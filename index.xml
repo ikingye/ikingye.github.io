@@ -75,6 +75,113 @@
     </item>
     
     <item>
+      <title>如何实现一个 CRD</title>
+      <link>/post/draft/k8s-new-crd/</link>
+      <pubDate>Mon, 09 Mar 2020 21:50:50 +0800</pubDate>
+      <guid>/post/draft/k8s-new-crd/</guid>
+      <description>&lt;p&gt;CRD 的全称是 Custom Resource Definition，顾名思义，就是用户在 Kubernetes 中添加一个跟 Pod，Deployment 类似的 API 资源类型。&lt;/p&gt;
+&lt;p&gt;下面以 Istio 的 DestinationRule 为例，说明实现一个 CRD 的具体步骤。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-customresourcedefinition-yaml-&#34;&gt;第一步，创建 CustomResourceDefinition YAML 文件&lt;/h2&gt;
+&lt;p&gt;kind 为 CustomResourceDefinition，spec.names.kind 为我们要创建的 DestinationRule。&lt;/p&gt;
+&lt;p&gt;以下省略了 additionalPrinterColumns 与 validation 内容，完整内容见 &lt;a href=&#34;https://github.com/istio/istio/blob/1.4.6/install/kubernetes/helm/istio-init/files/crd-10.yaml&#34;&gt;install/kubernetes/helm/istio-init/files/crd-10.yaml&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;apiVersion: apiextensions.k8s.io/v1beta1
+kind: CustomResourceDefinition
+metadata:
+  annotations:
+    &amp;quot;helm.sh/resource-policy&amp;quot;: keep
+  labels:
+    app: istio-pilot
+    chart: istio
+    heritage: Tiller
+    release: istio
+  name: destinationrules.networking.istio.io
+spec:
+  additionalPrinterColumns: ...
+  group: networking.istio.io
+  names:
+    categories:
+    - istio-io
+    - networking-istio-io
+    kind: DestinationRule
+    listKind: DestinationRuleList
+    plural: destinationrules
+    shortNames:
+    - dr
+    singular: destinationrule
+  scope: Namespaced
+  subresources:
+    status: {}
+  validation: ...
+  versions:
+  - name: v1alpha3
+    served: true
+    storage: true
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;-destinationrule-&#34;&gt;第二步，定义 DestinationRule 对象的完整描述&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;type DestinationRule struct {
+	meta_v1.TypeMeta   `json:&amp;quot;,inline&amp;quot;`
+	meta_v1.ObjectMeta `json:&amp;quot;metadata&amp;quot;`
+	Spec               map[string]interface{} `json:&amp;quot;spec&amp;quot;`
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;DestinationRule&lt;br&gt;
+proto: istio/api 的 &lt;a href=&#34;https://github.com/istio/api/blob/master/networking/v1alpha3/destination_rule.proto&#34;&gt;networking/v1alpha3/destination_rule.proto&lt;/a&gt;&lt;br&gt;
+pb.go: istio/api 的 &lt;a href=&#34;https://github.com/istio/api/blob/master/networking/v1alpha3/destination_rule.pb.go&#34;&gt;networking/v1alpha3/destination_rule.pb.go&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/istio/api&#34;&gt;istio/api&lt;/a&gt; defines component-level APIs and common configuration formats for the Istio platform.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;type DestinationRule struct {
+	// The name of a service from the service registry. Service
+	// names are looked up from the platform&#39;s service registry (e.g.,
+	// Kubernetes services, Consul services, etc.) and from the hosts
+	// declared by [ServiceEntries](https://istio.io/docs/reference/config/networking/service-entry/#ServiceEntry). Rules defined for
+	// services that do not exist in the service registry will be ignored.
+	//
+	// *Note for Kubernetes users*: When short names are used (e.g. &amp;quot;reviews&amp;quot;
+	// instead of &amp;quot;reviews.default.svc.cluster.local&amp;quot;), Istio will interpret
+	// the short name based on the namespace of the rule, not the service. A
+	// rule in the &amp;quot;default&amp;quot; namespace containing a host &amp;quot;reviews&amp;quot; will be
+	// interpreted as &amp;quot;reviews.default.svc.cluster.local&amp;quot;, irrespective of
+	// the actual namespace associated with the reviews service. _To avoid
+	// potential misconfigurations, it is recommended to always use fully
+	// qualified domain names over short names._
+	//
+	// Note that the host field applies to both HTTP and TCP services.
+	Host string `protobuf:&amp;quot;bytes,1,opt,name=host,proto3&amp;quot; json:&amp;quot;host,omitempty&amp;quot;`
+	// Traffic policies to apply (load balancing policy, connection pool
+	// sizes, outlier detection).
+	TrafficPolicy *TrafficPolicy `protobuf:&amp;quot;bytes,2,opt,name=traffic_policy,json=trafficPolicy,proto3&amp;quot; json:&amp;quot;traffic_policy,omitempty&amp;quot;`
+	// One or more named sets that represent individual versions of a
+	// service. Traffic policies can be overridden at subset level.
+	Subsets []*Subset `protobuf:&amp;quot;bytes,3,rep,name=subsets,proto3&amp;quot; json:&amp;quot;subsets,omitempty&amp;quot;`
+	// A list of namespaces to which this destination rule is exported.
+	// The resolution of a destination rule to apply to a service occurs in the
+	// context of a hierarchy of namespaces. Exporting a destination rule allows
+	// it to be included in the resolution hierarchy for services in
+	// other namespaces. This feature provides a mechanism for service owners
+	// and mesh administrators to control the visibility of destination rules
+	// across namespace boundaries.
+	//
+	// If no namespaces are specified then the destination rule is exported to all
+	// namespaces by default.
+	//
+	// The value &amp;quot;.&amp;quot; is reserved and defines an export to the same namespace that
+	// the destination rule is declared in. Similarly, the value &amp;quot;*&amp;quot; is reserved and
+	// defines an export to all namespaces.
+	//
+	// NOTE: in the current release, the `exportTo` value is restricted to
+	// &amp;quot;.&amp;quot; or &amp;quot;*&amp;quot; (i.e., the current namespace or all namespaces).
+	ExportTo             []string `protobuf:&amp;quot;bytes,4,rep,name=export_to,json=exportTo,proto3&amp;quot; json:&amp;quot;export_to,omitempty&amp;quot;`
+	XXX_NoUnkeyedLiteral struct{} `json:&amp;quot;-&amp;quot;`
+	XXX_unrecognized     []byte   `json:&amp;quot;-&amp;quot;`
+	XXX_sizecache        int32    `json:&amp;quot;-&amp;quot;`
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>An example preprint / working paper</title>
       <link>/publication/preprint/</link>
       <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>

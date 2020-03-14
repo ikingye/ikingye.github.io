@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="学而时习之">
+  <meta name="description" content="CRD 的全称是 Custom Resource Definition，顾名思义，就是用户在 Kubernetes 中添加一个跟 Pod，Deployment 类似的 API 资源类型。">
 
   
-  <link rel="alternate" hreflang="zh-cn" href="/post/">
+  <link rel="alternate" hreflang="zh-cn" href="/post/draft/k8s-new-crd/">
 
   
 
@@ -203,14 +203,12 @@
 
 
   
-  <link rel="alternate" href="/post/index.xml" type="application/rss+xml" title="叶王说">
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/post/">
+  <link rel="canonical" href="/post/draft/k8s-new-crd/">
 
   
   
@@ -226,18 +224,65 @@
   <meta property="twitter:creator" content="@ikingye">
   
   <meta property="og:site_name" content="叶王说">
-  <meta property="og:url" content="/post/">
-  <meta property="og:title" content="叶王博客 | 叶王说">
-  <meta property="og:description" content="学而时习之"><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
+  <meta property="og:url" content="/post/draft/k8s-new-crd/">
+  <meta property="og:title" content="如何实现一个 CRD | 叶王说">
+  <meta property="og:description" content="CRD 的全称是 Custom Resource Definition，顾名思义，就是用户在 Kubernetes 中添加一个跟 Pod，Deployment 类似的 API 资源类型。"><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=false) shape:circle]"><meta property="og:locale" content="zh-cn">
   
     
+      <meta property="article:published_time" content="2020-03-09T21:50:50&#43;08:00">
+    
+    <meta property="article:modified_time" content="2020-03-14T14:42:30&#43;08:00">
   
 
   
 
 
+    
 
+
+
+
+
+
+  
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/draft/k8s-new-crd/"
+  },
+  "headline": "如何实现一个 CRD",
+  
+  "datePublished": "2020-03-09T21:50:50+08:00",
+  "dateModified": "2020-03-14T14:42:30+08:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "叶王"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "叶王说",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/img/icon-512.png"
+    }
+  },
+  "description": "CRD 的全称是 Custom Resource Definition，顾名思义，就是用户在 Kubernetes 中添加一个跟 Pod，Deployment 类似的 API 资源类型。"
+}
+</script>
+
+  
 
   
 
@@ -245,10 +290,13 @@
   
 
 
+  
 
 
 
-  <title>叶王博客 | 叶王说</title>
+
+
+  <title>如何实现一个 CRD | 叶王说</title>
 
 </head>
 
@@ -447,78 +495,33 @@
 </nav>
 
 
-  
-
-
-
-
-
-
-
-
-
-
-
+  <article class="article">
 
   
 
+
+
+
+
+
+
+
+
+
+
+
+  
+
   
   
+  
+<div class="article-container pt-3">
+  <h1>如何实现一个 CRD</h1>
+
+  
+
   
     
-  
-<div class="universal-wrapper pt-3">
-  <h1>叶王博客</h1>
-
-  
-
-  
-</div>
-
-
-
-<div class="universal-wrapper">
-
-  
-
-  
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/draft/k8s-new-crd/" >如何实现一个 CRD</a>
-    </h3>
-
-    
-    <div class="article-style">
-      CRD 的全称是 Custom Resource Definition，顾名思义，就是用户在 Kubernetes 中添加一个跟 Pod，Deployment 类似的 API 资源类型。
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
 
 
 <div class="article-metadata">
@@ -556,25 +559,343 @@
 
 </div>
 
-      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>CRD 的全称是 Custom Resource Definition，顾名思义，就是用户在 Kubernetes 中添加一个跟 Pod，Deployment 类似的 API 资源类型。</p>
+<p>下面以 Istio 的 DestinationRule 为例，说明实现一个 CRD 的具体步骤。</p>
+<hr>
+<h2 id="-customresourcedefinition-yaml-">第一步，创建 CustomResourceDefinition YAML 文件</h2>
+<p>kind 为 CustomResourceDefinition，spec.names.kind 为我们要创建的 DestinationRule。</p>
+<p>以下省略了 additionalPrinterColumns 与 validation 内容，完整内容见 <a href="https://github.com/istio/istio/blob/1.4.6/install/kubernetes/helm/istio-init/files/crd-10.yaml">install/kubernetes/helm/istio-init/files/crd-10.yaml</a></p>
+<pre><code class="language-yaml">apiVersion: apiextensions.k8s.io/v1beta1
+kind: CustomResourceDefinition
+metadata:
+  annotations:
+    &quot;helm.sh/resource-policy&quot;: keep
+  labels:
+    app: istio-pilot
+    chart: istio
+    heritage: Tiller
+    release: istio
+  name: destinationrules.networking.istio.io
+spec:
+  additionalPrinterColumns: ...
+  group: networking.istio.io
+  names:
+    categories:
+    - istio-io
+    - networking-istio-io
+    kind: DestinationRule
+    listKind: DestinationRuleList
+    plural: destinationrules
+    shortNames:
+    - dr
+    singular: destinationrule
+  scope: Namespaced
+  subresources:
+    status: {}
+  validation: ...
+  versions:
+  - name: v1alpha3
+    served: true
+    storage: true
+</code></pre>
+<h2 id="-destinationrule-">第二步，定义 DestinationRule 对象的完整描述</h2>
+<pre><code class="language-go">type DestinationRule struct {
+	meta_v1.TypeMeta   `json:&quot;,inline&quot;`
+	meta_v1.ObjectMeta `json:&quot;metadata&quot;`
+	Spec               map[string]interface{} `json:&quot;spec&quot;`
+}
+</code></pre>
+<p>DestinationRule<br>
+proto: istio/api 的 <a href="https://github.com/istio/api/blob/master/networking/v1alpha3/destination_rule.proto">networking/v1alpha3/destination_rule.proto</a><br>
+pb.go: istio/api 的 <a href="https://github.com/istio/api/blob/master/networking/v1alpha3/destination_rule.pb.go">networking/v1alpha3/destination_rule.pb.go</a></p>
+<blockquote>
+<p><a href="https://github.com/istio/api">istio/api</a> defines component-level APIs and common configuration formats for the Istio platform.</p>
+</blockquote>
+<pre><code class="language-go">type DestinationRule struct {
+	// The name of a service from the service registry. Service
+	// names are looked up from the platform's service registry (e.g.,
+	// Kubernetes services, Consul services, etc.) and from the hosts
+	// declared by [ServiceEntries](https://istio.io/docs/reference/config/networking/service-entry/#ServiceEntry). Rules defined for
+	// services that do not exist in the service registry will be ignored.
+	//
+	// *Note for Kubernetes users*: When short names are used (e.g. &quot;reviews&quot;
+	// instead of &quot;reviews.default.svc.cluster.local&quot;), Istio will interpret
+	// the short name based on the namespace of the rule, not the service. A
+	// rule in the &quot;default&quot; namespace containing a host &quot;reviews&quot; will be
+	// interpreted as &quot;reviews.default.svc.cluster.local&quot;, irrespective of
+	// the actual namespace associated with the reviews service. _To avoid
+	// potential misconfigurations, it is recommended to always use fully
+	// qualified domain names over short names._
+	//
+	// Note that the host field applies to both HTTP and TCP services.
+	Host string `protobuf:&quot;bytes,1,opt,name=host,proto3&quot; json:&quot;host,omitempty&quot;`
+	// Traffic policies to apply (load balancing policy, connection pool
+	// sizes, outlier detection).
+	TrafficPolicy *TrafficPolicy `protobuf:&quot;bytes,2,opt,name=traffic_policy,json=trafficPolicy,proto3&quot; json:&quot;traffic_policy,omitempty&quot;`
+	// One or more named sets that represent individual versions of a
+	// service. Traffic policies can be overridden at subset level.
+	Subsets []*Subset `protobuf:&quot;bytes,3,rep,name=subsets,proto3&quot; json:&quot;subsets,omitempty&quot;`
+	// A list of namespaces to which this destination rule is exported.
+	// The resolution of a destination rule to apply to a service occurs in the
+	// context of a hierarchy of namespaces. Exporting a destination rule allows
+	// it to be included in the resolution hierarchy for services in
+	// other namespaces. This feature provides a mechanism for service owners
+	// and mesh administrators to control the visibility of destination rules
+	// across namespace boundaries.
+	//
+	// If no namespaces are specified then the destination rule is exported to all
+	// namespaces by default.
+	//
+	// The value &quot;.&quot; is reserved and defines an export to the same namespace that
+	// the destination rule is declared in. Similarly, the value &quot;*&quot; is reserved and
+	// defines an export to all namespaces.
+	//
+	// NOTE: in the current release, the `exportTo` value is restricted to
+	// &quot;.&quot; or &quot;*&quot; (i.e., the current namespace or all namespaces).
+	ExportTo             []string `protobuf:&quot;bytes,4,rep,name=export_to,json=exportTo,proto3&quot; json:&quot;export_to,omitempty&quot;`
+	XXX_NoUnkeyedLiteral struct{} `json:&quot;-&quot;`
+	XXX_unrecognized     []byte   `json:&quot;-&quot;`
+	XXX_sizecache        int32    `json:&quot;-&quot;`
+}
+</code></pre>
+
     </div>
 
     
 
-  </div>
-  <div class="ml-3">
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
     
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/post/draft/k8s-new-crd/&amp;text=%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0%e4%b8%80%e4%b8%aa%20CRD" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
     
-  </div>
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/post/draft/k8s-new-crd/&amp;t=%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0%e4%b8%80%e4%b8%aa%20CRD" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0%e4%b8%80%e4%b8%aa%20CRD&amp;body=/post/draft/k8s-new-crd/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/post/draft/k8s-new-crd/&amp;title=%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0%e4%b8%80%e4%b8%aa%20CRD" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0%e4%b8%80%e4%b8%aa%20CRD%20/post/draft/k8s-new-crd/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/post/draft/k8s-new-crd/&amp;title=%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0%e4%b8%80%e4%b8%aa%20CRD" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+  
     
   
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="portrait mr-3" src="/authors/admin/avatar_hufb6ed7f4fb6f2a99971e9dfd456d7dbf_75814_250x250_fill_q90_lanczos_center.jpg" alt="Avatar">
+    
 
+    <div class="media-body">
+      <h5 class="card-title"><a href="/">叶王</a></h5>
+      <h6 class="card-subtitle">资深研发工程师</h6>
+      <p class="card-text">目前主要做边缘计算和 Service Mesh 相关研发工作。</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:kingye.me@gmail.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/ikingye" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://weibo.com/kingye15215" target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/ikingye" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
   
 
 
-</div>
+
+  </div>
+</article>
 
       
 

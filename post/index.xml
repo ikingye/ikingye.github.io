@@ -12,5 +12,13 @@
       <link>/post/</link>
     </image>
     
+    <item>
+      <title>New to K8s</title>
+      <link>/post/draft/new-to-k8s/</link>
+      <pubDate>Sat, 04 Apr 2020 15:06:33 +0800</pubDate>
+      <guid>/post/draft/new-to-k8s/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

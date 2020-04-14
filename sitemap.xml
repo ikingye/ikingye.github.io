@@ -23,16 +23,6 @@
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2020-03-29T20:49:57+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/admin/</loc>
-    <lastmod>2020-03-09T22:05:21+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/publication_types/3/</loc>
     <lastmod>2020-01-18T03:24:09+08:00</lastmod>
   </url>
@@ -44,7 +34,7 @@
   
   <url>
     <loc>/authors/</loc>
-    <lastmod>2020-01-18T03:24:09+08:00</lastmod>
+    <lastmod>2020-03-09T22:05:21+08:00</lastmod>
   </url>
   
   <url>
@@ -70,6 +60,11 @@
   <url>
     <loc>/slides/example/</loc>
     <lastmod>2020-01-18T03:24:09+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-03-29T20:49:57+08:00</lastmod>
   </url>
   
   <url>
@@ -125,6 +120,11 @@
   <url>
     <loc>/publication/conference-paper/</loc>
     <lastmod>2020-01-18T03:24:09+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/admin/</loc>
+    <lastmod>2020-03-09T22:05:21+08:00</lastmod>
   </url>
   
   <url>

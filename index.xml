@@ -231,7 +231,8 @@ Three
       <guid>/notes/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://kingye.me/note&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;学习笔记&lt;/a&gt;&lt;/li&gt;
+&lt;a href=&#34;https://kingye.me/note&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;学习笔记&lt;/a&gt;
+&lt;ul&gt;
 &lt;li&gt;
 &lt;a href=&#34;https://kingye.me/note-cs&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;计算机学习笔记&lt;/a&gt;
 &lt;ul&gt;
@@ -249,6 +250,8 @@ Three
 &lt;a href=&#34;https://kingye.me/study-k8s&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kubernetes 学习笔记&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;
 &lt;a href=&#34;https://kingye.me/study-istio&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Istio 学习笔记&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

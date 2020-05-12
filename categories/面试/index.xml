@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>面试 | 叶王说</title>
+    <link>/categories/%E9%9D%A2%E8%AF%95/</link>
+      <atom:link href="/categories/%E9%9D%A2%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
+    <description>面试</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-cn</language><lastBuildDate>Wed, 13 May 2020 01:01:33 +0800</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>面试</title>
+      <link>/categories/%E9%9D%A2%E8%AF%95/</link>
+    </image>
+    
+    <item>
+      <title>适配器模式、装饰模式、代理模式有哪些异同？</title>
+      <link>/post/interview/adapter-decorator-proxy/</link>
+      <pubDate>Wed, 13 May 2020 01:01:33 +0800</pubDate>
+      <guid>/post/interview/adapter-decorator-proxy/</guid>
+      <description>&lt;h2 id=&#34;适配器模式&#34;&gt;适配器模式&lt;/h2&gt;
+&lt;h2 id=&#34;装饰模式&#34;&gt;装饰模式&lt;/h2&gt;
+&lt;h2 id=&#34;代理模式&#34;&gt;代理模式&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>面试导航</title>
+      <link>/post/interview/navi/</link>
+      <pubDate>Mon, 11 May 2020 22:01:33 +0800</pubDate>
+      <guid>/post/interview/navi/</guid>
+      <description>&lt;h2 id=&#34;计算机基础&#34;&gt;计算机基础&lt;/h2&gt;
+&lt;h3 id=&#34;网络httpskingyemestudy-networkdocsappendixinterview&#34;&gt;
+&lt;a href=&#34;https://kingye.me/study-network/docs/appendix/interview/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;网络&lt;/a&gt;&lt;/h3&gt;
+&lt;h4 id=&#34;https&#34;&gt;https&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;&#34;&gt;https 握手过程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;软件工程&#34;&gt;软件工程&lt;/h2&gt;
+&lt;h3 id=&#34;设计模式httpskingyemenote-csdocsdirectionsedesign-pattern&#34;&gt;
+&lt;a href=&#34;https://kingye.me/note-cs/docs/direction/se/design-pattern/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;设计模式&lt;/a&gt;&lt;/h3&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

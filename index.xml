@@ -77,17 +77,175 @@
     </item>
     
     <item>
-      <title>后端开发面试题</title>
-      <link>/post/interview/</link>
+      <title>适配器模式、装饰模式、代理模式有哪些异同？</title>
+      <link>/post/interview/adapter-decorator-proxy/</link>
+      <pubDate>Wed, 13 May 2020 01:01:33 +0800</pubDate>
+      <guid>/post/interview/adapter-decorator-proxy/</guid>
+      <description>&lt;h2 id=&#34;适配器模式&#34;&gt;适配器模式&lt;/h2&gt;
+&lt;h2 id=&#34;装饰模式&#34;&gt;装饰模式&lt;/h2&gt;
+&lt;h2 id=&#34;代理模式&#34;&gt;代理模式&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>面试导航</title>
+      <link>/post/interview/navi/</link>
       <pubDate>Mon, 11 May 2020 22:01:33 +0800</pubDate>
-      <guid>/post/interview/</guid>
-      <description>&lt;h1 id=&#34;计算机基础&#34;&gt;计算机基础&lt;/h1&gt;
-&lt;h2 id=&#34;网络httpskingyemestudy-networkdocsappendixinterview&#34;&gt;
-&lt;a href=&#34;https://kingye.me/study-network/docs/appendix/interview/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;网络&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id=&#34;https-握手过程&#34;&gt;https 握手过程&lt;/h3&gt;
+      <guid>/post/interview/navi/</guid>
+      <description>&lt;h2 id=&#34;计算机基础&#34;&gt;计算机基础&lt;/h2&gt;
+&lt;h3 id=&#34;网络httpskingyemestudy-networkdocsappendixinterview&#34;&gt;
+&lt;a href=&#34;https://kingye.me/study-network/docs/appendix/interview/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;网络&lt;/a&gt;&lt;/h3&gt;
+&lt;h4 id=&#34;https&#34;&gt;https&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;&#34;&gt;https 握手过程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;设计模式httpskingyemenote-csdocsdirectionsedesign-pattern&#34;&gt;
-&lt;a href=&#34;https://kingye.me/note-cs/docs/direction/se/design-pattern/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;设计模式&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;软件工程&#34;&gt;软件工程&lt;/h2&gt;
+&lt;h3 id=&#34;设计模式httpskingyemenote-csdocsdirectionsedesign-pattern&#34;&gt;
+&lt;a href=&#34;https://kingye.me/note-cs/docs/direction/se/design-pattern/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;设计模式&lt;/a&gt;&lt;/h3&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New to K8s</title>
+      <link>/post/draft/new-to-k8s/</link>
+      <pubDate>Sat, 04 Apr 2020 15:06:33 +0800</pubDate>
+      <guid>/post/draft/new-to-k8s/</guid>
+      <description>&lt;p&gt;安装 Docker Desktop 版本的 Kubernetes&lt;/p&gt;
+&lt;p&gt;使用
+
+&lt;a href=&#34;https://github.com/gotok8s/k8s-docker-desktop-for-mac&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;gotok8s/k8s-docker-desktop-for-mac&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/gotok8s/k8s-docker-desktop-for-mac.svg&#34; alt=&#34;Github stars&#34;&gt;&lt;/p&gt;
+&lt;p&gt;原理：&lt;/p&gt;
+&lt;p&gt;利用 GitHub Actions 实现 k8s.gcr.io 上 kubernetes 依赖镜像自动同步到 Docker Hub 上指定的仓库中。
+通过 &lt;code&gt;load_images.sh&lt;/code&gt; 将所需镜像从 Docker Hub 的同步仓库中取回，并重新打上原始的 tag。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Istio 如何实现 sidecar 注入</title>
+      <link>/post/draft/istio-sidecar-injection/</link>
+      <pubDate>Mon, 09 Mar 2020 21:50:50 +0800</pubDate>
+      <guid>/post/draft/istio-sidecar-injection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Istio 如何实现流量劫持</title>
+      <link>/post/draft/istio-hijack/</link>
+      <pubDate>Mon, 09 Mar 2020 21:50:50 +0800</pubDate>
+      <guid>/post/draft/istio-hijack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>如何实现一个 CRD ？</title>
+      <link>/post/draft/k8s-new-crd/</link>
+      <pubDate>Mon, 09 Mar 2020 21:50:50 +0800</pubDate>
+      <guid>/post/draft/k8s-new-crd/</guid>
+      <description>&lt;p&gt;CRD 的全称是 Custom Resource Definition，顾名思义，就是用户在 Kubernetes 中添加一个跟 Pod，Deployment 类似的 API 资源类型。&lt;/p&gt;
+&lt;p&gt;下面以 Istio 的 DestinationRule 为例，说明实现一个 CRD 的具体步骤。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;第一步创建-customresourcedefinition-yaml-文件&#34;&gt;第一步，创建 CustomResourceDefinition YAML 文件&lt;/h2&gt;
+&lt;p&gt;kind 为 CustomResourceDefinition，spec.names.kind 为我们要创建的 DestinationRule。&lt;/p&gt;
+&lt;p&gt;以下省略了 additionalPrinterColumns 与 validation 内容，完整内容见 
+&lt;a href=&#34;https://github.com/istio/istio/blob/1.4.6/install/kubernetes/helm/istio-init/files/crd-10.yaml&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;install/kubernetes/helm/istio-init/files/crd-10.yaml&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;apiVersion: apiextensions.k8s.io/v1beta1
+kind: CustomResourceDefinition
+metadata:
+  annotations:
+    &amp;quot;helm.sh/resource-policy&amp;quot;: keep
+  labels:
+    app: istio-pilot
+    chart: istio
+    heritage: Tiller
+    release: istio
+  name: destinationrules.networking.istio.io
+spec:
+  additionalPrinterColumns: ...
+  group: networking.istio.io
+  names:
+    categories:
+      - istio-io
+      - networking-istio-io
+    kind: DestinationRule
+    listKind: DestinationRuleList
+    plural: destinationrules
+    shortNames:
+      - dr
+    singular: destinationrule
+  scope: Namespaced
+  subresources:
+    status: {}
+  validation: ...
+  versions:
+    - name: v1alpha3
+      served: true
+      storage: true
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;第二步定义-destinationrule-对象的完整描述&#34;&gt;第二步，定义 DestinationRule 对象的完整描述&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;type DestinationRule struct {
+    meta_v1.TypeMeta   `json:&amp;quot;,inline&amp;quot;`
+    meta_v1.ObjectMeta `json:&amp;quot;metadata&amp;quot;`
+    Spec               map[string]interface{} `json:&amp;quot;spec&amp;quot;`
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;DestinationRule
+proto: istio/api 的 
+&lt;a href=&#34;https://github.com/istio/api/blob/master/networking/v1alpha3/destination_rule.proto&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;networking/v1alpha3/destination_rule.proto&lt;/a&gt;
+pb.go: istio/api 的 
+&lt;a href=&#34;https://github.com/istio/api/blob/master/networking/v1alpha3/destination_rule.pb.go&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;networking/v1alpha3/destination_rule.pb.go&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://github.com/istio/api&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;istio/api&lt;/a&gt; defines component-level APIs and common configuration formats for the Istio platform.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;type DestinationRule struct {
+    // The name of a service from the service registry. Service
+    // names are looked up from the platform&#39;s service registry (e.g.,
+    // Kubernetes services, Consul services, etc.) and from the hosts
+    // declared by [ServiceEntries](https://istio.io/docs/reference/config/networking/service-entry/#ServiceEntry). Rules defined for
+    // services that do not exist in the service registry will be ignored.
+    //
+    // *Note for Kubernetes users*: When short names are used (e.g. &amp;quot;reviews&amp;quot;
+    // instead of &amp;quot;reviews.default.svc.cluster.local&amp;quot;), Istio will interpret
+    // the short name based on the namespace of the rule, not the service. A
+    // rule in the &amp;quot;default&amp;quot; namespace containing a host &amp;quot;reviews&amp;quot; will be
+    // interpreted as &amp;quot;reviews.default.svc.cluster.local&amp;quot;, irrespective of
+    // the actual namespace associated with the reviews service. _To avoid
+    // potential misconfigurations, it is recommended to always use fully
+    // qualified domain names over short names._
+    //
+    // Note that the host field applies to both HTTP and TCP services.
+    Host string `protobuf:&amp;quot;bytes,1,opt,name=host,proto3&amp;quot; json:&amp;quot;host,omitempty&amp;quot;`
+    // Traffic policies to apply (load balancing policy, connection pool
+    // sizes, outlier detection).
+    TrafficPolicy *TrafficPolicy `protobuf:&amp;quot;bytes,2,opt,name=traffic_policy,json=trafficPolicy,proto3&amp;quot; json:&amp;quot;traffic_policy,omitempty&amp;quot;`
+    // One or more named sets that represent individual versions of a
+    // service. Traffic policies can be overridden at subset level.
+    Subsets []*Subset `protobuf:&amp;quot;bytes,3,rep,name=subsets,proto3&amp;quot; json:&amp;quot;subsets,omitempty&amp;quot;`
+    // A list of namespaces to which this destination rule is exported.
+    // The resolution of a destination rule to apply to a service occurs in the
+    // context of a hierarchy of namespaces. Exporting a destination rule allows
+    // it to be included in the resolution hierarchy for services in
+    // other namespaces. This feature provides a mechanism for service owners
+    // and mesh administrators to control the visibility of destination rules
+    // across namespace boundaries.
+    //
+    // If no namespaces are specified then the destination rule is exported to all
+    // namespaces by default.
+    //
+    // The value &amp;quot;.&amp;quot; is reserved and defines an export to the same namespace that
+    // the destination rule is declared in. Similarly, the value &amp;quot;*&amp;quot; is reserved and
+    // defines an export to all namespaces.
+    //
+    // NOTE: in the current release, the `exportTo` value is restricted to
+    // &amp;quot;.&amp;quot; or &amp;quot;*&amp;quot; (i.e., the current namespace or all namespaces).
+    ExportTo             []string `protobuf:&amp;quot;bytes,4,rep,name=export_to,json=exportTo,proto3&amp;quot; json:&amp;quot;export_to,omitempty&amp;quot;`
+    XXX_NoUnkeyedLiteral struct{} `json:&amp;quot;-&amp;quot;`
+    XXX_unrecognized     []byte   `json:&amp;quot;-&amp;quot;`
+    XXX_sizecache        int32    `json:&amp;quot;-&amp;quot;`
+}
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="zh-cn">
+<!DOCTYPE html><html lang="zh-cn" >
 
 <head>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.6.3">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
 
   
 
@@ -21,7 +20,7 @@
   
   
 
-  <meta name="author" content="叶王">
+  
 
   
   
@@ -51,7 +50,7 @@
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -63,8 +62,8 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
@@ -76,6 +75,13 @@
     
 
     
+    
+      
+
+      
+      
+
+      
     
       
 
@@ -203,13 +209,19 @@
 
 
   
+  
+
+  
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon-32.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
   <link rel="canonical" href="/post/draft/k8s-new-crd/">
 
+  
+  
+  
   
   
   
@@ -225,14 +237,14 @@
   
   <meta property="og:site_name" content="叶王说">
   <meta property="og:url" content="/post/draft/k8s-new-crd/">
-  <meta property="og:title" content="如何实现一个 CRD | 叶王说">
-  <meta property="og:description" content="CRD 的全称是 Custom Resource Definition，顾名思义，就是用户在 Kubernetes 中添加一个跟 Pod，Deployment 类似的 API 资源类型。"><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
-  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=false) shape:circle]"><meta property="og:locale" content="zh-cn">
+  <meta property="og:title" content="如何实现一个 CRD ？ | 叶王说">
+  <meta property="og:description" content="CRD 的全称是 Custom Resource Definition，顾名思义，就是用户在 Kubernetes 中添加一个跟 Pod，Deployment 类似的 API 资源类型。"><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="zh-cn">
   
     
       <meta property="article:published_time" content="2020-03-09T21:50:50&#43;08:00">
     
-    <meta property="article:modified_time" content="2020-03-14T14:42:30&#43;08:00">
+    <meta property="article:modified_time" content="2020-04-23T19:37:45&#43;08:00">
   
 
   
@@ -246,8 +258,6 @@
 
 
   
-
-
 
 
 
@@ -260,22 +270,17 @@
     "@type": "WebPage",
     "@id": "/post/draft/k8s-new-crd/"
   },
-  "headline": "如何实现一个 CRD",
+  "headline": "如何实现一个 CRD ？",
   
   "datePublished": "2020-03-09T21:50:50+08:00",
-  "dateModified": "2020-03-14T14:42:30+08:00",
-  
-  "author": {
-    "@type": "Person",
-    "name": "叶王"
-  },
+  "dateModified": "2020-04-23T19:37:45+08:00",
   
   "publisher": {
     "@type": "Organization",
     "name": "叶王说",
     "logo": {
       "@type": "ImageObject",
-      "url": "/img/icon-512.png"
+      "url": "/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
     }
   },
   "description": "CRD 的全称是 Custom Resource Definition，顾名思义，就是用户在 Kubernetes 中添加一个跟 Pod，Deployment 类似的 API 资源类型。"
@@ -296,7 +301,7 @@
 
 
 
-  <title>如何实现一个 CRD | 叶王说</title>
+  <title>如何实现一个 CRD ？ | 叶王说</title>
 
 </head>
 
@@ -335,6 +340,12 @@
 
 
   
+
+
+
+
+
+
 
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
@@ -439,35 +450,6 @@
         
         
 
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#about"><span>关于</span></a>
-        </li>
-
-        
-        
-
       
 
         
@@ -482,8 +464,21 @@
       
 
       
-      <li class="nav-item">
-        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
       </li>
       
 
@@ -516,7 +511,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>如何实现一个 CRD</h1>
+  <h1>如何实现一个 CRD ？</h1>
 
   
 
@@ -537,7 +532,7 @@
           最近更新于
       
     
-    2020-03-14
+    2020-04-23
   </span>
   
 
@@ -555,6 +550,10 @@
   
 
   
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/devops/">DevOps</a>, <a href="/categories/kubernetes/">Kubernetes</a>, <a href="/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/">云原生</a></span>
   
 
 </div>
@@ -585,9 +584,10 @@
       <p>CRD 的全称是 Custom Resource Definition，顾名思义，就是用户在 Kubernetes 中添加一个跟 Pod，Deployment 类似的 API 资源类型。</p>
 <p>下面以 Istio 的 DestinationRule 为例，说明实现一个 CRD 的具体步骤。</p>
 <hr>
-<h2 id="-customresourcedefinition-yaml-">第一步，创建 CustomResourceDefinition YAML 文件</h2>
+<h2 id="第一步创建-customresourcedefinition-yaml-文件">第一步，创建 CustomResourceDefinition YAML 文件</h2>
 <p>kind 为 CustomResourceDefinition，spec.names.kind 为我们要创建的 DestinationRule。</p>
-<p>以下省略了 additionalPrinterColumns 与 validation 内容，完整内容见 <a href="https://github.com/istio/istio/blob/1.4.6/install/kubernetes/helm/istio-init/files/crd-10.yaml">install/kubernetes/helm/istio-init/files/crd-10.yaml</a></p>
+<p>以下省略了 additionalPrinterColumns 与 validation 内容，完整内容见 
+<a href="https://github.com/istio/istio/blob/1.4.6/install/kubernetes/helm/istio-init/files/crd-10.yaml" target="_blank" rel="noopener">install/kubernetes/helm/istio-init/files/crd-10.yaml</a></p>
 <pre><code class="language-yaml">apiVersion: apiextensions.k8s.io/v1beta1
 kind: CustomResourceDefinition
 metadata:
@@ -604,81 +604,84 @@ spec:
   group: networking.istio.io
   names:
     categories:
-    - istio-io
-    - networking-istio-io
+      - istio-io
+      - networking-istio-io
     kind: DestinationRule
     listKind: DestinationRuleList
     plural: destinationrules
     shortNames:
-    - dr
+      - dr
     singular: destinationrule
   scope: Namespaced
   subresources:
     status: {}
   validation: ...
   versions:
-  - name: v1alpha3
-    served: true
-    storage: true
+    - name: v1alpha3
+      served: true
+      storage: true
 </code></pre>
-<h2 id="-destinationrule-">第二步，定义 DestinationRule 对象的完整描述</h2>
+<h2 id="第二步定义-destinationrule-对象的完整描述">第二步，定义 DestinationRule 对象的完整描述</h2>
 <pre><code class="language-go">type DestinationRule struct {
-	meta_v1.TypeMeta   `json:&quot;,inline&quot;`
-	meta_v1.ObjectMeta `json:&quot;metadata&quot;`
-	Spec               map[string]interface{} `json:&quot;spec&quot;`
+    meta_v1.TypeMeta   `json:&quot;,inline&quot;`
+    meta_v1.ObjectMeta `json:&quot;metadata&quot;`
+    Spec               map[string]interface{} `json:&quot;spec&quot;`
 }
 </code></pre>
-<p>DestinationRule<br>
-proto: istio/api 的 <a href="https://github.com/istio/api/blob/master/networking/v1alpha3/destination_rule.proto">networking/v1alpha3/destination_rule.proto</a><br>
-pb.go: istio/api 的 <a href="https://github.com/istio/api/blob/master/networking/v1alpha3/destination_rule.pb.go">networking/v1alpha3/destination_rule.pb.go</a></p>
+<p>DestinationRule
+proto: istio/api 的 
+<a href="https://github.com/istio/api/blob/master/networking/v1alpha3/destination_rule.proto" target="_blank" rel="noopener">networking/v1alpha3/destination_rule.proto</a>
+pb.go: istio/api 的 
+<a href="https://github.com/istio/api/blob/master/networking/v1alpha3/destination_rule.pb.go" target="_blank" rel="noopener">networking/v1alpha3/destination_rule.pb.go</a></p>
 <blockquote>
-<p><a href="https://github.com/istio/api">istio/api</a> defines component-level APIs and common configuration formats for the Istio platform.</p>
+<p>
+<a href="https://github.com/istio/api" target="_blank" rel="noopener">istio/api</a> defines component-level APIs and common configuration formats for the Istio platform.</p>
 </blockquote>
 <pre><code class="language-go">type DestinationRule struct {
-	// The name of a service from the service registry. Service
-	// names are looked up from the platform's service registry (e.g.,
-	// Kubernetes services, Consul services, etc.) and from the hosts
-	// declared by [ServiceEntries](https://istio.io/docs/reference/config/networking/service-entry/#ServiceEntry). Rules defined for
-	// services that do not exist in the service registry will be ignored.
-	//
-	// *Note for Kubernetes users*: When short names are used (e.g. &quot;reviews&quot;
-	// instead of &quot;reviews.default.svc.cluster.local&quot;), Istio will interpret
-	// the short name based on the namespace of the rule, not the service. A
-	// rule in the &quot;default&quot; namespace containing a host &quot;reviews&quot; will be
-	// interpreted as &quot;reviews.default.svc.cluster.local&quot;, irrespective of
-	// the actual namespace associated with the reviews service. _To avoid
-	// potential misconfigurations, it is recommended to always use fully
-	// qualified domain names over short names._
-	//
-	// Note that the host field applies to both HTTP and TCP services.
-	Host string `protobuf:&quot;bytes,1,opt,name=host,proto3&quot; json:&quot;host,omitempty&quot;`
-	// Traffic policies to apply (load balancing policy, connection pool
-	// sizes, outlier detection).
-	TrafficPolicy *TrafficPolicy `protobuf:&quot;bytes,2,opt,name=traffic_policy,json=trafficPolicy,proto3&quot; json:&quot;traffic_policy,omitempty&quot;`
-	// One or more named sets that represent individual versions of a
-	// service. Traffic policies can be overridden at subset level.
-	Subsets []*Subset `protobuf:&quot;bytes,3,rep,name=subsets,proto3&quot; json:&quot;subsets,omitempty&quot;`
-	// A list of namespaces to which this destination rule is exported.
-	// The resolution of a destination rule to apply to a service occurs in the
-	// context of a hierarchy of namespaces. Exporting a destination rule allows
-	// it to be included in the resolution hierarchy for services in
-	// other namespaces. This feature provides a mechanism for service owners
-	// and mesh administrators to control the visibility of destination rules
-	// across namespace boundaries.
-	//
-	// If no namespaces are specified then the destination rule is exported to all
-	// namespaces by default.
-	//
-	// The value &quot;.&quot; is reserved and defines an export to the same namespace that
-	// the destination rule is declared in. Similarly, the value &quot;*&quot; is reserved and
-	// defines an export to all namespaces.
-	//
-	// NOTE: in the current release, the `exportTo` value is restricted to
-	// &quot;.&quot; or &quot;*&quot; (i.e., the current namespace or all namespaces).
-	ExportTo             []string `protobuf:&quot;bytes,4,rep,name=export_to,json=exportTo,proto3&quot; json:&quot;export_to,omitempty&quot;`
-	XXX_NoUnkeyedLiteral struct{} `json:&quot;-&quot;`
-	XXX_unrecognized     []byte   `json:&quot;-&quot;`
-	XXX_sizecache        int32    `json:&quot;-&quot;`
+    // The name of a service from the service registry. Service
+    // names are looked up from the platform's service registry (e.g.,
+    // Kubernetes services, Consul services, etc.) and from the hosts
+    // declared by [ServiceEntries](https://istio.io/docs/reference/config/networking/service-entry/#ServiceEntry). Rules defined for
+    // services that do not exist in the service registry will be ignored.
+    //
+    // *Note for Kubernetes users*: When short names are used (e.g. &quot;reviews&quot;
+    // instead of &quot;reviews.default.svc.cluster.local&quot;), Istio will interpret
+    // the short name based on the namespace of the rule, not the service. A
+    // rule in the &quot;default&quot; namespace containing a host &quot;reviews&quot; will be
+    // interpreted as &quot;reviews.default.svc.cluster.local&quot;, irrespective of
+    // the actual namespace associated with the reviews service. _To avoid
+    // potential misconfigurations, it is recommended to always use fully
+    // qualified domain names over short names._
+    //
+    // Note that the host field applies to both HTTP and TCP services.
+    Host string `protobuf:&quot;bytes,1,opt,name=host,proto3&quot; json:&quot;host,omitempty&quot;`
+    // Traffic policies to apply (load balancing policy, connection pool
+    // sizes, outlier detection).
+    TrafficPolicy *TrafficPolicy `protobuf:&quot;bytes,2,opt,name=traffic_policy,json=trafficPolicy,proto3&quot; json:&quot;traffic_policy,omitempty&quot;`
+    // One or more named sets that represent individual versions of a
+    // service. Traffic policies can be overridden at subset level.
+    Subsets []*Subset `protobuf:&quot;bytes,3,rep,name=subsets,proto3&quot; json:&quot;subsets,omitempty&quot;`
+    // A list of namespaces to which this destination rule is exported.
+    // The resolution of a destination rule to apply to a service occurs in the
+    // context of a hierarchy of namespaces. Exporting a destination rule allows
+    // it to be included in the resolution hierarchy for services in
+    // other namespaces. This feature provides a mechanism for service owners
+    // and mesh administrators to control the visibility of destination rules
+    // across namespace boundaries.
+    //
+    // If no namespaces are specified then the destination rule is exported to all
+    // namespaces by default.
+    //
+    // The value &quot;.&quot; is reserved and defines an export to the same namespace that
+    // the destination rule is declared in. Similarly, the value &quot;*&quot; is reserved and
+    // defines an export to all namespaces.
+    //
+    // NOTE: in the current release, the `exportTo` value is restricted to
+    // &quot;.&quot; or &quot;*&quot; (i.e., the current namespace or all namespaces).
+    ExportTo             []string `protobuf:&quot;bytes,4,rep,name=export_to,json=exportTo,proto3&quot; json:&quot;export_to,omitempty&quot;`
+    XXX_NoUnkeyedLiteral struct{} `json:&quot;-&quot;`
+    XXX_unrecognized     []byte   `json:&quot;-&quot;`
+    XXX_sizecache        int32    `json:&quot;-&quot;`
 }
 </code></pre>
 
@@ -687,6 +690,14 @@ pb.go: istio/api 的 <a href="https://github.com/istio/api/blob/master/networkin
     
 
 
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/kubernetes/">Kubernetes</a>
+  
+  <a class="badge badge-light" href="/tags/crd/">CRD</a>
+  
+</div>
 
 
 
@@ -701,7 +712,7 @@ pb.go: istio/api 的 <a href="https://github.com/istio/api/blob/master/networkin
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=/post/draft/k8s-new-crd/&amp;text=%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0%e4%b8%80%e4%b8%aa%20CRD" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=/post/draft/k8s-new-crd/&amp;text=%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0%e4%b8%80%e4%b8%aa%20CRD%20%ef%bc%9f" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -714,7 +725,7 @@ pb.go: istio/api 的 <a href="https://github.com/istio/api/blob/master/networkin
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=/post/draft/k8s-new-crd/&amp;t=%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0%e4%b8%80%e4%b8%aa%20CRD" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=/post/draft/k8s-new-crd/&amp;t=%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0%e4%b8%80%e4%b8%aa%20CRD%20%ef%bc%9f" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -727,7 +738,7 @@ pb.go: istio/api 的 <a href="https://github.com/istio/api/blob/master/networkin
       
       
       <li>
-        <a href="mailto:?subject=%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0%e4%b8%80%e4%b8%aa%20CRD&amp;body=/post/draft/k8s-new-crd/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0%e4%b8%80%e4%b8%aa%20CRD%20%ef%bc%9f&amp;body=/post/draft/k8s-new-crd/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -740,7 +751,7 @@ pb.go: istio/api 的 <a href="https://github.com/istio/api/blob/master/networkin
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=/post/draft/k8s-new-crd/&amp;title=%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0%e4%b8%80%e4%b8%aa%20CRD" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=/post/draft/k8s-new-crd/&amp;title=%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0%e4%b8%80%e4%b8%aa%20CRD%20%ef%bc%9f" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -753,7 +764,7 @@ pb.go: istio/api 的 <a href="https://github.com/istio/api/blob/master/networkin
       
       
       <li>
-        <a href="https://web.whatsapp.com/send?text=%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0%e4%b8%80%e4%b8%aa%20CRD%20/post/draft/k8s-new-crd/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="https://web.whatsapp.com/send?text=%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0%e4%b8%80%e4%b8%aa%20CRD%20%ef%bc%9f%20/post/draft/k8s-new-crd/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -766,7 +777,7 @@ pb.go: istio/api 的 <a href="https://github.com/istio/api/blob/master/networkin
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=/post/draft/k8s-new-crd/&amp;title=%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0%e4%b8%80%e4%b8%aa%20CRD" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=/post/draft/k8s-new-crd/&amp;title=%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0%e4%b8%80%e4%b8%aa%20CRD%20%ef%bc%9f" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -786,29 +797,82 @@ pb.go: istio/api 的 <a href="https://github.com/istio/api/blob/master/networkin
 
 
   
-
-
-
-
-
-
   
-  
+
+
+
+
+
   
     
-  
-  
-  <div class="media author-card content-widget-hr">
+    
     
       
-      <img class="portrait mr-3" src="/authors/admin/avatar_hufb6ed7f4fb6f2a99971e9dfd456d7dbf_75814_250x250_fill_q90_lanczos_center.jpg" alt="Avatar">
     
+    
+    
+    <div class="media author-card content-widget-hr">
+      
+        
+        <img class="avatar mr-3 avatar-circle" src="/authors/yewang/avatar_hufb6ed7f4fb6f2a99971e9dfd456d7dbf_75814_270x270_fill_q90_lanczos_center.jpg" alt="">
+      
 
-    <div class="media-body">
-      <h5 class="card-title"><a href="/">叶王</a></h5>
-      <h6 class="card-subtitle">资深研发工程师</h6>
-      <p class="card-text">目前主要做边缘计算和 Service Mesh 相关研发工作。</p>
-      <ul class="network-icon" aria-hidden="true">
+      <div class="media-body">
+        <h5 class="card-title"><a href="/"></a></h5>
+        <h6 class="card-subtitle">高级研发工程师</h6>
+        <p class="card-text">目前主要做边缘计算和 Service Mesh 相关研发工作。</p>
+        <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png" target="_blank" rel="noopener">
+        <i class="fab fa-weixin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://weibo.com/kingye15215" target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/ikingye" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
   
     
     
@@ -854,32 +918,19 @@ pb.go: istio/api 的 <a href="https://github.com/istio/api/blob/master/networkin
       
     
     <li>
-      <a href="https://weibo.com/kingye15215" target="_blank" rel="noopener">
-        <i class="fab fa-weibo"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://twitter.com/ikingye" target="_blank" rel="noopener">
-        <i class="fab fa-twitter"></i>
+      <a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417021727.png" target="_blank" rel="noopener">
+        <i class="fab fa-weixin"></i>
       </a>
     </li>
   
 </ul>
 
+      </div>
     </div>
-  </div>
+  
+
+
+
 
 
 
@@ -911,9 +962,9 @@ pb.go: istio/api 的 <a href="https://github.com/istio/api/blob/master/networkin
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
         
       
 
@@ -927,6 +978,11 @@ pb.go: istio/api 的 <a href="https://github.com/istio/api/blob/master/networkin
     
     
     <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
     
 
     
@@ -979,6 +1035,9 @@ pb.go: istio/api 的 <a href="https://github.com/istio/api/blob/master/networkin
 
     
     
+
+    
+    
     
     
     
@@ -991,7 +1050,7 @@ pb.go: istio/api 的 <a href="https://github.com/istio/api/blob/master/networkin
     
     
     
-    <script src="/js/academic.min.600a2e440c16093e23e26e90951c4d4b.js"></script>
+    <script src="/js/academic.min.37431be2d92d7fb0160054761ab79602.js"></script>
 
     
 

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>流量劫持 | 叶王说</title>
+    <link>/tags/%E6%B5%81%E9%87%8F%E5%8A%AB%E6%8C%81/</link>
+      <atom:link href="/tags/%E6%B5%81%E9%87%8F%E5%8A%AB%E6%8C%81/index.xml" rel="self" type="application/rss+xml" />
+    <description>流量劫持</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-cn</language><lastBuildDate>Mon, 09 Mar 2020 21:50:50 +0800</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>流量劫持</title>
+      <link>/tags/%E6%B5%81%E9%87%8F%E5%8A%AB%E6%8C%81/</link>
+    </image>
+    
+    <item>
+      <title>Istio 如何实现流量劫持</title>
+      <link>/post/draft/istio-hijack/</link>
+      <pubDate>Mon, 09 Mar 2020 21:50:50 +0800</pubDate>
+      <guid>/post/draft/istio-hijack/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

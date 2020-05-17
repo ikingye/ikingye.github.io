@@ -14,9 +14,9 @@
     
     <item>
       <title>适配器模式、装饰模式、代理模式有哪些异同？</title>
-      <link>/post/interview/adapter-decorator-proxy/</link>
+      <link>/post/2020/adapter-decorator-proxy/</link>
       <pubDate>Wed, 13 May 2020 01:01:33 +0800</pubDate>
-      <guid>/post/interview/adapter-decorator-proxy/</guid>
+      <guid>/post/2020/adapter-decorator-proxy/</guid>
       <description>&lt;h2 id=&#34;适配器模式&#34;&gt;适配器模式&lt;/h2&gt;
 &lt;h2 id=&#34;装饰模式&#34;&gt;装饰模式&lt;/h2&gt;
 &lt;h2 id=&#34;代理模式&#34;&gt;代理模式&lt;/h2&gt;

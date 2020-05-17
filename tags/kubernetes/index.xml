@@ -14,9 +14,9 @@
     
     <item>
       <title>New to K8s</title>
-      <link>/post/draft/new-to-k8s/</link>
+      <link>/post/2020/new-to-k8s/</link>
       <pubDate>Sat, 04 Apr 2020 15:06:33 +0800</pubDate>
-      <guid>/post/draft/new-to-k8s/</guid>
+      <guid>/post/2020/new-to-k8s/</guid>
       <description>&lt;p&gt;安装 Docker Desktop 版本的 Kubernetes&lt;/p&gt;
 &lt;p&gt;使用
 
@@ -29,9 +29,9 @@
     
     <item>
       <title>如何实现一个 CRD ？</title>
-      <link>/post/draft/k8s-new-crd/</link>
+      <link>/post/2020/k8s-new-crd/</link>
       <pubDate>Mon, 09 Mar 2020 21:50:50 +0800</pubDate>
-      <guid>/post/draft/k8s-new-crd/</guid>
+      <guid>/post/2020/k8s-new-crd/</guid>
       <description>&lt;p&gt;CRD 的全称是 Custom Resource Definition，顾名思义，就是用户在 Kubernetes 中添加一个跟 Pod，Deployment 类似的 API 资源类型。&lt;/p&gt;
 &lt;p&gt;下面以 Istio 的 DestinationRule 为例，说明实现一个 CRD 的具体步骤。&lt;/p&gt;
 &lt;hr&gt;

@@ -14,25 +14,25 @@
     
     <item>
       <title>Istio 如何实现 sidecar 注入</title>
-      <link>/post/draft/istio-sidecar-injection/</link>
+      <link>/post/2020/istio-sidecar-injection/</link>
       <pubDate>Mon, 09 Mar 2020 21:50:50 +0800</pubDate>
-      <guid>/post/draft/istio-sidecar-injection/</guid>
+      <guid>/post/2020/istio-sidecar-injection/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Istio 如何实现流量劫持</title>
-      <link>/post/draft/istio-hijack/</link>
+      <link>/post/2020/istio-hijack/</link>
       <pubDate>Mon, 09 Mar 2020 21:50:50 +0800</pubDate>
-      <guid>/post/draft/istio-hijack/</guid>
+      <guid>/post/2020/istio-hijack/</guid>
       <description></description>
     </item>
     
     <item>
       <title>如何实现一个 CRD ？</title>
-      <link>/post/draft/k8s-new-crd/</link>
+      <link>/post/2020/k8s-new-crd/</link>
       <pubDate>Mon, 09 Mar 2020 21:50:50 +0800</pubDate>
-      <guid>/post/draft/k8s-new-crd/</guid>
+      <guid>/post/2020/k8s-new-crd/</guid>
       <description>&lt;p&gt;CRD 的全称是 Custom Resource Definition，顾名思义，就是用户在 Kubernetes 中添加一个跟 Pod，Deployment 类似的 API 资源类型。&lt;/p&gt;
 &lt;p&gt;下面以 Istio 的 DestinationRule 为例，说明实现一个 CRD 的具体步骤。&lt;/p&gt;
 &lt;hr&gt;

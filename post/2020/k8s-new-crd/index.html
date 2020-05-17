@@ -27,10 +27,10 @@
   
     
   
-  <meta name="description" content="记录">
+  <meta name="description" content="CRD 的全称是 Custom Resource Definition，顾名思义，就是用户在 Kubernetes 中添加一个跟 Pod，Deployment 类似的 API 资源类型。">
 
   
-  <link rel="alternate" hreflang="zh-cn" href="/404.html">
+  <link rel="alternate" hreflang="zh-cn" href="/post/2020/k8s-new-crd/">
 
   
 
@@ -217,7 +217,7 @@
   <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="/404.html">
+  <link rel="canonical" href="/post/2020/k8s-new-crd/">
 
   
   
@@ -236,18 +236,58 @@
   <meta property="twitter:creator" content="@ikingye">
   
   <meta property="og:site_name" content="叶王说">
-  <meta property="og:url" content="/404.html">
-  <meta property="og:title" content="404 Page not found | 叶王说">
-  <meta property="og:description" content="记录"><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="og:url" content="/post/2020/k8s-new-crd/">
+  <meta property="og:title" content="如何实现一个 CRD ？ | 叶王说">
+  <meta property="og:description" content="CRD 的全称是 Custom Resource Definition，顾名思义，就是用户在 Kubernetes 中添加一个跟 Pod，Deployment 类似的 API 资源类型。"><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="zh-cn">
   
     
+      <meta property="article:published_time" content="2020-03-09T21:50:50&#43;08:00">
+    
+    <meta property="article:modified_time" content="2020-03-09T21:50:50&#43;08:00">
   
 
   
 
 
+    
 
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/2020/k8s-new-crd/"
+  },
+  "headline": "如何实现一个 CRD ？",
+  
+  "datePublished": "2020-03-09T21:50:50+08:00",
+  "dateModified": "2020-03-09T21:50:50+08:00",
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "叶王说",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "CRD 的全称是 Custom Resource Definition，顾名思义，就是用户在 Kubernetes 中添加一个跟 Pod，Deployment 类似的 API 资源类型。"
+}
+</script>
+
+  
 
   
 
@@ -255,10 +295,13 @@
   
 
 
+  
 
 
 
-  <title>404 Page not found | 叶王说</title>
+
+
+  <title>如何实现一个 CRD ？ | 叶王说</title>
 
 </head>
 
@@ -350,7 +393,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/post"><span>博客</span></a>
+          <a class="nav-link  active" href="/post"><span>博客</span></a>
         </li>
 
         
@@ -601,51 +644,461 @@
 </nav>
 
 
-  <div class="universal-wrapper pt-3">
-
-  <h1>找不到页面</h1>
-
-  
-  
-  <form class="d-flex align-items-center mb-3">
-    <input name="q" type="search" class="form-control" placeholder="搜索..." autocomplete="off">
-  </form>
-  
+  <article class="article">
 
   
 
-  <p>也许你在找？</p>
+
+
+
+
+
+
+
+
+
+
+
+  
 
   
   
   
-  <h2>最新</h2>
-  <ul>
+<div class="article-container pt-3">
+  <h1>如何实现一个 CRD ？</h1>
+
+  
+
+  
     
-      <li><a href="/courses/example/example1/">Example Page 1</a></li>
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
     
-      <li><a href="/courses/example/example2/">Example Page 2</a></li>
     
-      <li><a href="/talk/example/">Example Talk</a></li>
+      
     
-      <li><a href="/post/2020/adapter-decorator-proxy/">适配器模式、装饰模式、代理模式有哪些异同？</a></li>
-    
-      <li><a href="/post/2020/navi-interview/">面试导航</a></li>
-    
-      <li><a href="/post/2020/new-to-k8s/">New to K8s</a></li>
-    
-      <li><a href="/post/2020/istio-sidecar-injection/">Istio 如何实现 sidecar 注入</a></li>
-    
-      <li><a href="/post/2020/istio-hijack/">Istio 如何实现流量劫持</a></li>
-    
-      <li><a href="/post/2020/k8s-new-crd/">如何实现一个 CRD ？</a></li>
-    
-      <li><a href="/publication/preprint/">An example preprint / working paper</a></li>
-    
-  </ul>
+    2020-03-09
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    2 分钟阅读时长
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/devops/">DevOps</a>, <a href="/categories/kubernetes/">Kubernetes</a>, <a href="/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/">云原生</a></span>
   
 
 </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>CRD 的全称是 Custom Resource Definition，顾名思义，就是用户在 Kubernetes 中添加一个跟 Pod，Deployment 类似的 API 资源类型。</p>
+<p>下面以 Istio 的 DestinationRule 为例，说明实现一个 CRD 的具体步骤。</p>
+<hr>
+<h2 id="第一步创建-customresourcedefinition-yaml-文件">第一步，创建 CustomResourceDefinition YAML 文件</h2>
+<p>kind 为 CustomResourceDefinition，spec.names.kind 为我们要创建的 DestinationRule。</p>
+<p>以下省略了 additionalPrinterColumns 与 validation 内容，完整内容见 
+<a href="https://github.com/istio/istio/blob/1.4.6/install/kubernetes/helm/istio-init/files/crd-10.yaml" target="_blank" rel="noopener">install/kubernetes/helm/istio-init/files/crd-10.yaml</a></p>
+<pre><code class="language-yaml">apiVersion: apiextensions.k8s.io/v1beta1
+kind: CustomResourceDefinition
+metadata:
+  annotations:
+    &quot;helm.sh/resource-policy&quot;: keep
+  labels:
+    app: istio-pilot
+    chart: istio
+    heritage: Tiller
+    release: istio
+  name: destinationrules.networking.istio.io
+spec:
+  additionalPrinterColumns: ...
+  group: networking.istio.io
+  names:
+    categories:
+      - istio-io
+      - networking-istio-io
+    kind: DestinationRule
+    listKind: DestinationRuleList
+    plural: destinationrules
+    shortNames:
+      - dr
+    singular: destinationrule
+  scope: Namespaced
+  subresources:
+    status: {}
+  validation: ...
+  versions:
+    - name: v1alpha3
+      served: true
+      storage: true
+</code></pre>
+<h2 id="第二步定义-destinationrule-对象的完整描述">第二步，定义 DestinationRule 对象的完整描述</h2>
+<pre><code class="language-go">type DestinationRule struct {
+    meta_v1.TypeMeta   `json:&quot;,inline&quot;`
+    meta_v1.ObjectMeta `json:&quot;metadata&quot;`
+    Spec               map[string]interface{} `json:&quot;spec&quot;`
+}
+</code></pre>
+<p>DestinationRule
+proto: istio/api 的 
+<a href="https://github.com/istio/api/blob/master/networking/v1alpha3/destination_rule.proto" target="_blank" rel="noopener">networking/v1alpha3/destination_rule.proto</a>
+pb.go: istio/api 的 
+<a href="https://github.com/istio/api/blob/master/networking/v1alpha3/destination_rule.pb.go" target="_blank" rel="noopener">networking/v1alpha3/destination_rule.pb.go</a></p>
+<blockquote>
+<p>
+<a href="https://github.com/istio/api" target="_blank" rel="noopener">istio/api</a> defines component-level APIs and common configuration formats for the Istio platform.</p>
+</blockquote>
+<pre><code class="language-go">type DestinationRule struct {
+    // The name of a service from the service registry. Service
+    // names are looked up from the platform's service registry (e.g.,
+    // Kubernetes services, Consul services, etc.) and from the hosts
+    // declared by [ServiceEntries](https://istio.io/docs/reference/config/networking/service-entry/#ServiceEntry). Rules defined for
+    // services that do not exist in the service registry will be ignored.
+    //
+    // *Note for Kubernetes users*: When short names are used (e.g. &quot;reviews&quot;
+    // instead of &quot;reviews.default.svc.cluster.local&quot;), Istio will interpret
+    // the short name based on the namespace of the rule, not the service. A
+    // rule in the &quot;default&quot; namespace containing a host &quot;reviews&quot; will be
+    // interpreted as &quot;reviews.default.svc.cluster.local&quot;, irrespective of
+    // the actual namespace associated with the reviews service. _To avoid
+    // potential misconfigurations, it is recommended to always use fully
+    // qualified domain names over short names._
+    //
+    // Note that the host field applies to both HTTP and TCP services.
+    Host string `protobuf:&quot;bytes,1,opt,name=host,proto3&quot; json:&quot;host,omitempty&quot;`
+    // Traffic policies to apply (load balancing policy, connection pool
+    // sizes, outlier detection).
+    TrafficPolicy *TrafficPolicy `protobuf:&quot;bytes,2,opt,name=traffic_policy,json=trafficPolicy,proto3&quot; json:&quot;traffic_policy,omitempty&quot;`
+    // One or more named sets that represent individual versions of a
+    // service. Traffic policies can be overridden at subset level.
+    Subsets []*Subset `protobuf:&quot;bytes,3,rep,name=subsets,proto3&quot; json:&quot;subsets,omitempty&quot;`
+    // A list of namespaces to which this destination rule is exported.
+    // The resolution of a destination rule to apply to a service occurs in the
+    // context of a hierarchy of namespaces. Exporting a destination rule allows
+    // it to be included in the resolution hierarchy for services in
+    // other namespaces. This feature provides a mechanism for service owners
+    // and mesh administrators to control the visibility of destination rules
+    // across namespace boundaries.
+    //
+    // If no namespaces are specified then the destination rule is exported to all
+    // namespaces by default.
+    //
+    // The value &quot;.&quot; is reserved and defines an export to the same namespace that
+    // the destination rule is declared in. Similarly, the value &quot;*&quot; is reserved and
+    // defines an export to all namespaces.
+    //
+    // NOTE: in the current release, the `exportTo` value is restricted to
+    // &quot;.&quot; or &quot;*&quot; (i.e., the current namespace or all namespaces).
+    ExportTo             []string `protobuf:&quot;bytes,4,rep,name=export_to,json=exportTo,proto3&quot; json:&quot;export_to,omitempty&quot;`
+    XXX_NoUnkeyedLiteral struct{} `json:&quot;-&quot;`
+    XXX_unrecognized     []byte   `json:&quot;-&quot;`
+    XXX_sizecache        int32    `json:&quot;-&quot;`
+}
+</code></pre>
+
+    </div>
+
+    
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/kubernetes/">Kubernetes</a>
+  
+  <a class="badge badge-light" href="/tags/crd/">CRD</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/post/2020/k8s-new-crd/&amp;text=%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0%e4%b8%80%e4%b8%aa%20CRD%20%ef%bc%9f" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/post/2020/k8s-new-crd/&amp;t=%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0%e4%b8%80%e4%b8%aa%20CRD%20%ef%bc%9f" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0%e4%b8%80%e4%b8%aa%20CRD%20%ef%bc%9f&amp;body=/post/2020/k8s-new-crd/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/post/2020/k8s-new-crd/&amp;title=%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0%e4%b8%80%e4%b8%aa%20CRD%20%ef%bc%9f" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0%e4%b8%80%e4%b8%aa%20CRD%20%ef%bc%9f%20/post/2020/k8s-new-crd/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/post/2020/k8s-new-crd/&amp;title=%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0%e4%b8%80%e4%b8%aa%20CRD%20%ef%bc%9f" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+    
+    
+    
+      
+    
+    
+    
+    <div class="media author-card content-widget-hr">
+      
+        
+        <img class="avatar mr-3 avatar-circle" src="/authors/yewang/avatar_hufb6ed7f4fb6f2a99971e9dfd456d7dbf_75814_270x270_fill_q90_lanczos_center.jpg" alt="">
+      
+
+      <div class="media-body">
+        <h5 class="card-title"><a href="/"></a></h5>
+        <h6 class="card-subtitle">高级研发工程师</h6>
+        <p class="card-text">目前主要做边缘计算和 Service Mesh 相关研发工作。</p>
+        <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png" target="_blank" rel="noopener">
+        <i class="fab fa-weixin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://weibo.com/kingye15215" target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/ikingye" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:kingye.me@gmail.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/ikingye" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417021727.png" target="_blank" rel="noopener">
+        <i class="fab fa-weixin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  </div>
+</article>
 
       
 

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>软件 | 叶王说</title>
+    <link>/categories/%E8%BD%AF%E4%BB%B6/</link>
+      <atom:link href="/categories/%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
+    <description>软件</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-cn</language><lastBuildDate>Mon, 18 May 2020 17:14:33 +0800</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>软件</title>
+      <link>/categories/%E8%BD%AF%E4%BB%B6/</link>
+    </image>
+    
+    <item>
+      <title>推荐软件</title>
+      <link>/post/2020/apps/</link>
+      <pubDate>Mon, 18 May 2020 17:14:33 +0800</pubDate>
+      <guid>/post/2020/apps/</guid>
+      <description>&lt;h2 id=&#34;macos&#34;&gt;MacOS&lt;/h2&gt;
+&lt;h3 id=&#34;日常&#34;&gt;日常&lt;/h3&gt;
+&lt;h3 id=&#34;编程&#34;&gt;编程&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://github.com/Homebrew/brew&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Homebrew/brew&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/Homebrew/brew.svg&#34; alt=&#34;Github stars&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The missing package manager for macOS (or Linux) &lt;a href=&#34;https://brew.sh&#34;&gt;https://brew.sh&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://github.com/neovim/neovim&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;neovim/neovim&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/neovim/neovim.svg&#34; alt=&#34;Github stars&#34;&gt;
+Vim-fork focused on extensibility and usability &lt;a href=&#34;https://neovim.io&#34;&gt;https://neovim.io&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://github.com/github/hub&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;github/hub&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/github/hub.svg&#34; alt=&#34;Github stars&#34;&gt;&lt;/p&gt;
+&lt;p&gt;A command-line tool that makes git easier to use with GitHub. &lt;a href=&#34;https://hub.github.com/&#34;&gt;https://hub.github.com/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://github.com/mas-cli/mas&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mas-cli/mas&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/mas-cli/mas.svg&#34; alt=&#34;Github stars&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;linux&#34;&gt;Linux&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;
+&lt;h3 id=&#34;日常-1&#34;&gt;日常&lt;/h3&gt;
+&lt;h3 id=&#34;编程-1&#34;&gt;编程&lt;/h3&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

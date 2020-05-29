@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="zh-cn" >
+<!DOCTYPE html>
+<html lang="zh-cn">
 
 <head>
 
@@ -20,7 +21,7 @@
   
   
 
-  
+  <meta name="author" content="叶王">
 
   
   
@@ -209,9 +210,6 @@
 
 
   
-  
-
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
@@ -219,8 +217,6 @@
 
   <link rel="canonical" href="/post/2020/istio-sidecar-injection/">
 
-  
-  
   
   
   
@@ -238,8 +234,8 @@
   <meta property="og:site_name" content="叶王说">
   <meta property="og:url" content="/post/2020/istio-sidecar-injection/">
   <meta property="og:title" content="Istio 如何实现 sidecar 注入 | 叶王说">
-  <meta property="og:description" content=""><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
-  <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="zh-cn">
+  <meta property="og:description" content=""><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
+  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=false) shape:circle]"><meta property="og:locale" content="zh-cn">
   
     
       <meta property="article:published_time" content="2020-03-09T21:50:50&#43;08:00">
@@ -274,6 +270,11 @@
   
   "datePublished": "2020-03-09T21:50:50+08:00",
   "dateModified": "2020-05-17T14:32:04+08:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "叶王"
+  },
   
   "publisher": {
     "@type": "Organization",
@@ -618,21 +619,8 @@
       
 
       
-      <li class="nav-item dropdown theme-dropdown">
-        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
-          <i class="fas fa-palette" aria-hidden="true"></i>
-        </a>
-        <div class="dropdown-menu">
-          <a href="#" class="dropdown-item js-set-theme-light">
-            <span>Light</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-dark">
-            <span>Dark</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-auto">
-            <span>Automatic</span>
-          </a>
-        </div>
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
       </li>
       
 
@@ -707,7 +695,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/categories/istio/">Istio</a>, <a href="/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/">云原生</a>, <a href="/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/">微服务</a>, <a href="/categories/%E7%BD%91%E7%BB%9C/">网络</a></span>
+    <i class="fas fa-folder mr-1"></i><a href="">微服务</a>, <a href="/categories/istio/">Istio</a>, <a href="">云原生</a>, <a href="">网络</a></span>
   
 
 </div>
@@ -855,24 +843,23 @@
 
 
   
+  
+  
     
-    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
     
       
+      <img class="avatar mr-3 avatar-circle" src="/authors/yewang/avatar_hufb6ed7f4fb6f2a99971e9dfd456d7dbf_75814_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
     
-    
-    
-    <div class="media author-card content-widget-hr">
-      
-        
-        <img class="avatar mr-3 avatar-circle" src="/authors/yewang/avatar_hufb6ed7f4fb6f2a99971e9dfd456d7dbf_75814_270x270_fill_q90_lanczos_center.jpg" alt="">
-      
 
-      <div class="media-body">
-        <h5 class="card-title"><a href="/"></a></h5>
-        <h6 class="card-subtitle">高级研发工程师</h6>
-        <p class="card-text">目前主要做边缘计算和 Service Mesh 相关研发工作。</p>
-        <ul class="network-icon" aria-hidden="true">
+    <div class="media-body">
+      <h5 class="card-title"><a href="/">叶王</a></h5>
+      <h6 class="card-subtitle">高级研发工程师</h6>
+      <p class="card-text">目前主要做边缘计算和 Service Mesh 相关研发工作。</p>
+      <ul class="network-icon" aria-hidden="true">
   
     
     
@@ -976,9 +963,8 @@
   
 </ul>
 
-      </div>
     </div>
-  
+  </div>
 
 
 
@@ -1095,9 +1081,6 @@
 
     
     
-
-    
-    
     
     
     
@@ -1110,7 +1093,7 @@
     
     
     
-    <script src="/js/academic.min.37431be2d92d7fb0160054761ab79602.js"></script>
+    <script src="/js/academic.min.c816d323c3a55093dae0829b44ea1ca8.js"></script>
 
     
 
@@ -1127,17 +1110,7 @@
 
   <p class="powered-by">
     
-  </p>
 
-  
-  
-
-
-
-
-
-
-  <p class="powered-by">
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
     <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.

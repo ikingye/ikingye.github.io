@@ -13,6 +13,32 @@
     </image>
     
     <item>
+      <title>推荐网站？</title>
+      <link>/post/2020/recommend-site/</link>
+      <pubDate>Tue, 09 Jun 2020 20:24:50 +0800</pubDate>
+      <guid>/post/2020/recommend-site/</guid>
+      <description>&lt;h2 id=&#34;计算机&#34;&gt;计算机&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;推荐度&lt;/th&gt;
+&lt;th&gt;网址&lt;/th&gt;
+&lt;th&gt;推荐理由&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;★★★★&lt;/td&gt;
+&lt;td&gt;
+&lt;a href=&#34;http://highscalability.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;highscalability.com&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;High Scalability&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
       <title>推荐软件</title>
       <link>/post/2020/apps/</link>
       <pubDate>Mon, 18 May 2020 17:14:33 +0800</pubDate>

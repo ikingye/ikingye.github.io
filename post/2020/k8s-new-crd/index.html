@@ -206,14 +206,52 @@
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155112858-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-155112858-1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
 
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu5a99a96afa0d5c480d2983cdb70f75bc_28032_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu5a99a96afa0d5c480d2983cdb70f75bc_28032_192x192_fill_lanczos_center_2.png">
 
   <link rel="canonical" href="/post/2020/k8s-new-crd/">
 
@@ -240,7 +278,7 @@
     
       <meta property="article:published_time" content="2020-03-09T21:50:50&#43;08:00">
     
-    <meta property="article:modified_time" content="2020-05-26T18:08:19&#43;08:00">
+    <meta property="article:modified_time" content="2020-06-28T23:52:10&#43;08:00">
   
 
   
@@ -269,7 +307,7 @@
   "headline": "如何实现一个 CRD ？",
   
   "datePublished": "2020-03-09T21:50:50+08:00",
-  "dateModified": "2020-05-26T18:08:19+08:00",
+  "dateModified": "2020-06-28T23:52:10+08:00",
   
   "author": {
     "@type": "Person",
@@ -281,7 +319,7 @@
     "name": "叶王说",
     "logo": {
       "@type": "ImageObject",
-      "url": "/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+      "url": "/images/icon_hu5a99a96afa0d5c480d2983cdb70f75bc_28032_192x192_fill_lanczos_center_2.png"
     }
   },
   "description": "CRD 的全称是 Custom Resource Definition，顾名思义，就是用户在 Kubernetes 中添加一个跟 Pod，Deployment 类似的 API 资源类型。"
@@ -445,7 +483,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/categories/linux/"><span>Linux</span></a>
+          <a class="nav-link " href="/study-go"><span>Go 笔记</span></a>
         </li>
 
         
@@ -467,7 +505,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/categories/network/"><span>网络</span></a>
+          <a class="nav-link " href="/study-k8s"><span>Kubernetes 笔记</span></a>
         </li>
 
         
@@ -489,117 +527,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/categories/algs/"><span>算法</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/categories/go/"><span>Go</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/categories/kubernetes/"><span>Kubernetes</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/categories/istio/"><span>Istio</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/categories/python/"><span>Python</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/notes"><span>笔记</span></a>
+          <a class="nav-link " href="/notes"><span>更多笔记...</span></a>
         </li>
 
         
@@ -674,7 +602,7 @@
           最近更新于
       
     
-    2020-05-26
+    2020-06-28
   </span>
   
 
@@ -727,7 +655,7 @@
 <p>下面以 Istio 的 <code>DestinationRule</code> 为例，说明实现一个 CRD 的具体步骤。</p>
 <hr>
 <h2 id="第一步创建-customresourcedefinition-yaml-文件">第一步，创建 CustomResourceDefinition YAML 文件</h2>
-<p>kind 为 CustomResourceDefinition，spec.names.kind 为我们要创建的 <code>DestinationRule</code>。</p>
+<p>kind 为 <code>CustomResourceDefinition</code>，<code>spec.names.kind</code> 为我们要创建的 <code>DestinationRule</code>。</p>
 <p>以下省略了 additionalPrinterColumns 与 validation 内容，完整内容见 
 <a href="https://github.com/istio/istio/blob/1.4.6/install/kubernetes/helm/istio-init/files/crd-10.yaml" target="_blank" rel="noopener">install/kubernetes/helm/istio-init/files/crd-10.yaml</a></p>
 <pre><code class="language-yaml">apiVersion: apiextensions.k8s.io/v1beta1

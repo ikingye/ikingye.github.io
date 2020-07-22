@@ -206,6 +206,44 @@
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155112858-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-155112858-1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
 
@@ -214,8 +252,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu5a99a96afa0d5c480d2983cdb70f75bc_28032_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu5a99a96afa0d5c480d2983cdb70f75bc_28032_192x192_fill_lanczos_center_2.png">
 
   <link rel="canonical" href="/categories/kubernetes/">
 
@@ -239,7 +277,7 @@
   <meta property="og:description" content="记录"><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=false) shape:circle]"><meta property="og:locale" content="zh-cn">
   
-    <meta property="og:updated_time" content="2020-04-04T15:06:33&#43;08:00">
+    <meta property="og:updated_time" content="2020-03-09T21:50:50&#43;08:00">
   
 
   
@@ -399,7 +437,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/categories/linux/"><span>Linux</span></a>
+          <a class="nav-link " href="/study-go"><span>Go 笔记</span></a>
         </li>
 
         
@@ -421,7 +459,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/categories/network/"><span>网络</span></a>
+          <a class="nav-link " href="/study-k8s"><span>Kubernetes 笔记</span></a>
         </li>
 
         
@@ -443,117 +481,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/categories/algs/"><span>算法</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/categories/go/"><span>Go</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-
-        <li class="nav-item">
-          <a class="nav-link  active" href="/categories/kubernetes/"><span>Kubernetes</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/categories/istio/"><span>Istio</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/categories/python/"><span>Python</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/notes"><span>笔记</span></a>
+          <a class="nav-link " href="/notes"><span>更多笔记...</span></a>
         </li>
 
         
@@ -620,18 +548,6 @@
   
 
   
-  
-    
-    
-    
-    <div>
-      <h2><a href="/post/2020/new-to-k8s/" >New to K8s</a></h2>
-      <div class="article-style">
-        
-          安装 Docker Desktop 版本的 Kubernetes 使用 gotok8s/k8s-docker-desktop-for-mac 原理： 利用 GitHub Actions 实现 k8s.gcr.io 上 kubernetes 依赖镜像自动同步到 Docker Hub 上指定的仓库中。 通过 load_images.sh 将所需镜像从 Docker Hub 的同步仓库中取回，并重新打上原始的
-        
-      </div>
-    </div>
   
     
     

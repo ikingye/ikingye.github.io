@@ -21,7 +21,7 @@
 &lt;p&gt;下面以 Istio 的 &lt;code&gt;DestinationRule&lt;/code&gt; 为例，说明实现一个 CRD 的具体步骤。&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;第一步创建-customresourcedefinition-yaml-文件&#34;&gt;第一步，创建 CustomResourceDefinition YAML 文件&lt;/h2&gt;
-&lt;p&gt;kind 为 CustomResourceDefinition，spec.names.kind 为我们要创建的 &lt;code&gt;DestinationRule&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;kind 为 &lt;code&gt;CustomResourceDefinition&lt;/code&gt;，&lt;code&gt;spec.names.kind&lt;/code&gt; 为我们要创建的 &lt;code&gt;DestinationRule&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;以下省略了 additionalPrinterColumns 与 validation 内容，完整内容见 
 &lt;a href=&#34;https://github.com/istio/istio/blob/1.4.6/install/kubernetes/helm/istio-init/files/crd-10.yaml&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;install/kubernetes/helm/istio-init/files/crd-10.yaml&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;apiVersion: apiextensions.k8s.io/v1beta1

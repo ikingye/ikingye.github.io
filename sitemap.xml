@@ -3,167 +3,145 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/courses/example/example1/</loc>
+    <loc>https://kingye.me/courses/example/example1/</loc>
     <lastmod>2020-01-18T03:24:09+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/example/</loc>
+    <loc>https://kingye.me/courses/example/</loc>
     <lastmod>2020-01-18T03:24:09+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/example/example2/</loc>
+    <loc>https://kingye.me/courses/example/example2/</loc>
     <lastmod>2020-01-18T03:24:09+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/talk/example/</loc>
+    <loc>https://kingye.me/talk/example/</loc>
     <lastmod>2020-01-18T03:24:09+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2020-07-22T15:03:37+08:00</lastmod>
+    <loc>https://kingye.me/post/jupyter/test/</loc>
+    <lastmod>2020-08-05T15:13:42+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/crd/</loc>
-    <lastmod>2020-07-22T15:03:37+08:00</lastmod>
+    <loc>https://kingye.me/test2/</loc>
+    <lastmod>2020-08-05T15:11:36+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/devops/</loc>
-    <lastmod>2020-07-22T15:03:37+08:00</lastmod>
+    <loc>https://kingye.me/</loc>
+    <lastmod>2020-08-05T15:11:36+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/kubernetes/</loc>
-    <lastmod>2020-07-22T15:03:37+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/kubernetes/</loc>
-    <lastmod>2020-07-22T15:03:37+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-07-22T15:03:37+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/</loc>
-    <lastmod>2020-07-22T15:03:37+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/2020/k8s-new-crd/</loc>
-    <lastmod>2020-07-22T15:03:37+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication_types/3/</loc>
+    <loc>https://kingye.me/publication_types/3/</loc>
     <lastmod>2020-05-13T02:09:57+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/preprint/</loc>
+    <loc>https://kingye.me/publication/preprint/</loc>
     <lastmod>2020-05-13T02:09:57+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/</loc>
-    <lastmod>2020-08-05T00:28:58+08:00</lastmod>
+    <loc>https://kingye.me/authors/</loc>
+    <lastmod>2020-08-05T00:29:32+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication_types/</loc>
+    <loc>https://kingye.me/publication_types/</loc>
     <lastmod>2020-05-13T02:09:57+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/slides/</loc>
+    <loc>https://kingye.me/slides/</loc>
     <lastmod>2020-01-18T03:24:09+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/slides/example/</loc>
+    <loc>https://kingye.me/slides/example/</loc>
     <lastmod>2020-01-18T03:24:09+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>https://kingye.me/notes/</loc>
     <lastmod>2020-08-04T23:55:27+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/notes/</loc>
-    <lastmod>2020-08-04T23:55:27+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/external-project/</loc>
+    <loc>https://kingye.me/project/external-project/</loc>
     <lastmod>2020-05-13T02:09:57+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/internal-project/</loc>
+    <loc>https://kingye.me/project/internal-project/</loc>
     <lastmod>2020-05-13T02:09:57+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/</loc>
+    <loc>https://kingye.me/project/</loc>
     <lastmod>2020-05-13T02:09:57+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication_types/2/</loc>
+    <loc>https://kingye.me/publication_types/2/</loc>
     <lastmod>2020-05-13T02:09:57+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/journal-article/</loc>
+    <loc>https://kingye.me/publication/journal-article/</loc>
     <lastmod>2020-05-13T02:09:57+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/robert-ford/</loc>
+    <loc>https://kingye.me/authors/robert-ford/</loc>
     <lastmod>2020-05-13T02:09:57+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication_types/1/</loc>
+    <loc>https://kingye.me/publication_types/1/</loc>
     <lastmod>2020-05-13T02:09:57+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/conference-paper/</loc>
+    <loc>https://kingye.me/publication/conference-paper/</loc>
     <lastmod>2020-05-13T02:09:57+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/yewang/</loc>
-    <lastmod>2020-08-05T00:28:58+08:00</lastmod>
+    <loc>https://kingye.me/authors/yewang/</loc>
+    <lastmod>2020-08-05T00:29:32+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/</loc>
+    <loc>https://kingye.me/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kingye.me/courses/</loc>
     <lastmod>2020-01-18T03:24:09+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/talk/</loc>
+    <loc>https://kingye.me/talk/</loc>
     <lastmod>2020-01-18T03:24:09+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/</loc>
+    <loc>https://kingye.me/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kingye.me/publication/</loc>
     <lastmod>2020-01-18T03:24:09+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>https://kingye.me/post/</loc>
     <lastmod>2020-03-09T22:05:21+08:00</lastmod>
   </url>
   

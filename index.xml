@@ -234,7 +234,7 @@ Three
     </item>
     
     <item>
-      <title>学习笔记</title>
+      <title>叶王笔记</title>
       <link>https://kingye.me/notes/</link>
       <pubDate>Thu, 28 Jun 2018 00:00:00 +0000</pubDate>
       <guid>https://kingye.me/notes/</guid>
@@ -242,7 +242,7 @@ Three
 &lt;a href=&#34;https://kingye.me/note&#34;&gt;学习笔记&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://kingye.me/note-cs&#34;&gt;计算机学习笔记&lt;/a&gt;
+&lt;a href=&#34;https://kingye.me/note-cs&#34;&gt;计算机笔记&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;编程语言
 &lt;ol&gt;
@@ -280,38 +280,47 @@ Three
 &lt;a href=&#34;https://kingye.me/study-kubernetes&#34;&gt;Kubernetes 学习笔记&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;
 &lt;a href=&#34;https://kingye.me/study-istio&#34;&gt;Istio 学习笔记&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
 &lt;li&gt;
 &lt;a href=&#34;https://kingye.me/interview-me&#34;&gt;面试笔记&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://kingye.me/workenv&#34;&gt;工具&lt;/a&gt;&lt;/li&gt;
+&lt;a href=&#34;https://kingye.me/workenv&#34;&gt;我的工具&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;数学笔记&lt;/li&gt;
+&lt;li&gt;历史笔记&lt;/li&gt;
+&lt;li&gt;经济笔记&lt;/li&gt;
+&lt;li&gt;电影笔记&lt;/li&gt;
+&lt;li&gt;音乐笔记&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;读书笔记&#34;&gt;读书笔记&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://kingye.me/note-cs/docs/book&#34;&gt;计算机读书笔记&lt;/a&gt;
+&lt;a href=&#34;https://kingye.me/note-cs/docs/book/&#34;&gt;计算机读书笔记&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://kingye.me/note-cs/docs/book/basic/os/csapp&#34;&gt;深入理解计算机系统&lt;/a&gt;&lt;/li&gt;
+&lt;a href=&#34;https://kingye.me/note-cs/docs/book/basic/os/csapp/&#34;&gt;深入理解计算机系统&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://kingye.me/note-cs/docs/book/basic/os/sicp&#34;&gt;计算机程序的构造和解释&lt;/a&gt;&lt;/li&gt;
+&lt;a href=&#34;https://kingye.me/note-cs/docs/book/basic/os/sicp/&#34;&gt;计算机程序的构造和解释&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://kingye.me/note-cs/docs/book/basic/pl/go-in-action/zh&#34;&gt;Go 语言实战&lt;/a&gt;&lt;/li&gt;
+&lt;a href=&#34;https://kingye.me/note-cs/docs/book/basic/pl/go-advanced-programming/&#34;&gt;Go 语言高级编程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://kingye.me/note-cs/docs/book/basic/pl/go-in-action/zh/&#34;&gt;Go 语言实战&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;非虚构&lt;/li&gt;
+&lt;li&gt;小说&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;课程笔记&#34;&gt;课程笔记&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://kingye.me/note-cs/docs/course&#34;&gt;计算机&lt;/a&gt;
+&lt;a href=&#34;https://kingye.me/note-cs/docs/course/&#34;&gt;计算机&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://kingye.me/note-cs/docs/course/basic/pl/go/go-wiki&#34;&gt;go wiki&lt;/a&gt;&lt;/li&gt;
+&lt;a href=&#34;https://kingye.me/note-cs/docs/course/basic/pl/go/go-wiki/&#34;&gt;go wiki&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://kingye.me/note-cs/docs/course/basic/pl/go/gobyexample&#34;&gt;通过例子学 Golang&lt;/a&gt;&lt;/li&gt;
+&lt;a href=&#34;https://kingye.me/note-cs/docs/course/basic/pl/go/gobyexample/&#34;&gt;通过例子学 Golang&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

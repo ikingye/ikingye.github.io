@@ -31,7 +31,7 @@
   <meta name="description" content="记录">
 
   
-  <link rel="alternate" hreflang="zh-cn" href="/tags/%E6%8E%A8%E8%8D%90/">
+  <link rel="alternate" hreflang="zh-cn" href="https://kingye.me/tags/%E6%8E%A8%E8%8D%90/">
 
   
 
@@ -206,6 +206,44 @@
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155112858-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-155112858-1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
 
@@ -214,10 +252,10 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu5a99a96afa0d5c480d2983cdb70f75bc_28032_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu5a99a96afa0d5c480d2983cdb70f75bc_28032_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="/tags/%E6%8E%A8%E8%8D%90/">
+  <link rel="canonical" href="https://kingye.me/tags/%E6%8E%A8%E8%8D%90/">
 
   
   
@@ -234,12 +272,12 @@
   <meta property="twitter:creator" content="@ikingye">
   
   <meta property="og:site_name" content="叶王说">
-  <meta property="og:url" content="/tags/%E6%8E%A8%E8%8D%90/">
+  <meta property="og:url" content="https://kingye.me/tags/%E6%8E%A8%E8%8D%90/">
   <meta property="og:title" content="推荐 | 叶王说">
   <meta property="og:description" content="记录"><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=false) shape:circle]"><meta property="og:locale" content="zh-cn">
   
-    <meta property="og:updated_time" content="2020-06-09T20:24:50&#43;08:00">
+    <meta property="og:updated_time" content="2020-10-06T23:50:33&#43;08:00">
   
 
   
@@ -399,7 +437,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/categories/linux/"><span>Linux</span></a>
+          <a class="nav-link " href="/study-go"><span>Go 笔记</span></a>
         </li>
 
         
@@ -421,7 +459,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/categories/network/"><span>网络</span></a>
+          <a class="nav-link " href="/study-kubernetes"><span>Kubernetes 笔记</span></a>
         </li>
 
         
@@ -443,117 +481,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/categories/algs/"><span>算法</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/categories/go/"><span>Go</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/categories/kubernetes/"><span>Kubernetes</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/categories/istio/"><span>Istio</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/categories/python/"><span>Python</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/notes"><span>笔记</span></a>
+          <a class="nav-link " href="/notes"><span>更多笔记...</span></a>
         </li>
 
         
@@ -625,22 +553,10 @@
     
     
     <div>
-      <h2><a href="/post/2020/recommend-site/" >推荐网站？</a></h2>
+      <h2><a href="/post/2020/zhihu/" >知乎好问题</a></h2>
       <div class="article-style">
         
-          计算机 推荐度 网址 推荐理由 ★★★★ highscalability.com High Scalability
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/post/2020/apps/" >推荐软件</a></h2>
-      <div class="article-style">
-        
-          MacOS 日常 编程 Homebrew/brew The missing package manager for macOS (or Linux) https://brew.sh neovim/neovim Vim-fork focused on extensibility and usability https://neovim.io github/hub A command-line tool that makes git easier to use with GitHub. https://hub.github.com/ mas-cli/mas Linux Windows 日常 编程
+          学习 有哪些知识，你知道后你的世界马上就不一样了？ 历史 如何理清春秋战国的历史？ 如何理清五胡十六国的脉络关系？ 怎样理清魏晋南北朝那段的历史？ 如何
         
       </div>
     </div>

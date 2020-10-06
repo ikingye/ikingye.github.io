@@ -23,6 +23,46 @@
   </url>
   
   <url>
+    <loc>https://kingye.me/authors/</loc>
+    <lastmod>2020-10-06T23:50:33+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kingye.me/categories/</loc>
+    <lastmod>2020-10-06T23:50:33+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kingye.me/tags/</loc>
+    <lastmod>2020-10-06T23:50:33+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kingye.me/tags/%E6%8E%A8%E8%8D%90/</loc>
+    <lastmod>2020-10-06T23:50:33+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kingye.me/categories/%E6%8E%A8%E8%8D%90/</loc>
+    <lastmod>2020-10-06T23:50:33+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kingye.me/tags/%E7%9F%A5%E4%B9%8E/</loc>
+    <lastmod>2020-10-06T23:50:33+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kingye.me/categories/%E7%9F%A5%E4%B9%8E/</loc>
+    <lastmod>2020-10-06T23:50:33+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kingye.me/post/2020/zhihu/</loc>
+    <lastmod>2020-10-06T23:50:33+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kingye.me/test2/</loc>
     <lastmod>2020-08-05T17:39:32+08:00</lastmod>
   </url>
@@ -40,11 +80,6 @@
   <url>
     <loc>https://kingye.me/publication/preprint/</loc>
     <lastmod>2020-05-13T02:09:57+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/authors/</loc>
-    <lastmod>2020-08-27T16:50:56+08:00</lastmod>
   </url>
   
   <url>
@@ -113,10 +148,6 @@
   </url>
   
   <url>
-    <loc>https://kingye.me/categories/</loc>
-  </url>
-  
-  <url>
     <loc>https://kingye.me/courses/</loc>
     <lastmod>2020-01-18T03:24:09+08:00</lastmod>
   </url>
@@ -124,10 +155,6 @@
   <url>
     <loc>https://kingye.me/talk/</loc>
     <lastmod>2020-01-18T03:24:09+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/tags/</loc>
   </url>
   
   <url>

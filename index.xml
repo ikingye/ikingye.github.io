@@ -388,6 +388,19 @@ Three
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;学习活动&#34;&gt;学习活动&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://kingye.me/note-cs/docs/activity/&#34;&gt;计算机&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://kingye.me/note-cs/docs/activity/csapp/&#34;&gt;TalkGo 读书会第三期 -《深入理解计算机系统》学习&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://kingye.me/note-cs/docs/activity/kubernetes-scheduler/&#34;&gt;Kubernetes 源码研习社第二期 - Kubernetes 调度器源码学习&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     

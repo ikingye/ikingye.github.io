@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>叶王博客 | 叶王说</title>
-    <link>https://kingye.me/post/</link>
-      <atom:link href="https://kingye.me/post/index.xml" rel="self" type="application/rss+xml" />
-    <description>叶王博客</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-cn</language>
+    <title>云计算 | 叶王说</title>
+    <link>https://kingye.me/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/</link>
+      <atom:link href="https://kingye.me/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/index.xml" rel="self" type="application/rss+xml" />
+    <description>云计算</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-cn</language><lastBuildDate>Wed, 21 Oct 2020 18:14:33 +0800</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
-      <title>叶王博客</title>
-      <link>https://kingye.me/post/</link>
+      <title>云计算</title>
+      <link>https://kingye.me/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/</link>
     </image>
     
     <item>
@@ -75,43 +75,6 @@
 &lt;li&gt;百度云 COS 
 &lt;a href=&#34;https://cloud.baidu.com/doc/COS/s/Gjzknaf67&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cloud Orchestration Service&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>知乎好问题</title>
-      <link>https://kingye.me/post/2020/zhihu/</link>
-      <pubDate>Tue, 06 Oct 2020 23:50:33 +0800</pubDate>
-      <guid>https://kingye.me/post/2020/zhihu/</guid>
-      <description>&lt;h2 id=&#34;学习&#34;&gt;学习&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://www.zhihu.com/question/38632401&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;有哪些知识，你知道后你的世界马上就不一样了？&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;历史&#34;&gt;历史&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://www.zhihu.com/question/30376558&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;如何理清春秋战国的历史？&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://www.zhihu.com/question/30467324/answer/84996810&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;如何理清五胡十六国的脉络关系？&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://www.zhihu.com/question/20689758/answer/46052840&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;怎样理清魏晋南北朝那段的历史？&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://www.zhihu.com/question/30046079/answer/47765961&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;如何理清五代十国的历史？&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://www.zhihu.com/question/38786702&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;如何理清民国时军阀混战的历史？&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://www.zhihu.com/question/34856776&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;怎么有效的区分和理顺历史上中国北方的各游牧民族？&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://www.zhihu.com/question/27453531&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;欧洲中世纪史的脉络或结构图是怎么样的？&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://www.zhihu.com/question/34550296&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;如何清晰梳理古希腊、罗马史？&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;其他&#34;&gt;其他&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://www.zhihu.com/question/398193048&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;有哪些网站，一旦知道，你就离不开了？&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
 </description>
     </item>
     

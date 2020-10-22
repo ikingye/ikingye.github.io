@@ -145,7 +145,12 @@
 &lt;li&gt;Google GKE 
 &lt;a href=&#34;https://cloud.google.com/kubernetes-engine&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Kubernetes Engine&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Microsoft AKS 
-&lt;a href=&#34;https://azure.microsoft.com/en-us/services/kubernetes-service/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Azure Kubernetes Service&lt;/a&gt;&lt;/li&gt;
+&lt;a href=&#34;https://azure.microsoft.com/en-us/services/kubernetes-service/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Azure Kubernetes Service&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://docs.microsoft.com/en-us/azure/service-fabric/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Microsoft Azure Service Fabric&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;阿里云 ACK 
 &lt;a href=&#34;&#34;&gt;Alibaba Cloud Container Service for Kubernetes&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;腾讯云 TKE 
@@ -186,6 +191,8 @@
 &lt;a href=&#34;&#34;&gt;Tencent Cloud Mesh&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;华为云 ASM 
 &lt;a href=&#34;https://support.huaweicloud.com/istio/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Application Service Mesh&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;百度云 CNAP 
+&lt;a href=&#34;https://cloud.baidu.com/doc/CNAP/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cloud-Native Application Platform&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;边缘容器服务&#34;&gt;边缘容器服务&lt;/h2&gt;
 &lt;ul&gt;

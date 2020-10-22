@@ -80,11 +80,6 @@
 &lt;a href=&#34;&#34;&gt;Application Orchestration Service&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;百度云 COS 
 &lt;a href=&#34;https://cloud.baidu.com/doc/COS/s/Gjzknaf67&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cloud Orchestration Service&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://github.com/hashicorp/terraform&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hashicorp/terraform&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/hashicorp/terraform.svg&#34; alt=&#34;Github stars&#34;&gt; &lt;img src=&#34;https://img.shields.io/github/languages/top/hashicorp/terraform.svg&#34; alt=&#34;Language&#34;&gt; &lt;img src=&#34;https://img.shields.io/github/v/tag/hashicorp/terraform.svg?sort=semver&#34; alt=&#34;Last Tag&#34;&gt; &lt;img src=&#34;https://img.shields.io/github/last-commit/hashicorp/terraform.svg&#34; alt=&#34;Last commit&#34;&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://github.com/pulumi/pulumi&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;pulumi/pulumi&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/pulumi/pulumi.svg&#34; alt=&#34;Github stars&#34;&gt; &lt;img src=&#34;https://img.shields.io/github/languages/top/pulumi/pulumi.svg&#34; alt=&#34;Language&#34;&gt; &lt;img src=&#34;https://img.shields.io/github/v/tag/pulumi/pulumi.svg?sort=semver&#34; alt=&#34;Last Tag&#34;&gt; &lt;img src=&#34;https://img.shields.io/github/last-commit/pulumi/pulumi.svg&#34; alt=&#34;Last commit&#34;&gt;&lt;/li&gt;
-&lt;li&gt;OpenStack - Heat&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;serverless&#34;&gt;Serverless&lt;/h2&gt;
 &lt;ul&gt;
@@ -97,6 +92,8 @@
 &lt;a href=&#34;https://www.aliyun.com/product/servicemesh&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Alibaba Cloud Service Mesh&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;腾讯云 TCM 
 &lt;a href=&#34;&#34;&gt;Tencent Cloud Mesh&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;华为云 ASM 
+&lt;a href=&#34;https://support.huaweicloud.com/istio/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Application Service Mesh&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;边缘容器服务&#34;&gt;边缘容器服务&lt;/h2&gt;
 &lt;ul&gt;

@@ -93,12 +93,35 @@
 &lt;li&gt;金山云&lt;/li&gt;
 &lt;li&gt;京东云&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3 id=&#34;其他云计算公司&#34;&gt;其他云计算公司&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Red Hat
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;OpenShift&lt;/code&gt;（&lt;code&gt;Red Hat&lt;/code&gt; 收购 &lt;code&gt;Makara&lt;/code&gt;）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Pivotal&lt;/code&gt;（由 EMC/易安信 和 VMware 联合成立的一家新公司）
+&lt;ul&gt;
+&lt;li&gt;Cloud Foundry（最初是在 VMware 内部孵化出来）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Rancher
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/rancher/k3s&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;rancher/k3s&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/rancher/k3s.svg&#34; alt=&#34;Github stars&#34;&gt; &lt;img src=&#34;https://img.shields.io/github/languages/top/rancher/k3s.svg&#34; alt=&#34;Language&#34;&gt; &lt;img src=&#34;https://img.shields.io/github/v/tag/rancher/k3s.svg?sort=semver&#34; alt=&#34;Last Tag&#34;&gt; &lt;img src=&#34;https://img.shields.io/github/last-commit/rancher/k3s.svg&#34; alt=&#34;Last commit&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;VMware&lt;/li&gt;
+&lt;li&gt;HPE/惠普 &lt;code&gt;Hewlett Packard Enterprise&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;IBM&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
 &lt;h2 id=&#34;云服务器&#34;&gt;云服务器&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;AWS EC2 
 &lt;a href=&#34;&#34;&gt;Amazon Elastic Compute Cloud&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Google GCE 
-&lt;a href=&#34;https://cloud.google.com/compute/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Compute Engine&lt;/a&gt;&lt;/li&gt;
+&lt;a href=&#34;https://cloud.google.com/compute/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Compute Engine&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Microsoft 
 &lt;a href=&#34;&#34;&gt;Azure VM&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;阿里云 ECS 
@@ -112,11 +135,11 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;容器服务&#34;&gt;容器服务&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;AWS ECS 
-&lt;a href=&#34;https://aws.amazon.com/ecs&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Amazon Elastic Container Service&lt;/a&gt;
-&lt;ul&gt;
 &lt;li&gt;AWS EKS 
-&lt;a href=&#34;&#34;&gt;Elastic Kubernetes Service&lt;/a&gt;&lt;/li&gt;
+&lt;a href=&#34;&#34;&gt;Elastic Kubernetes Service&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;AWS ECS 
+&lt;a href=&#34;https://aws.amazon.com/ecs&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Amazon Elastic Container Service&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Google GKE 

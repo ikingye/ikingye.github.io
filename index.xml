@@ -525,6 +525,8 @@ Three
 &lt;a href=&#34;https://kingye.me/note-cs/docs/book/basic/cc/sicp/&#34;&gt;计算机程序的构造和解释&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 【CSAPP】
 &lt;a href=&#34;https://kingye.me/note-cs/docs/book/basic/cc/csapp/&#34;&gt;深入理解计算机系统&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 【OSTEP】
+&lt;a href=&#34;&#34;&gt;操作系统导论&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 【MOS】
 &lt;a href=&#34;&#34;&gt;现代操作系统&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 【CAAQA】

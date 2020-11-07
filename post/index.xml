@@ -58,7 +58,7 @@
 &lt;li&gt;Rancher
 &lt;ul&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://github.com/rancher/k3s&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;rancher/k3s&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/rancher/k3s.svg&#34; alt=&#34;Github stars&#34;&gt; &lt;img src=&#34;https://img.shields.io/github/languages/top/rancher/k3s.svg&#34; alt=&#34;Language&#34;&gt; &lt;img src=&#34;https://img.shields.io/github/v/tag/rancher/k3s.svg?sort=semver&#34; alt=&#34;Last Tag&#34;&gt; &lt;img src=&#34;https://img.shields.io/github/last-commit/rancher/k3s.svg&#34; alt=&#34;Last commit&#34;&gt;&lt;/li&gt;
+&lt;a href=&#34;https://github.com/rancher/k3s&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;rancher/k3s&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;VMware&lt;/li&gt;

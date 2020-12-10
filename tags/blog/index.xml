@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog | 叶王说</title>
+    <link>https://kingye.me/tags/blog/</link>
+      <atom:link href="https://kingye.me/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <description>blog</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-cn</language><copyright>叶王 ©2013-2020 版权所有</copyright><lastBuildDate>Wed, 09 Dec 2020 21:21:01 +0800</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>blog</title>
+      <link>https://kingye.me/tags/blog/</link>
+    </image>
+    
+    <item>
+      <title>Have a Blog</title>
+      <link>https://kingye.me/post/draft/have-a-blog/</link>
+      <pubDate>Wed, 09 Dec 2020 21:21:01 +0800</pubDate>
+      <guid>https://kingye.me/post/draft/have-a-blog/</guid>
+      <description>&lt;h2 id=&#34;主题&#34;&gt;主题&lt;/h2&gt;
+&lt;h3 id=&#34;wowchemy-原名-academic&#34;&gt;Wowchemy (原名 Academic)&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;hugo new --kind post post/my-article-name
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;文档：https://wowchemy.com/docs/&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

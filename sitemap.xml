@@ -53,6 +53,11 @@
   </url>
   
   <url>
+    <loc>https://kingye.me/categories/%E8%8D%89%E7%A8%BF/</loc>
+    <lastmod>2020-12-10T16:04:22+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kingye.me/post/draft/zhihu/</loc>
     <lastmod>2020-12-10T16:04:22+08:00</lastmod>
   </url>
@@ -69,11 +74,6 @@
   
   <url>
     <loc>https://kingye.me/categories/%E5%85%BB%E8%82%B2/</loc>
-    <lastmod>2020-12-10T16:04:22+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/post/draft/k8s/</loc>
     <lastmod>2020-12-10T16:04:22+08:00</lastmod>
   </url>
   
@@ -109,6 +109,11 @@
   
   <url>
     <loc>https://kingye.me/post/draft/app-macos/</loc>
+    <lastmod>2020-12-10T16:04:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kingye.me/tags/%E6%8E%A8%E8%8D%90/</loc>
     <lastmod>2020-12-10T16:04:22+08:00</lastmod>
   </url>
   
@@ -168,7 +173,17 @@
   </url>
   
   <url>
+    <loc>https://kingye.me/tags/blog/</loc>
+    <lastmod>2020-12-10T16:04:22+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://kingye.me/post/draft/have-a-blog/</loc>
+    <lastmod>2020-12-10T16:04:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kingye.me/categories/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2020-12-10T16:04:22+08:00</lastmod>
   </url>
   

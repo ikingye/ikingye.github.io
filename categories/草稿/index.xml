@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>叶王博客 | 叶王说</title>
-    <link>https://kingye.me/post/</link>
-      <atom:link href="https://kingye.me/post/index.xml" rel="self" type="application/rss+xml" />
-    <description>叶王博客</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-cn</language><copyright>叶王 ©2013-2020 版权所有</copyright>
+    <title>草稿 | 叶王说</title>
+    <link>https://kingye.me/categories/%E8%8D%89%E7%A8%BF/</link>
+      <atom:link href="https://kingye.me/categories/%E8%8D%89%E7%A8%BF/index.xml" rel="self" type="application/rss+xml" />
+    <description>草稿</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-cn</language><copyright>叶王 ©2013-2020 版权所有</copyright><lastBuildDate>Thu, 10 Dec 2020 15:31:02 +0800</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
-      <title>叶王博客</title>
-      <link>https://kingye.me/post/</link>
+      <title>草稿</title>
+      <link>https://kingye.me/categories/%E8%8D%89%E7%A8%BF/</link>
     </image>
     
     <item>
@@ -274,17 +274,6 @@ Vim-fork focused on extensibility and usability &lt;a href=&#34;https://neovim.i
 &lt;a href=&#34;https://github.com/mas-cli/mas&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mas-cli/mas&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/mas-cli/mas.svg&#34; alt=&#34;Github stars&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>适配器模式、装饰模式、代理模式有哪些异同？</title>
-      <link>https://kingye.me/post/draft/adapter-decorator-proxy/</link>
-      <pubDate>Thu, 10 Dec 2020 14:09:28 +0800</pubDate>
-      <guid>https://kingye.me/post/draft/adapter-decorator-proxy/</guid>
-      <description>&lt;h2 id=&#34;适配器模式&#34;&gt;适配器模式&lt;/h2&gt;
-&lt;h2 id=&#34;装饰模式&#34;&gt;装饰模式&lt;/h2&gt;
-&lt;h2 id=&#34;代理模式&#34;&gt;代理模式&lt;/h2&gt;
 </description>
     </item>
     

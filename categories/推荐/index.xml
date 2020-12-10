@@ -75,36 +75,5 @@
 </description>
     </item>
     
-    <item>
-      <title>Macos 推荐软件</title>
-      <link>https://kingye.me/post/draft/app-macos/</link>
-      <pubDate>Thu, 10 Dec 2020 15:21:23 +0800</pubDate>
-      <guid>https://kingye.me/post/draft/app-macos/</guid>
-      <description>&lt;h2 id=&#34;日常&#34;&gt;日常&lt;/h2&gt;
-&lt;h2 id=&#34;编程&#34;&gt;编程&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://github.com/Homebrew/brew&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Homebrew/brew&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/Homebrew/brew.svg&#34; alt=&#34;Github stars&#34;&gt;&lt;/p&gt;
-&lt;p&gt;The missing package manager for macOS (or Linux) &lt;a href=&#34;https://brew.sh&#34;&gt;https://brew.sh&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://github.com/neovim/neovim&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;neovim/neovim&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/neovim/neovim.svg&#34; alt=&#34;Github stars&#34;&gt;
-Vim-fork focused on extensibility and usability &lt;a href=&#34;https://neovim.io&#34;&gt;https://neovim.io&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://github.com/github/hub&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;github/hub&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/github/hub.svg&#34; alt=&#34;Github stars&#34;&gt;&lt;/p&gt;
-&lt;p&gt;A command-line tool that makes git easier to use with GitHub. &lt;a href=&#34;https://hub.github.com/&#34;&gt;https://hub.github.com/&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://github.com/mas-cli/mas&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mas-cli/mas&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/mas-cli/mas.svg&#34; alt=&#34;Github stars&#34;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-    </item>
-    
   </channel>
 </rss>

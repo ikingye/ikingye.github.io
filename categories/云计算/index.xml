@@ -5,7 +5,7 @@
     <link>https://kingye.me/categories/%E4%BA%91%E8%AE%A1%E7%AE%97/</link>
       <atom:link href="https://kingye.me/categories/%E4%BA%91%E8%AE%A1%E7%AE%97/index.xml" rel="self" type="application/rss+xml" />
     <description>云计算</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-cn</language><copyright>叶王 ©2013-2020 版权所有</copyright><lastBuildDate>Wed, 21 Oct 2020 18:14:33 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-cn</language><copyright>叶王 ©2013-2020 版权所有</copyright><lastBuildDate>Thu, 10 Dec 2020 15:22:31 +0800</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>云计算</title>
@@ -13,10 +13,10 @@
     </image>
     
     <item>
-      <title>云服务提供商</title>
-      <link>https://kingye.me/post/2020/cloud-provider/</link>
-      <pubDate>Wed, 21 Oct 2020 18:14:33 +0800</pubDate>
-      <guid>https://kingye.me/post/2020/cloud-provider/</guid>
+      <title>公有云主流产品</title>
+      <link>https://kingye.me/post/draft/cloud-provider/</link>
+      <pubDate>Thu, 10 Dec 2020 15:22:31 +0800</pubDate>
+      <guid>https://kingye.me/post/draft/cloud-provider/</guid>
       <description>&lt;h2 id=&#34;云厂商&#34;&gt;云厂商&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Amazon AWS &lt;code&gt;Amazon Web Services&lt;/code&gt;&lt;/li&gt;

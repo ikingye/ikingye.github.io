@@ -13,10 +13,73 @@
     </image>
     
     <item>
-      <title>养育孩子</title>
-      <link>https://kingye.me/post/2020/raise-a-child/</link>
-      <pubDate>Sun, 01 Nov 2020 22:22:33 +0800</pubDate>
-      <guid>https://kingye.me/post/2020/raise-a-child/</guid>
+      <title>推荐网站</title>
+      <link>https://kingye.me/post/draft/site/</link>
+      <pubDate>Thu, 10 Dec 2020 15:31:02 +0800</pubDate>
+      <guid>https://kingye.me/post/draft/site/</guid>
+      <description>&lt;h2 id=&#34;计算机&#34;&gt;计算机&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;推荐度&lt;/th&gt;
+&lt;th&gt;网址&lt;/th&gt;
+&lt;th&gt;推荐理由&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;★★★★&lt;/td&gt;
+&lt;td&gt;
+&lt;a href=&#34;http://highscalability.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;highscalability.com&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;High Scalability&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Zhihu</title>
+      <link>https://kingye.me/post/draft/zhihu/</link>
+      <pubDate>Thu, 10 Dec 2020 15:29:20 +0800</pubDate>
+      <guid>https://kingye.me/post/draft/zhihu/</guid>
+      <description>&lt;h2 id=&#34;学习&#34;&gt;学习&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://www.zhihu.com/question/38632401&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;有哪些知识，你知道后你的世界马上就不一样了？&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;历史&#34;&gt;历史&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://www.zhihu.com/question/30376558&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;如何理清春秋战国的历史？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://www.zhihu.com/question/30467324/answer/84996810&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;如何理清五胡十六国的脉络关系？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://www.zhihu.com/question/20689758/answer/46052840&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;怎样理清魏晋南北朝那段的历史？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://www.zhihu.com/question/30046079/answer/47765961&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;如何理清五代十国的历史？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://www.zhihu.com/question/38786702&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;如何理清民国时军阀混战的历史？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://www.zhihu.com/question/34856776&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;怎么有效的区分和理顺历史上中国北方的各游牧民族？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://www.zhihu.com/question/27453531&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;欧洲中世纪史的脉络或结构图是怎么样的？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://www.zhihu.com/question/34550296&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;如何清晰梳理古希腊、罗马史？&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;其他&#34;&gt;其他&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://www.zhihu.com/question/398193048&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;有哪些网站，一旦知道，你就离不开了？&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Raise a Child</title>
+      <link>https://kingye.me/post/draft/raise-a-child/</link>
+      <pubDate>Thu, 10 Dec 2020 15:28:17 +0800</pubDate>
+      <guid>https://kingye.me/post/draft/raise-a-child/</guid>
       <description>&lt;h2 id=&#34;兴趣班&#34;&gt;兴趣班&lt;/h2&gt;
 &lt;p&gt;参考：&lt;/p&gt;
 &lt;ul&gt;
@@ -27,10 +90,18 @@
     </item>
     
     <item>
-      <title>云服务提供商</title>
-      <link>https://kingye.me/post/2020/cloud-provider/</link>
-      <pubDate>Wed, 21 Oct 2020 18:14:33 +0800</pubDate>
-      <guid>https://kingye.me/post/2020/cloud-provider/</guid>
+      <title>K8s</title>
+      <link>https://kingye.me/post/draft/k8s/</link>
+      <pubDate>Thu, 10 Dec 2020 15:27:34 +0800</pubDate>
+      <guid>https://kingye.me/post/draft/k8s/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>公有云主流产品</title>
+      <link>https://kingye.me/post/draft/cloud-provider/</link>
+      <pubDate>Thu, 10 Dec 2020 15:22:31 +0800</pubDate>
+      <guid>https://kingye.me/post/draft/cloud-provider/</guid>
       <description>&lt;h2 id=&#34;云厂商&#34;&gt;云厂商&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Amazon AWS &lt;code&gt;Amazon Web Services&lt;/code&gt;&lt;/li&gt;
@@ -184,40 +255,74 @@
     </item>
     
     <item>
-      <title>知乎好问题</title>
-      <link>https://kingye.me/post/2020/zhihu/</link>
-      <pubDate>Tue, 06 Oct 2020 23:50:33 +0800</pubDate>
-      <guid>https://kingye.me/post/2020/zhihu/</guid>
-      <description>&lt;h2 id=&#34;学习&#34;&gt;学习&lt;/h2&gt;
+      <title>Macos 推荐软件</title>
+      <link>https://kingye.me/post/draft/app-macos/</link>
+      <pubDate>Thu, 10 Dec 2020 15:21:23 +0800</pubDate>
+      <guid>https://kingye.me/post/draft/app-macos/</guid>
+      <description>&lt;h2 id=&#34;日常&#34;&gt;日常&lt;/h2&gt;
+&lt;h2 id=&#34;编程&#34;&gt;编程&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://www.zhihu.com/question/38632401&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;有哪些知识，你知道后你的世界马上就不一样了？&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;历史&#34;&gt;历史&lt;/h2&gt;
-&lt;ol&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://github.com/Homebrew/brew&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Homebrew/brew&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/Homebrew/brew.svg&#34; alt=&#34;Github stars&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The missing package manager for macOS (or Linux) &lt;a href=&#34;https://brew.sh&#34;&gt;https://brew.sh&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://www.zhihu.com/question/30376558&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;如何理清春秋战国的历史？&lt;/a&gt;&lt;/li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://github.com/neovim/neovim&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;neovim/neovim&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/neovim/neovim.svg&#34; alt=&#34;Github stars&#34;&gt;
+Vim-fork focused on extensibility and usability &lt;a href=&#34;https://neovim.io&#34;&gt;https://neovim.io&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://www.zhihu.com/question/30467324/answer/84996810&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;如何理清五胡十六国的脉络关系？&lt;/a&gt;&lt;/li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://github.com/github/hub&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;github/hub&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/github/hub.svg&#34; alt=&#34;Github stars&#34;&gt;&lt;/p&gt;
+&lt;p&gt;A command-line tool that makes git easier to use with GitHub. &lt;a href=&#34;https://hub.github.com/&#34;&gt;https://hub.github.com/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://www.zhihu.com/question/20689758/answer/46052840&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;怎样理清魏晋南北朝那段的历史？&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://www.zhihu.com/question/30046079/answer/47765961&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;如何理清五代十国的历史？&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://www.zhihu.com/question/38786702&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;如何理清民国时军阀混战的历史？&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://www.zhihu.com/question/34856776&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;怎么有效的区分和理顺历史上中国北方的各游牧民族？&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://www.zhihu.com/question/27453531&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;欧洲中世纪史的脉络或结构图是怎么样的？&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://www.zhihu.com/question/34550296&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;如何清晰梳理古希腊、罗马史？&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;其他&#34;&gt;其他&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://www.zhihu.com/question/398193048&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;有哪些网站，一旦知道，你就离不开了？&lt;/a&gt;&lt;/li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://github.com/mas-cli/mas&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mas-cli/mas&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/mas-cli/mas.svg&#34; alt=&#34;Github stars&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>适配器模式、装饰模式、代理模式有哪些异同？</title>
+      <link>https://kingye.me/post/draft/adapter-decorator-proxy/</link>
+      <pubDate>Thu, 10 Dec 2020 14:09:28 +0800</pubDate>
+      <guid>https://kingye.me/post/draft/adapter-decorator-proxy/</guid>
+      <description>&lt;h2 id=&#34;适配器模式&#34;&gt;适配器模式&lt;/h2&gt;
+&lt;h2 id=&#34;装饰模式&#34;&gt;装饰模式&lt;/h2&gt;
+&lt;h2 id=&#34;代理模式&#34;&gt;代理模式&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Have a Blog</title>
+      <link>https://kingye.me/post/draft/have-a-blog/</link>
+      <pubDate>Wed, 09 Dec 2020 21:21:01 +0800</pubDate>
+      <guid>https://kingye.me/post/draft/have-a-blog/</guid>
+      <description>&lt;h2 id=&#34;主题&#34;&gt;主题&lt;/h2&gt;
+&lt;h3 id=&#34;wowchemy-原名-academic&#34;&gt;Wowchemy (原名 Academic)&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;hugo new --kind post post/my-article-name
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;文档：https://wowchemy.com/docs/&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Istio 如何实现 sidecar 注入</title>
+      <link>https://kingye.me/post/draft/istio-sidecar-injection/</link>
+      <pubDate>Mon, 09 Mar 2020 21:50:50 +0800</pubDate>
+      <guid>https://kingye.me/post/draft/istio-sidecar-injection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Istio 如何实现流量劫持</title>
+      <link>https://kingye.me/post/draft/istio-hijack/</link>
+      <pubDate>Mon, 09 Mar 2020 21:50:50 +0800</pubDate>
+      <guid>https://kingye.me/post/draft/istio-hijack/</guid>
+      <description></description>
     </item>
     
   </channel>

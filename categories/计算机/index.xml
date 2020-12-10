@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>计算机 | 叶王说</title>
+    <link>https://kingye.me/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
+      <atom:link href="https://kingye.me/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
+    <description>计算机</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-cn</language><copyright>叶王 ©2013-2020 版权所有</copyright><lastBuildDate>Thu, 10 Dec 2020 14:09:28 +0800</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>计算机</title>
+      <link>https://kingye.me/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
+    </image>
+    
+    <item>
+      <title>适配器模式、装饰模式、代理模式有哪些异同？</title>
+      <link>https://kingye.me/post/draft/adapter-decorator-proxy/</link>
+      <pubDate>Thu, 10 Dec 2020 14:09:28 +0800</pubDate>
+      <guid>https://kingye.me/post/draft/adapter-decorator-proxy/</guid>
+      <description>&lt;h2 id=&#34;适配器模式&#34;&gt;适配器模式&lt;/h2&gt;
+&lt;h2 id=&#34;装饰模式&#34;&gt;装饰模式&lt;/h2&gt;
+&lt;h2 id=&#34;代理模式&#34;&gt;代理模式&lt;/h2&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

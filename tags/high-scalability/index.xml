@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>high scalability | 叶王说</title>
+    <link>https://kingye.me/tags/high-scalability/</link>
+      <atom:link href="https://kingye.me/tags/high-scalability/index.xml" rel="self" type="application/rss+xml" />
+    <description>high scalability</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-cn</language><copyright>叶王 ©2013-2020 版权所有</copyright><lastBuildDate>Thu, 10 Dec 2020 15:31:02 +0800</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>high scalability</title>
+      <link>https://kingye.me/tags/high-scalability/</link>
+    </image>
+    
+    <item>
+      <title>推荐网站</title>
+      <link>https://kingye.me/post/draft/site/</link>
+      <pubDate>Thu, 10 Dec 2020 15:31:02 +0800</pubDate>
+      <guid>https://kingye.me/post/draft/site/</guid>
+      <description>&lt;h2 id=&#34;计算机&#34;&gt;计算机&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;推荐度&lt;/th&gt;
+&lt;th&gt;网址&lt;/th&gt;
+&lt;th&gt;推荐理由&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;★★★★&lt;/td&gt;
+&lt;td&gt;
+&lt;a href=&#34;http://highscalability.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;highscalability.com&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;High Scalability&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

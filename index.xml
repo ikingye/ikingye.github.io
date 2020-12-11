@@ -316,6 +316,18 @@
       <pubDate>Thu, 10 Dec 2020 15:21:23 +0800</pubDate>
       <guid>https://kingye.me/post/draft/app-macos/</guid>
       <description>&lt;h2 id=&#34;日常&#34;&gt;日常&lt;/h2&gt;
+&lt;h3 id=&#34;微信助手&#34;&gt;微信助手&lt;/h3&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://github.com/MustangYM/WeChatExtension-ForMac&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MustangYM/WeChatExtension-ForMac&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/MustangYM/WeChatExtension-ForMac.svg&#34; alt=&#34;Github stars&#34;&gt; &lt;img src=&#34;https://img.shields.io/github/languages/top/MustangYM/WeChatExtension-ForMac.svg&#34; alt=&#34;Language&#34;&gt; &lt;img src=&#34;https://img.shields.io/github/v/tag/MustangYM/WeChatExtension-ForMac.svg?sort=semver&#34; alt=&#34;Last Tag&#34;&gt; &lt;img src=&#34;https://img.shields.io/github/last-commit/MustangYM/WeChatExtension-ForMac.svg&#34; alt=&#34;Last commit&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Mac 微信功能拓展 / 微信插件 / 微信小助手 (A plugin for Mac WeChat)&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://github.com/lmk123/oh-my-wechat&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;lmk123/oh-my-wechat&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/lmk123/oh-my-wechat.svg&#34; alt=&#34;Github stars&#34;&gt; &lt;img src=&#34;https://img.shields.io/github/languages/top/lmk123/oh-my-wechat.svg&#34; alt=&#34;Language&#34;&gt; &lt;img src=&#34;https://img.shields.io/github/v/tag/lmk123/oh-my-wechat.svg?sort=semver&#34; alt=&#34;Last Tag&#34;&gt; &lt;img src=&#34;https://img.shields.io/github/last-commit/lmk123/oh-my-wechat.svg&#34; alt=&#34;Last commit&#34;&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;# 安装
+curl -o- -L https://omw.limingkai.cn/install.sh | bash -s
+
+# 开机自动安装小助手的功能（即在开机后自动运行一次 omw -n）
+omw open
+&lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;编程&#34;&gt;编程&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;

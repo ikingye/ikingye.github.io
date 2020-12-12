@@ -3,243 +3,38 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://kingye.me/courses/example/example1/</loc>
-    <lastmod>2020-01-18T03:24:09+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/courses/example/</loc>
-    <lastmod>2020-01-18T03:24:09+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/courses/example/example2/</loc>
-    <lastmod>2020-01-18T03:24:09+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://kingye.me/talk/example/</loc>
     <lastmod>2020-01-18T03:24:09+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kingye.me/categories/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
+    <loc>https://kingye.me/tags/blog/</loc>
+    <lastmod>2020-12-12T12:21:01+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kingye.me/tags/high-scalability/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
+    <loc>https://kingye.me/categories/</loc>
+    <lastmod>2020-12-12T12:21:01+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://kingye.me/tags/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
+    <lastmod>2020-12-12T12:21:01+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://kingye.me/categories/%E5%88%9D%E7%A8%BF/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/categories/%E6%8E%A8%E8%8D%90/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/post/draft/site/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/categories/%E7%BD%91%E7%AB%99/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/post/draft/zhihu/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/categories/%E7%9F%A5%E4%B9%8E/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/post/draft/raise-a-child/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/categories/%E5%85%BB%E8%82%B2/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/tags/%E4%BA%91%E4%BA%A7%E5%93%81/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/categories/%E4%BA%91%E8%AE%A1%E7%AE%97/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/tags/%E5%85%AC%E6%9C%89%E4%BA%91/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/post/draft/cloud-provider/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/tags/app/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/tags/macos/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/post/draft/app-macos/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/tags/%E6%8E%A8%E8%8D%90/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/tags/%E8%BD%AF%E4%BB%B6/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/categories/%E8%BD%AF%E4%BB%B6/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/authors/</loc>
-    <lastmod>2020-12-10T16:04:22+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/tags/%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F/</loc>
-    <lastmod>2020-12-10T16:04:22+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/tags/%E8%A3%85%E9%A5%B0%E6%A8%A1%E5%BC%8F/</loc>
-    <lastmod>2020-12-10T16:04:22+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/</loc>
-    <lastmod>2020-12-10T16:04:22+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
-    <lastmod>2020-12-10T16:04:22+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/</loc>
-    <lastmod>2020-12-10T16:04:22+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/tags/%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F/</loc>
-    <lastmod>2020-12-10T16:04:22+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/post/draft/adapter-decorator-proxy/</loc>
-    <lastmod>2020-12-10T16:04:22+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/categories/%E9%9D%A2%E8%AF%95/</loc>
-    <lastmod>2020-12-10T16:04:22+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/tags/blog/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/post/draft/have-a-blog/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
+    <lastmod>2020-12-12T12:21:01+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://kingye.me/categories/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
+    <lastmod>2020-12-12T12:21:01+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kingye.me/tags/iptables/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/tags/istio/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/categories/istio/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/post/draft/istio-sidecar-injection/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/post/draft/istio-hijack/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/tags/sidecar/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/tags/%E6%B5%81%E9%87%8F%E5%8A%AB%E6%8C%81/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/tags/%E7%BD%91%E7%BB%9C/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kingye.me/categories/%E7%BD%91%E7%BB%9C/</loc>
-    <lastmod>2020-12-12T11:00:50+08:00</lastmod>
+    <loc>https://kingye.me/post/draft/have-a-blog/0/</loc>
+    <lastmod>2020-12-12T12:21:01+08:00</lastmod>
   </url>
   
   <url>
@@ -250,6 +45,11 @@
   <url>
     <loc>https://kingye.me/publication/preprint/</loc>
     <lastmod>2020-05-13T02:09:57+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kingye.me/authors/</loc>
+    <lastmod>2020-08-27T16:50:56+08:00</lastmod>
   </url>
   
   <url>

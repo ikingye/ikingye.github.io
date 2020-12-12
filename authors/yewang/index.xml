@@ -13,17 +13,6 @@
     </image>
     
     <item>
-      <title>适配器模式、装饰模式、代理模式有哪些异同？</title>
-      <link>https://kingye.me/post/draft/adapter-decorator-proxy/</link>
-      <pubDate>Thu, 10 Dec 2020 14:09:28 +0800</pubDate>
-      <guid>https://kingye.me/post/draft/adapter-decorator-proxy/</guid>
-      <description>&lt;h2 id=&#34;适配器模式&#34;&gt;适配器模式&lt;/h2&gt;
-&lt;h2 id=&#34;装饰模式&#34;&gt;装饰模式&lt;/h2&gt;
-&lt;h2 id=&#34;代理模式&#34;&gt;代理模式&lt;/h2&gt;
-</description>
-    </item>
-    
-    <item>
       <title>An example preprint / working paper</title>
       <link>https://kingye.me/publication/preprint/</link>
       <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>

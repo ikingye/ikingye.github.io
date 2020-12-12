@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>草稿 | 叶王说</title>
-    <link>https://kingye.me/categories/%E8%8D%89%E7%A8%BF/</link>
-      <atom:link href="https://kingye.me/categories/%E8%8D%89%E7%A8%BF/index.xml" rel="self" type="application/rss+xml" />
-    <description>草稿</description>
+    <title>初稿 | 叶王说</title>
+    <link>https://kingye.me/categories/%E5%88%9D%E7%A8%BF/</link>
+      <atom:link href="https://kingye.me/categories/%E5%88%9D%E7%A8%BF/index.xml" rel="self" type="application/rss+xml" />
+    <description>初稿</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-cn</language><copyright>叶王 ©2013-2020 版权所有</copyright><lastBuildDate>Thu, 10 Dec 2020 15:31:02 +0800</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
-      <title>草稿</title>
-      <link>https://kingye.me/categories/%E8%8D%89%E7%A8%BF/</link>
+      <title>初稿</title>
+      <link>https://kingye.me/categories/%E5%88%9D%E7%A8%BF/</link>
     </image>
     
     <item>

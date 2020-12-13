@@ -47,7 +47,7 @@
     </item>
     
     <item>
-      <title>自动化部署你的博客</title>
+      <title>一键部署并备份你的博客</title>
       <link>https://kingye.me/post/draft/have-a-blog/2/</link>
       <pubDate>Sun, 13 Dec 2020 16:58:22 +0800</pubDate>
       <guid>https://kingye.me/post/draft/have-a-blog/2/</guid>
@@ -260,7 +260,7 @@ git push origin main
 &lt;li&gt;
 &lt;a href=&#34;../1/&#34;&gt;创建你的第一个博客&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;
-&lt;a href=&#34;../2/&#34;&gt;自动化部署你的博客&lt;/a&gt;&lt;/li&gt;
+&lt;a href=&#34;../2/&#34;&gt;一键部署并备份你的博客&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;
 &lt;a href=&#34;../3/&#34;&gt;创建你的博客群&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;

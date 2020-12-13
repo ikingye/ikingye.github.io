@@ -40,8 +40,8 @@
       <pubDate>Sat, 12 Dec 2020 12:21:01 +0800</pubDate>
       <guid>https://kingye.me/post/draft/have-a-blog/1/</guid>
       <description>&lt;p&gt;本系列主要教你使用 
-&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo&lt;/a&gt; 在 
-&lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Pages&lt;/a&gt; 创建一个博客。&lt;/p&gt;
+&lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Pages&lt;/a&gt; 和 
+&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo&lt;/a&gt; 创建一个博客。&lt;/p&gt;
 &lt;h2 id=&#34;1-使用-hugohttpsgohugoio-创建博客&#34;&gt;1. 使用 
 &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo&lt;/a&gt; 创建博客&lt;/h2&gt;
 &lt;p&gt;注：你也可以使用 
@@ -97,32 +97,34 @@ hugo new post/my-first-post.md
 &lt;h3 id=&#34;16-本地预览博客&#34;&gt;1.6 本地预览博客&lt;/h3&gt;
 &lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;hugo server
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;打开 http://localhost:1313/ 就可以预览你的博客了&lt;/p&gt;
+&lt;p&gt;打开 &lt;a href=&#34;http://localhost:1313/&#34;&gt;http://localhost:1313/&lt;/a&gt; 就可以预览你的博客了&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;2-使用-github-pages&#34;&gt;2. 使用 Github Pages&lt;/h2&gt;
+&lt;h2 id=&#34;2-使用-github-pages-部署博客&#34;&gt;2. 使用 GitHub Pages 部署博客&lt;/h2&gt;
 &lt;p&gt;注：你还可以使用 
 &lt;a href=&#34;http://gitlab.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitLab&lt;/a&gt;，
 &lt;a href=&#34;https://bitbucket.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bitbucket&lt;/a&gt;，或者国内的 
 &lt;a href=&#34;https://gitee.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;gitee&lt;/a&gt;，
 &lt;a href=&#34;https://coding.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;coding.net&lt;/a&gt; 等部署博客。&lt;/p&gt;
 &lt;p&gt;详情参考：
-&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Hosting &amp;amp; Deployment&lt;/a&gt; 或者进行百度搜索。&lt;/p&gt;
+&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Hosting &amp;amp; Deployment&lt;/a&gt; 或者进行
+&lt;a href=&#34;https://www.baidu.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;百度搜索&lt;/a&gt;。&lt;/p&gt;
 &lt;h2 id=&#34;21-注册-github-账户&#34;&gt;2.1 注册 github 账户&lt;/h2&gt;
 &lt;p&gt;假设用户名为 &lt;code&gt;ilivelearnteach&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;22-创建仓库&#34;&gt;2.2 创建仓库&lt;/h2&gt;
 &lt;p&gt;创建仓库 &lt;code&gt;ilivelearnteach.github.io&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;注：必须是 &lt;code&gt;你的用户名.github.io&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;23-提交博客到-github&#34;&gt;2.3 提交博客到 github&lt;/h2&gt;
+&lt;p&gt;2.3.1 使用 submodule 管理你的博客内容&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;# ilivelearnteach 换成你的用户名
 git submodule add -b main https://github.com/ilivelearnteach/ilivelearnteach.github.io public
 
-# 会输出下面内容，有个 fatal 错误，不管它
-Cloning into &#39;xxx/livelearnteach/hugo/ilivelearnteach.github.io/public&#39;...
-warning: You appear to have cloned an empty repository.
-fatal: &#39;origin/main&#39; is not a commit and a branch &#39;main&#39; cannot be created from it
-Unable to checkout submodule &#39;public&#39;
-
+# 会输出下面内容，有个 fatal 错误，忽略
+# Cloning into &#39;xxx/livelearnteach/hugo/ilivelearnteach.github.io/public&#39;...
+# warning: You appear to have cloned an empty repository.
+# fatal: &#39;origin/main&#39; is not a commit and a branch &#39;main&#39; cannot be created from it
+# Unable to checkout submodule &#39;public&#39;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;2.3.2 生成博客内容并提交到 github&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;# 生成博客内容
 hugo
 
@@ -140,7 +142,9 @@ git push -u origin main
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;24-完成&#34;&gt;2.4 完成&lt;/h2&gt;
 &lt;p&gt;稍等一会儿，直接访问 &lt;a href=&#34;https://ilivelearnteach.github.io/&#34;&gt;https://ilivelearnteach.github.io/&lt;/a&gt; 就可以看到博客了。&lt;/p&gt;
-&lt;p&gt;ps: 打开 &lt;a href=&#34;https://github.com/ilivelearnteach/ilivelearnteach.github.io&#34;&gt;https://github.com/ilivelearnteach/ilivelearnteach.github.io&lt;/a&gt; 的 settings 页面可以看到&lt;/p&gt;
+&lt;p&gt;PS: GitHub Pages 会自动开启。&lt;/p&gt;
+&lt;p&gt;打开 &lt;a href=&#34;https://github.com/ilivelearnteach/ilivelearnteach.github.io&#34;&gt;https://github.com/ilivelearnteach/ilivelearnteach.github.io&lt;/a&gt; 的 settings 页面即可以看到。&lt;/p&gt;
+&lt;p&gt;如果没有自动开启 GitHub Pages，就手动选择 &lt;code&gt;main&lt;/code&gt; 分支，&lt;code&gt;/ (root)&lt;/code&gt; 路径，点击 &lt;code&gt;Save&lt;/code&gt; 即可。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20201213162649.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;更多详情参考：
 &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Host on GitHub&lt;/a&gt;&lt;/p&gt;

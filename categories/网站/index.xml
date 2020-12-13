@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>叶王博客 | 叶王说</title>
-    <link>https://kingye.me/post/</link>
-      <atom:link href="https://kingye.me/post/index.xml" rel="self" type="application/rss+xml" />
-    <description>叶王博客</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-cn</language><copyright>叶王 ©2013-2020 版权所有</copyright>
+    <title>网站 | 叶王说</title>
+    <link>https://kingye.me/categories/%E7%BD%91%E7%AB%99/</link>
+      <atom:link href="https://kingye.me/categories/%E7%BD%91%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
+    <description>网站</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-cn</language><copyright>叶王 ©2013-2020 版权所有</copyright><lastBuildDate>Sun, 13 Dec 2020 16:58:22 +0800</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
-      <title>叶王博客</title>
-      <link>https://kingye.me/post/</link>
+      <title>网站</title>
+      <link>https://kingye.me/categories/%E7%BD%91%E7%AB%99/</link>
     </image>
     
     <item>

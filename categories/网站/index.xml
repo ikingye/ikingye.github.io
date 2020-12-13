@@ -5,7 +5,7 @@
     <link>https://kingye.me/categories/%E7%BD%91%E7%AB%99/</link>
       <atom:link href="https://kingye.me/categories/%E7%BD%91%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
     <description>网站</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-cn</language><copyright>叶王 ©2013-2020 版权所有</copyright><lastBuildDate>Sun, 13 Dec 2020 16:58:22 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-cn</language><copyright>叶王 ©2013-2020 版权所有</copyright><lastBuildDate>Mon, 14 Dec 2020 01:48:22 +0800</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>网站</title>
@@ -13,7 +13,19 @@
     </image>
     
     <item>
-      <title>改进你的博客</title>
+      <title>创建你的博客群</title>
+      <link>https://kingye.me/post/draft/have-a-blog/3/</link>
+      <pubDate>Mon, 14 Dec 2020 01:48:22 +0800</pubDate>
+      <guid>https://kingye.me/post/draft/have-a-blog/3/</guid>
+      <description>&lt;p&gt;本文主要教你在 
+&lt;a href=&#34;../1/&#34;&gt;《创建你的第一个博客》&lt;/a&gt; 的基础上，创建出一个博客群构成的网站。
+包括博客，笔记本等。&lt;/p&gt;
+&lt;p&gt;效果参考：&lt;a href=&#34;https://kingye.me&#34;&gt;https://kingye.me&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>自动化部署你的博客</title>
       <link>https://kingye.me/post/draft/have-a-blog/2/</link>
       <pubDate>Sun, 13 Dec 2020 16:58:22 +0800</pubDate>
       <guid>https://kingye.me/post/draft/have-a-blog/2/</guid>
@@ -24,9 +36,7 @@
 &lt;ol&gt;
 &lt;li&gt;我们只提交了博客生成的数据，而博客原始数据并没有提交到 GitHub，如果你的博客内容丢失了，就无法找回；&lt;/li&gt;
 &lt;li&gt;编写博客后，我们需要手动进行 git 管理，没有实现自动化；&lt;/li&gt;
-&lt;li&gt;我们使用 &lt;code&gt;xxx.github.io&lt;/code&gt;，没有使用自己的域名；&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;下面我们将一一解决这些问题。&lt;/p&gt;
 &lt;h2 id=&#34;1-管理你的博客原始数据&#34;&gt;1. 管理你的博客原始数据&lt;/h2&gt;
 &lt;h3 id=&#34;11-新建仓库&#34;&gt;1.1 新建仓库&lt;/h3&gt;
 &lt;p&gt;如 ilivelearnteach.com&lt;/p&gt;
@@ -223,12 +233,14 @@ git push origin main
       <guid>https://kingye.me/post/draft/have-a-blog/0/</guid>
       <description>&lt;p&gt;本系列将手把手教你使用 
 &lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Pages&lt;/a&gt; 和 
-&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo&lt;/a&gt; 创建一个属于你的网站，包括博客系统，笔记系统，私人笔记本等。无需购买服务器资源。&lt;/p&gt;
+&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo&lt;/a&gt; 创建一个属于你的网站，包括博客系统，笔记系统等。无需购买服务器资源。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;a href=&#34;../1/&#34;&gt;创建你的第一个博客&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;
-&lt;a href=&#34;../2/&#34;&gt;改进你的博客&lt;/a&gt;&lt;/li&gt;
+&lt;a href=&#34;../2/&#34;&gt;自动化部署你的博客&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;../3/&#34;&gt;创建你的博客群&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </description>
     </item>

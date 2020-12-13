@@ -13,7 +13,7 @@
     </image>
     
     <item>
-      <title>改进你的博客</title>
+      <title>自动化部署你的博客</title>
       <link>https://kingye.me/post/draft/have-a-blog/2/</link>
       <pubDate>Sun, 13 Dec 2020 16:58:22 +0800</pubDate>
       <guid>https://kingye.me/post/draft/have-a-blog/2/</guid>
@@ -24,9 +24,7 @@
 &lt;ol&gt;
 &lt;li&gt;我们只提交了博客生成的数据，而博客原始数据并没有提交到 GitHub，如果你的博客内容丢失了，就无法找回；&lt;/li&gt;
 &lt;li&gt;编写博客后，我们需要手动进行 git 管理，没有实现自动化；&lt;/li&gt;
-&lt;li&gt;我们使用 &lt;code&gt;xxx.github.io&lt;/code&gt;，没有使用自己的域名；&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;下面我们将一一解决这些问题。&lt;/p&gt;
 &lt;h2 id=&#34;1-管理你的博客原始数据&#34;&gt;1. 管理你的博客原始数据&lt;/h2&gt;
 &lt;h3 id=&#34;11-新建仓库&#34;&gt;1.1 新建仓库&lt;/h3&gt;
 &lt;p&gt;如 ilivelearnteach.com&lt;/p&gt;

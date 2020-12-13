@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>统计 | 叶王说</title>
+    <link>https://kingye.me/tags/%E7%BB%9F%E8%AE%A1/</link>
+      <atom:link href="https://kingye.me/tags/%E7%BB%9F%E8%AE%A1/index.xml" rel="self" type="application/rss+xml" />
+    <description>统计</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-cn</language><copyright>叶王 ©2013-2020 版权所有</copyright><lastBuildDate>Mon, 14 Dec 2020 02:08:22 +0800</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>统计</title>
+      <link>https://kingye.me/tags/%E7%BB%9F%E8%AE%A1/</link>
+    </image>
+    
+    <item>
+      <title>网站的一些高阶能力建设</title>
+      <link>https://kingye.me/post/draft/have-a-blog/4/</link>
+      <pubDate>Mon, 14 Dec 2020 02:08:22 +0800</pubDate>
+      <guid>https://kingye.me/post/draft/have-a-blog/4/</guid>
+      <description>&lt;p&gt;你已经拥有了书写博文，记录笔记，并一键备份和发布的能力，如果只是给自己看，那差不多够用了。
+但是，随着你的博文写得越来越多，越来越好，&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;你会不会有那么一瞬间很好奇，到底有多少用户看了你的博文；&lt;/li&gt;
+&lt;li&gt;你会不会想让用户对你的文章进行评论，与之交流；&lt;/li&gt;
+&lt;li&gt;你会不会想要注册一个独立域名，让用户让容易记住你。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -704,6 +704,9 @@ cd $(dirname &quot;$0&quot;)
 
 # Commit changes.
 msg=&quot;rebuilding site $(date)&quot;
+if [ -n &quot;$*&quot; ]; then
+	msg=&quot;$*&quot;
+fi
 
 # update the theme
 git submodule update --remote
@@ -738,6 +741,9 @@ hugo new post/my-second-post.md
 
 # 执行脚本，自动提交博客源码和生成的博客到 GitHub，博客将自动更新
 ./deploy.sh
+
+# 当然你可以写 commit 信息，记录本次博客更新的内容
+# ./deploy.sh &quot;Your optional commit message&quot;
 </code></pre>
 
     </div>

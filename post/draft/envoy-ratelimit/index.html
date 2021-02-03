@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="本文主要教你对上一篇 [《创建你的第一个博客》](../1/) 进行一些改进，可以一键部署并备份你的博客。">
+  <meta name="description" content="ratelimit action 详解 A list of actions that are to be applied for this rate limit configuration. Order matters as the actions are processed sequentially and the descriptor is composed by appending descriptor entries in that sequence. If an action cannot append a descriptor entry, no descriptor is generated for the configuration. See composing actions for additional documentation. action 分为 6 种，下面将一一">
 
   
-  <link rel="alternate" hreflang="zh-cn" href="https://kingye.me/post/draft/have-a-blog/2/">
+  <link rel="alternate" hreflang="zh-cn" href="https://kingye.me/post/draft/envoy-ratelimit/">
 
   
 
@@ -253,7 +253,7 @@
   <link rel="icon" type="image/png" href="/images/icon_hu5a99a96afa0d5c480d2983cdb70f75bc_28032_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu5a99a96afa0d5c480d2983cdb70f75bc_28032_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://kingye.me/post/draft/have-a-blog/2/">
+  <link rel="canonical" href="https://kingye.me/post/draft/envoy-ratelimit/">
 
   
   
@@ -270,15 +270,15 @@
   <meta property="twitter:creator" content="@ikingye">
   
   <meta property="og:site_name" content="叶王说">
-  <meta property="og:url" content="https://kingye.me/post/draft/have-a-blog/2/">
-  <meta property="og:title" content="一键部署并备份你的博客 | 叶王说">
-  <meta property="og:description" content="本文主要教你对上一篇 [《创建你的第一个博客》](../1/) 进行一些改进，可以一键部署并备份你的博客。"><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
+  <meta property="og:url" content="https://kingye.me/post/draft/envoy-ratelimit/">
+  <meta property="og:title" content="Envoy Ratelimit | 叶王说">
+  <meta property="og:description" content="ratelimit action 详解 A list of actions that are to be applied for this rate limit configuration. Order matters as the actions are processed sequentially and the descriptor is composed by appending descriptor entries in that sequence. If an action cannot append a descriptor entry, no descriptor is generated for the configuration. See composing actions for additional documentation. action 分为 6 种，下面将一一"><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=false) shape:circle]"><meta property="og:locale" content="zh-cn">
   
     
-      <meta property="article:published_time" content="2020-12-13T16:58:22&#43;08:00">
+      <meta property="article:published_time" content="2021-02-03T20:20:04&#43;08:00">
     
-    <meta property="article:modified_time" content="2020-12-14T01:58:01&#43;08:00">
+    <meta property="article:modified_time" content="2021-02-03T20:20:04&#43;08:00">
   
 
   
@@ -302,12 +302,12 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://kingye.me/post/draft/have-a-blog/2/"
+    "@id": "https://kingye.me/post/draft/envoy-ratelimit/"
   },
-  "headline": "一键部署并备份你的博客",
+  "headline": "Envoy Ratelimit",
   
-  "datePublished": "2020-12-13T16:58:22+08:00",
-  "dateModified": "2020-12-14T01:58:01+08:00",
+  "datePublished": "2021-02-03T20:20:04+08:00",
+  "dateModified": "2021-02-03T20:20:04+08:00",
   
   "author": {
     "@type": "Person",
@@ -322,7 +322,7 @@
       "url": "https://kingye.me/images/icon_hu5a99a96afa0d5c480d2983cdb70f75bc_28032_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "本文主要教你对上一篇 [《创建你的第一个博客》](../1/) 进行一些改进，可以一键部署并备份你的博客。"
+  "description": "ratelimit action 详解 A list of actions that are to be applied for this rate limit configuration. Order matters as the actions are processed sequentially and the descriptor is composed by appending descriptor entries in that sequence. If an action cannot append a descriptor entry, no descriptor is generated for the configuration. See composing actions for additional documentation. action 分为 6 种，下面将一一"
 }
 </script>
 
@@ -340,7 +340,7 @@
 
 
 
-  <title>一键部署并备份你的博客 | 叶王说</title>
+  <title>Envoy Ratelimit | 叶王说</title>
 
 </head>
 
@@ -581,7 +581,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>一键部署并备份你的博客</h1>
+  <h1>Envoy Ratelimit</h1>
 
   
 
@@ -593,26 +593,14 @@
 
   
   
-  
-  
-  <div>
-    
-
-  
-  <span><a href="/authors/yewang/">叶王</a></span>
-  </div>
-  
-  
 
   
   <span class="article-date">
     
     
       
-          最近更新于
-      
     
-    2020-12-14
+    2021-02-03
   </span>
   
 
@@ -630,10 +618,6 @@
   
 
   
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="">网站</a>, <a href="">初稿</a></span>
   
 
 </div>
@@ -661,102 +645,121 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>在上一篇 
-<a href="../1/">《创建你的第一个博客》</a> 中，我们已经搭建了一个基本的博客系统，你已经可以使用喜欢的编辑器（推荐 
-<a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a>） 进行文章编写，使用 Git 提交修改到 GitHub，由其自动部署到 GitHub Pages，读者就可以读取到你的新博文。</p>
-<p>但是还存在一些问题，比如：</p>
-<ol>
-<li>我们只提交了博客生成的数据，而博客原始数据并没有提交到 GitHub，如果你的博客源码丢失了，就无法找回；</li>
-<li>编写博客后，我们需要手动进行 git 管理，没有实现自动化；</li>
-</ol>
-<h2 id="1-管理你的博客原始数据">1. 管理你的博客原始数据</h2>
-<h3 id="11-新建仓库">1.1 新建仓库</h3>
-<p>如 ilivelearnteach.com</p>
-<p>注：建议为私有仓库，保护博客源码。</p>
-<h3 id="12-提交博客原始数据到-github">1.2 提交博客原始数据到 GitHub</h3>
-<pre><code class="language-shell"># 进入你的博客目录
-cd path-to-your-blog/
+      <h2 id="ratelimit-action-详解">ratelimit action 详解</h2>
+<p>A list of actions that are to be applied for this rate limit configuration. Order matters as the actions are processed sequentially and the descriptor is composed by appending descriptor entries in that sequence. If an action cannot append a descriptor entry, no descriptor is generated for the configuration.</p>
+<p>See 
+<a href="https://www.envoyproxy.io/docs/envoy/v1.14.5/configuration/http/http_filters/rate_limit_filter#config-http-filters-rate-limit-composing-actions" target="_blank" rel="noopener">composing actions</a> for additional documentation.</p>
+<p>action 分为 6 种，下面将一一介绍</p>
+<h3 id="1-source_cluster">1. source_cluster</h3>
+<p>(&ldquo;source_cluster&rdquo;, &ldquo;<local service cluster>&rdquo;)</p>
+<p>其中 &ldquo;<local service cluster>&rdquo; 为该 Envoy 所在的 cluster name，来源于 Envoy 启动时 &ndash;service-cluster 选择指定的值。</p>
+<pre><code class="language-yaml"># envoy: envoy.yaml
+# HttpConnectionManager.route_config.virtual_hosts.rate_limits.actions
+- source_cluster: {}
 
-# ilivelearnteach.com 为新建的仓库名
-git remote add origin https://github.com/ilivelearnteach/ilivelearnteach.com
-
-# 提交内容
-git add .
-git commit -m &quot;my blog code&quot;
-
-git branch -M main
-# 提交博客到 github
-git push -u origin main
+# ratelimit: config.yaml
+- key: source_cluster
+  value: &lt;cluser_name&gt;
+  rate_limit:
+    unit: minute
+    requests_per_unit: 10
 </code></pre>
-<hr>
-<h2 id="2-自动化脚本">2. 自动化脚本</h2>
-<p>想实现的目标是：每次创建或更新博文，执行 <code>./deploy.sh</code> 命令，一键完成所有后续动作。</p>
-<h3 id="21-创建脚本">2.1 创建脚本</h3>
-<p>在博客根目录创建脚本文件 <code>deploy.sh</code>，内容为：</p>
-<pre><code class="language-shell">#!/bin/sh
+<h3 id="2-destination_cluster">2. destination_cluster</h3>
+<p>(&ldquo;destination_cluster&rdquo;, &ldquo;<routed target cluster>&rdquo;)</p>
+<p>其中，&ldquo;<routed target cluster>&rdquo; 表示根据路由匹配规则该请求将发往的 upstream cluster 的 cluster name。</p>
+<p>如果是  route 级别的 ratelimit，则 upstream cluster 由当前路由规则决定。</p>
+<p>路由规则中 routed cluster 配置不同，那么 &ldquo;<routed target cluster>&rdquo; 得到的 upstream cluster name 也不同。</p>
+<ul>
+<li>如果配置为 cluster， 比如    cluster: XXXX ，那么    &ldquo;<routed target cluster>&rdquo;  就 为    XXXX ；</li>
+<li>如果配置为 cluster_header，比如 cluster_header: X-Envoy-Destination-Cluster，那么通过读取该请求 header 中 X-Envoy-Destination-Cluster 的值，比如 X-Envoy-Destination-Cluster: YYYY，并且 YYYY 名字的 upstream cluster 存在，那么 &ldquo;<routed target cluster>&rdquo; 就是 YYYY。如果不存在则返回 404 错误；</li>
+<li>如果配置为 weighted_clusters，如上述配置实例所示，那么 upstream cluster 就是 Envoy 当前根据权重选择出来的，比如选中的 upstream cluster 为 ZZZZ-02，那么 &ldquo;<routed target cluster>&rdquo; 就为 ZZZZ-02。</li>
+</ul>
+<pre><code class="language-yaml"># envoy: envoy.yaml
+# HttpConnectionManager.route_config.virtual_hosts.rate_limits.actions
+- destination_cluster: {}
 
-set -x
-# 可以修改成自己的博客名
-printf &quot;\033[0;32m ilivelearnteach.com Deploying updates to GitHub...\033[0m\n&quot;
-cd $(dirname &quot;$0&quot;)
-
-# Commit changes.
-msg=&quot;rebuilding site $(date)&quot;
-if [ -n &quot;$*&quot; ]; then
-	msg=&quot;$*&quot;
-fi
-
-# update the theme
-git submodule update --remote
-# remove old files
-rm -rf public/*
-# Build the project.
-hugo
-
-# Go To Public folder
-cd public
-# Add changes to git.
-git add .
-git commit -m &quot;$msg&quot;
-# Push to blog repo and trigger building blog.
-git push origin main
-
-# push to source repo
-cd ..
-git add .
-git commit -m &quot;$msg&quot;
-git push origin main
+# ratelimit: config.yaml
+- key: destination_cluster
+  value: &lt;cluser_name&gt;
+  rate_limit:
+    unit: minute
+    requests_per_unit: 10
 </code></pre>
-<h3 id="22-运行脚本">2.2 运行脚本</h3>
-<pre><code class="language-shell"># 修改文件属性为可执行（只需要第一次执行）
-chmod +x deploy.sh
-
-# 创建或修改博客
-# 创建博客文章
-hugo new post/my-second-post.md
-# 然后打开文件 `ilivelearnteach.github.io/content/post/my-second-post.md`，
-# 把 `draft: true` 改成 `draft: false`
-
-# 执行脚本，自动提交博客源码和生成的博客到 GitHub，博客将自动更新
-./deploy.sh
-
-# 当然你可以写 commit 信息，记录本次博客更新的内容
-# ./deploy.sh &quot;Your optional commit message&quot;
+<h3 id="3-request_headers">3. request_headers</h3>
+<p>(&ldquo;&lt;descriptor_key&gt;&rdquo;, &ldquo;&lt;header_value_queried_from_header&gt;&rdquo;)</p>
+<pre><code class="language-yaml"># envoy: envoy.yaml
+# HttpConnectionManager.route_config.virtual_hosts.rate_limits.actions
+- request_headers:
+  head_name: X-Envoy-ClientID
+  descriptor_key: client_id
+# ratelimit: config.yaml
+- key: client_id
+  value: foo
+  rate_limit:
+    unit: minute
+    requests_per_unit: 10
 </code></pre>
+<p>&ldquo;&lt;header_value_queried_from_header&gt;&rdquo; 为该请求 header 中 X-Envoy-ClientID 对应的值。</p>
+<p>如果 X-Envoy-ClientID: foo，则 &ldquo;&lt;header_value_queried_from_header&gt;&rdquo; 为 foo。</p>
+<h3 id="4-remote_address">4. remote_address</h3>
+<p>(&ldquo;remote_address&rdquo;, &ldquo;<trusted address from x-forwarded-for>&rdquo;)</p>
+<p>&ldquo;<trusted address from x-forwarded-for>&rdquo; 的值为该请求 header 中 x-forwarded-for 的值，</p>
+<p>例如如果 x-forwarded-for: 50.0.0.1，那么 &ldquo;<trusted address from x-forwarded-for>&rdquo; 就为 50.0.0.1。</p>
+<pre><code class="language-yaml"># envoy: envoy.yaml
+# HttpConnectionManager.route_config.virtual_hosts.rate_limits.actions
+- remote_address: {}
+
+# ratelimit: config.yaml
+- key: remote_address
+  value: 50.0.0.1
+  rate_limit:
+    unit: minute
+    requests_per_unit: 10
+</code></pre>
+<h3 id="5-generic_key">5. generic_key</h3>
+<p>(&ldquo;generic_key&rdquo;, &ldquo;&lt;descriptor_value&gt;&rdquo;)</p>
+<pre><code class="language-yaml"># envoy: envoy.yaml
+# HttpConnectionManager.route_config.virtual_hosts.rate_limits.actions
+- generic_key:
+  descriptor_value: bar
+
+# ratelimit: config.yaml
+- key: generic_key
+  value: bar
+  rate_limit:
+    unit: minute
+    requests_per_unit: 10
+</code></pre>
+<h3 id="6-header_value_match">6. header_value_match</h3>
+<p>(&ldquo;header_match&rdquo;, &ldquo;&lt;descriptor_value&gt;&rdquo;)</p>
+<pre><code class="language-yaml"># envoy: envoy.yaml
+# HttpConnectionManager.route_config.virtual_hosts.rate_limits.actions
+- header_value_match:
+    descriptor_value: quote-path-auth
+    expect_match: true
+    headers:
+      - name: &quot;:path&quot;
+        exact_match: &quot;/quote&quot;
+
+# ratelimit: config.yaml
+- key: header_match
+  value: quote-path-auth
+  rate_limit:
+    unit: minute
+    requests_per_unit: 10
+</code></pre>
+<p>当 headers 命中时，生成一个如下 descriptor entry (&ldquo;header_match&rdquo;, &ldquo;quote-path-auth&rdquo;)</p>
+<p>参考：</p>
+<ul>
+<li>
+<a href="https://caicloud.io/blog/5e5cb029e7ea52002b5646ba" target="_blank" rel="noopener">微服务之服务治理（二）：一文掌握 Envoy 限速配置</a></li>
+</ul>
 
     </div>
 
     
 
 
-
-<div class="article-tags">
-  
-  <a class="badge badge-light" href="">自动化脚本</a>
-  
-  <a class="badge badge-light" href="">博客</a>
-  
-</div>
 
 
 
@@ -771,7 +774,7 @@ hugo new post/my-second-post.md
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://kingye.me/post/draft/have-a-blog/2/&amp;text=%e4%b8%80%e9%94%ae%e9%83%a8%e7%bd%b2%e5%b9%b6%e5%a4%87%e4%bb%bd%e4%bd%a0%e7%9a%84%e5%8d%9a%e5%ae%a2" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://kingye.me/post/draft/envoy-ratelimit/&amp;text=Envoy%20Ratelimit" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -784,7 +787,7 @@ hugo new post/my-second-post.md
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://kingye.me/post/draft/have-a-blog/2/&amp;t=%e4%b8%80%e9%94%ae%e9%83%a8%e7%bd%b2%e5%b9%b6%e5%a4%87%e4%bb%bd%e4%bd%a0%e7%9a%84%e5%8d%9a%e5%ae%a2" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://kingye.me/post/draft/envoy-ratelimit/&amp;t=Envoy%20Ratelimit" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -797,7 +800,7 @@ hugo new post/my-second-post.md
       
       
       <li>
-        <a href="mailto:?subject=%e4%b8%80%e9%94%ae%e9%83%a8%e7%bd%b2%e5%b9%b6%e5%a4%87%e4%bb%bd%e4%bd%a0%e7%9a%84%e5%8d%9a%e5%ae%a2&amp;body=https://kingye.me/post/draft/have-a-blog/2/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Envoy%20Ratelimit&amp;body=https://kingye.me/post/draft/envoy-ratelimit/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -810,7 +813,7 @@ hugo new post/my-second-post.md
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://kingye.me/post/draft/have-a-blog/2/&amp;title=%e4%b8%80%e9%94%ae%e9%83%a8%e7%bd%b2%e5%b9%b6%e5%a4%87%e4%bb%bd%e4%bd%a0%e7%9a%84%e5%8d%9a%e5%ae%a2" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://kingye.me/post/draft/envoy-ratelimit/&amp;title=Envoy%20Ratelimit" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -823,7 +826,7 @@ hugo new post/my-second-post.md
       
       
       <li>
-        <a href="https://web.whatsapp.com/send?text=%e4%b8%80%e9%94%ae%e9%83%a8%e7%bd%b2%e5%b9%b6%e5%a4%87%e4%bb%bd%e4%bd%a0%e7%9a%84%e5%8d%9a%e5%ae%a2%20https://kingye.me/post/draft/have-a-blog/2/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="https://web.whatsapp.com/send?text=Envoy%20Ratelimit%20https://kingye.me/post/draft/envoy-ratelimit/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -836,7 +839,7 @@ hugo new post/my-second-post.md
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://kingye.me/post/draft/have-a-blog/2/&amp;title=%e4%b8%80%e9%94%ae%e9%83%a8%e7%bd%b2%e5%b9%b6%e5%a4%87%e4%bb%bd%e4%bd%a0%e7%9a%84%e5%8d%9a%e5%ae%a2" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://kingye.me/post/draft/envoy-ratelimit/&amp;title=Envoy%20Ratelimit" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -856,8 +859,7 @@ hugo new post/my-second-post.md
 
 
   
-    
-    
+  
 
 
 
@@ -988,7 +990,6 @@ hugo new post/my-second-post.md
   </div>
 
 
-  
 
 
 
@@ -1000,17 +1001,6 @@ hugo new post/my-second-post.md
 
 
   
-  
-  <div class="article-widget content-widget-hr">
-    <h3>相关</h3>
-    <ul>
-      
-      <li><a href="/post/draft/have-a-blog/1/">创建你的第一个博客</a></li>
-      
-      <li><a href="/post/draft/have-a-blog/0/">手把手教你搭建属于你的网站（无需服务器）</a></li>
-      
-    </ul>
-  </div>
   
 
 

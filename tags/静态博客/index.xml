@@ -14,9 +14,9 @@
     
     <item>
       <title>创建你的第一个博客</title>
-      <link>https://kingye.me/post/draft/have-a-blog/1/</link>
+      <link>https://kingye.me/post/2020/have-a-blog/1/</link>
       <pubDate>Sat, 12 Dec 2020 16:41:22 +0800</pubDate>
-      <guid>https://kingye.me/post/draft/have-a-blog/1/</guid>
+      <guid>https://kingye.me/post/2020/have-a-blog/1/</guid>
       <description>&lt;p&gt;本文主要教你使用 
 &lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Pages&lt;/a&gt; 和 
 &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo&lt;/a&gt; 创建一个博客。&lt;/p&gt;
@@ -126,9 +126,9 @@ git push origin main
     
     <item>
       <title>手把手教你搭建属于你的网站（无需服务器）</title>
-      <link>https://kingye.me/post/draft/have-a-blog/0/</link>
+      <link>https://kingye.me/post/2020/have-a-blog/0/</link>
       <pubDate>Sat, 12 Dec 2020 15:41:22 +0800</pubDate>
-      <guid>https://kingye.me/post/draft/have-a-blog/0/</guid>
+      <guid>https://kingye.me/post/2020/have-a-blog/0/</guid>
       <description>&lt;p&gt;本系列手把手教你使用 
 &lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Pages&lt;/a&gt; 和 
 &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo&lt;/a&gt; 创建一个属于你的网站，包括博客系统，笔记系统等。无需购买服务器资源。&lt;/p&gt;

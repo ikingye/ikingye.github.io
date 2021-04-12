@@ -687,11 +687,11 @@ Three
 &lt;li&gt;
 &lt;a href=&#34;https://kingye.me/note-cs/docs/activity/&#34;&gt;计算机&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 
 &lt;a href=&#34;https://kingye.me/note-cs/docs/activity/istio-handbook/&#34;&gt;《Istio Handbook - Istio 服务网格进阶实战》写作&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 
 &lt;a href=&#34;https://kingye.me/note-cs/docs/activity/csapp/&#34;&gt;TalkGo 读书会第三期 -《深入理解计算机系统》学习&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 
 &lt;a href=&#34;https://kingye.me/note-cs/docs/activity/kubernetes-scheduler/&#34;&gt;Kubernetes 源码研习社第二期 - Kubernetes 调度器源码学习&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;

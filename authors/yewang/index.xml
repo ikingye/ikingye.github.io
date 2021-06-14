@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>叶王说</title>
+    <title>叶王 | 叶王说</title>
     <link>https://kingye.me/authors/yewang/</link>
       <atom:link href="https://kingye.me/authors/yewang/index.xml" rel="self" type="application/rss+xml" />
-    <description>叶王说</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-cn</language><copyright>叶王 ©2013-2021 版权所有</copyright>
+    <description>叶王</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-cn</language><copyright>叶王 ©2013-2021 版权所有</copyright>
     <image>
-      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
-      <title>叶王说</title>
+      <url>https://kingye.me/images/icon_hu5a99a96afa0d5c480d2983cdb70f75bc_28032_512x512_fill_lanczos_center_2.png</url>
+      <title>叶王</title>
       <link>https://kingye.me/authors/yewang/</link>
     </image>
     
@@ -32,8 +32,7 @@
       <link>https://kingye.me/post/2020/have-a-blog/3/</link>
       <pubDate>Mon, 14 Dec 2020 01:48:22 +0800</pubDate>
       <guid>https://kingye.me/post/2020/have-a-blog/3/</guid>
-      <description>&lt;p&gt;本文主要教你在 
-&lt;a href=&#34;../1/&#34;&gt;《创建你的第一个博客》&lt;/a&gt; 的基础上，创建出一个博客群构成的网站。
+      <description>&lt;p&gt;本文主要教你在 &lt;a href=&#34;../1/&#34;&gt;《创建你的第一个博客》&lt;/a&gt; 的基础上，创建出一个博客群构成的网站。
 包括博客，笔记本等。&lt;/p&gt;
 &lt;p&gt;效果参考：&lt;a href=&#34;https://kingye.me&#34;&gt;https://kingye.me&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -44,9 +43,7 @@
       <link>https://kingye.me/post/2020/have-a-blog/2/</link>
       <pubDate>Sun, 13 Dec 2020 16:58:22 +0800</pubDate>
       <guid>https://kingye.me/post/2020/have-a-blog/2/</guid>
-      <description>&lt;p&gt;在上一篇 
-&lt;a href=&#34;../1/&#34;&gt;《创建你的第一个博客》&lt;/a&gt; 中，我们已经搭建了一个基本的博客系统，你已经可以使用喜欢的编辑器（推荐 
-&lt;a href=&#34;https://code.visualstudio.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VSCode&lt;/a&gt;） 进行文章编写，使用 Git 提交修改到 GitHub，由其自动部署到 GitHub Pages，读者就可以读取到你的新博文。&lt;/p&gt;
+      <description>&lt;p&gt;在上一篇 &lt;a href=&#34;../1/&#34;&gt;《创建你的第一个博客》&lt;/a&gt; 中，我们已经搭建了一个基本的博客系统，你已经可以使用喜欢的编辑器（推荐 &lt;a href=&#34;https://code.visualstudio.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VSCode&lt;/a&gt;） 进行文章编写，使用 Git 提交修改到 GitHub，由其自动部署到 GitHub Pages，读者就可以读取到你的新博文。&lt;/p&gt;
 &lt;p&gt;但是还存在一些问题，比如：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;我们只提交了博客生成的数据，而博客原始数据并没有提交到 GitHub，如果你的博客源码丢失了，就无法找回；&lt;/li&gt;
@@ -134,14 +131,9 @@ hugo new post/my-second-post.md
       <link>https://kingye.me/post/2020/have-a-blog/1/</link>
       <pubDate>Sat, 12 Dec 2020 16:41:22 +0800</pubDate>
       <guid>https://kingye.me/post/2020/have-a-blog/1/</guid>
-      <description>&lt;p&gt;本文主要教你使用 
-&lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Pages&lt;/a&gt; 和 
-&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo&lt;/a&gt; 创建一个博客。&lt;/p&gt;
-&lt;h2 id=&#34;1-使用-hugohttpsgohugoio-创建博客&#34;&gt;1. 使用 
-&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo&lt;/a&gt; 创建博客&lt;/h2&gt;
-&lt;p&gt;注：你也可以使用 
-&lt;a href=&#34;https://github.com/gohugoio/hugo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hexo&lt;/a&gt;, 
-&lt;a href=&#34;https://help.github.com/articles/using-jekyll-with-pages&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;jekyll&lt;/a&gt; 等其他静态博客生成工具，详情自己百度。&lt;/p&gt;
+      <description>&lt;p&gt;本文主要教你使用 &lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Pages&lt;/a&gt; 和 &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo&lt;/a&gt; 创建一个博客。&lt;/p&gt;
+&lt;h2 id=&#34;1-使用-hugohttpsgohugoio-创建博客&#34;&gt;1. 使用 &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo&lt;/a&gt; 创建博客&lt;/h2&gt;
+&lt;p&gt;注：你也可以使用 &lt;a href=&#34;https://github.com/gohugoio/hugo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hexo&lt;/a&gt;, &lt;a href=&#34;https://help.github.com/articles/using-jekyll-with-pages&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;jekyll&lt;/a&gt; 等其他静态博客生成工具，详情自己百度。&lt;/p&gt;
 &lt;h3 id=&#34;11-安装-hugo&#34;&gt;1.1 安装 hugo&lt;/h3&gt;
 &lt;p&gt;MacOS 安装 hugo&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;# 若未安装 homebrew，参考这里安装：https://treehouse.github.io/installation-guides/mac/homebrew
@@ -149,20 +141,16 @@ brew install hugo
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;其他系统参考：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://gohugo.io/getting-started/installing#chocolatey-windows&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Windows 安装 hugo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://gohugo.io/getting-started/installing#homebrew-linux&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Linux 安装 hugo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gohugo.io/getting-started/installing#chocolatey-windows&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Windows 安装 hugo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gohugo.io/getting-started/installing#homebrew-linux&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Linux 安装 hugo&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;12-创建博客&#34;&gt;1.2 创建博客&lt;/h3&gt;
 &lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;# ilivelearnteach.github.io 为本地目录名，可以随意更改
 hugo new site ilivelearnteach.github.io
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;参考：
-&lt;a href=&#34;https://gohugo.io/getting-started/quick-start/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Quick Start&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;参考：&lt;a href=&#34;https://gohugo.io/getting-started/quick-start/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Quick Start&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;13-选择一个主题&#34;&gt;1.3 选择一个主题&lt;/h3&gt;
-&lt;p&gt;假设你喜欢主题 
-&lt;a href=&#34;https://github.com/olOwOlo/hugo-theme-even&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Even&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;假设你喜欢主题 &lt;a href=&#34;https://github.com/olOwOlo/hugo-theme-even&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Even&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20201212160642.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;# 进入你刚创建的博客目录
 cd ilivelearnteach.github.io
@@ -172,8 +160,7 @@ git init
 # 添加 even 主题
 git submodule add https://github.com/olOwOlo/hugo-theme-even themes/even
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;更多主题见：
-&lt;a href=&#34;https://themes.gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Themes&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;更多主题见：&lt;a href=&#34;https://themes.gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Themes&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;14-配置博客&#34;&gt;1.4 配置博客&lt;/h3&gt;
 &lt;p&gt;（假设使用 Even 主题）在主题的 exampleSite 目录下有一个 config.toml 文件，将这个 config.toml 文件复制到你的站点目录下，根据自己的需求更改即可。&lt;/p&gt;
 &lt;p&gt;注意修改 baseURL 为 &lt;code&gt;&amp;quot;http://ilivelearnteach.github.io/&amp;quot;&lt;/code&gt;&lt;/p&gt;
@@ -194,14 +181,8 @@ hugo new post/my-first-post.md
 &lt;p&gt;打开 &lt;a href=&#34;http://localhost:1313/&#34;&gt;http://localhost:1313/&lt;/a&gt; 就可以预览你的博客了&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;2-使用-github-pages-部署博客&#34;&gt;2. 使用 GitHub Pages 部署博客&lt;/h2&gt;
-&lt;p&gt;注：你还可以使用 
-&lt;a href=&#34;http://gitlab.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitLab&lt;/a&gt;，
-&lt;a href=&#34;https://bitbucket.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bitbucket&lt;/a&gt;，或者国内的 
-&lt;a href=&#34;https://gitee.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;gitee&lt;/a&gt;，
-&lt;a href=&#34;https://coding.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;coding.net&lt;/a&gt; 等部署博客。&lt;/p&gt;
-&lt;p&gt;详情参考：
-&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Hosting &amp;amp; Deployment&lt;/a&gt; 或者进行
-&lt;a href=&#34;https://www.baidu.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;百度搜索&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;注：你还可以使用 &lt;a href=&#34;http://gitlab.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitLab&lt;/a&gt;，&lt;a href=&#34;https://bitbucket.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bitbucket&lt;/a&gt;，或者国内的 &lt;a href=&#34;https://gitee.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;gitee&lt;/a&gt;，&lt;a href=&#34;https://coding.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;coding.net&lt;/a&gt; 等部署博客。&lt;/p&gt;
+&lt;p&gt;详情参考：&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Hosting &amp;amp; Deployment&lt;/a&gt; 或者进行&lt;a href=&#34;https://www.baidu.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;百度搜索&lt;/a&gt;。&lt;/p&gt;
 &lt;h2 id=&#34;21-注册-github-账户&#34;&gt;2.1 注册 github 账户&lt;/h2&gt;
 &lt;p&gt;假设用户名为 &lt;code&gt;ilivelearnteach&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;22-创建仓库&#34;&gt;2.2 创建仓库&lt;/h2&gt;
@@ -236,8 +217,7 @@ git push origin main
 &lt;p&gt;打开 &lt;a href=&#34;https://github.com/ilivelearnteach/ilivelearnteach.github.io&#34;&gt;https://github.com/ilivelearnteach/ilivelearnteach.github.io&lt;/a&gt; 的 settings 页面即可以看到。&lt;/p&gt;
 &lt;p&gt;如果没有自动开启 GitHub Pages，就手动选择 &lt;code&gt;main&lt;/code&gt; 分支，&lt;code&gt;/ (root)&lt;/code&gt; 路径，点击 &lt;code&gt;Save&lt;/code&gt; 即可。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20201213162649.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;更多详情参考：
-&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Host on GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;更多详情参考：&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Host on GitHub&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -246,25 +226,16 @@ git push origin main
       <link>https://kingye.me/post/2020/have-a-blog/0/</link>
       <pubDate>Sat, 12 Dec 2020 15:41:22 +0800</pubDate>
       <guid>https://kingye.me/post/2020/have-a-blog/0/</guid>
-      <description>&lt;p&gt;本系列手把手教你使用 
-&lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Pages&lt;/a&gt; 和 
-&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo&lt;/a&gt; 创建一个属于你的网站，包括博客系统，笔记系统等。无需购买服务器资源。&lt;/p&gt;
+      <description>&lt;p&gt;本系列手把手教你使用 &lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Pages&lt;/a&gt; 和 &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo&lt;/a&gt; 创建一个属于你的网站，包括博客系统，笔记系统等。无需购买服务器资源。&lt;/p&gt;
 &lt;p&gt;将包括以下内容：&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;a href=&#34;../1/&#34;&gt;创建你的第一个博客&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;../2/&#34;&gt;一键部署并备份你的博客&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;../3/&#34;&gt;创建你的博客群&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;../4/&#34;&gt;网站的一些高阶能力建设&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;../5/&#34;&gt;Markdown 及图片的管理&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;../5/&#34;&gt;文本编辑器 VSCode&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;../6/&#34;&gt;作图工具推荐&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../1/&#34;&gt;创建你的第一个博客&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../2/&#34;&gt;一键部署并备份你的博客&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../3/&#34;&gt;创建你的博客群&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../4/&#34;&gt;网站的一些高阶能力建设&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../5/&#34;&gt;Markdown 及图片的管理&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../5/&#34;&gt;文本编辑器 VSCode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../6/&#34;&gt;作图工具推荐&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </description>
     </item>

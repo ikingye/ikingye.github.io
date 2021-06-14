@@ -5,9 +5,9 @@
     <link>https://kingye.me/</link>
       <atom:link href="https://kingye.me/index.xml" rel="self" type="application/rss+xml" />
     <description>叶王说</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-cn</language><copyright>叶王 ©2013-2021 版权所有</copyright><lastBuildDate>Thu, 28 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-cn</language><copyright>叶王 ©2013-2021 版权所有</copyright><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
     <image>
-      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <url>https://kingye.me/images/icon_hu5a99a96afa0d5c480d2983cdb70f75bc_28032_512x512_fill_lanczos_center_2.png</url>
       <title>叶王说</title>
       <link>https://kingye.me/</link>
     </image>
@@ -24,11 +24,9 @@
 &lt;/div&gt;
 &lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; slides using Academic&amp;rsquo;s 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Slides&lt;/em&gt;&lt;/a&gt; feature and link using &lt;code&gt;slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; slides using Academic&amp;rsquo;s &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Slides&lt;/em&gt;&lt;/a&gt; feature and link using &lt;code&gt;slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Upload&lt;/strong&gt; an existing slide deck to &lt;code&gt;static/&lt;/code&gt; and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Embed&lt;/strong&gt; your slides (e.g. Google Slides) or presentation video on this page using 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Embed&lt;/strong&gt; your slides (e.g. Google Slides) or presentation video on this page using &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Further talk details can easily be added to this page using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
@@ -41,11 +39,10 @@
       <guid>https://kingye.me/post/draft/envoy-ratelimit/</guid>
       <description>&lt;h2 id=&#34;ratelimit-action-详解&#34;&gt;ratelimit action 详解&lt;/h2&gt;
 &lt;p&gt;A list of actions that are to be applied for this rate limit configuration. Order matters as the actions are processed sequentially and the descriptor is composed by appending descriptor entries in that sequence. If an action cannot append a descriptor entry, no descriptor is generated for the configuration.&lt;/p&gt;
-&lt;p&gt;See 
-&lt;a href=&#34;https://www.envoyproxy.io/docs/envoy/v1.14.5/configuration/http/http_filters/rate_limit_filter#config-http-filters-rate-limit-composing-actions&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;composing actions&lt;/a&gt; for additional documentation.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://www.envoyproxy.io/docs/envoy/v1.14.5/configuration/http/http_filters/rate_limit_filter#config-http-filters-rate-limit-composing-actions&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;composing actions&lt;/a&gt; for additional documentation.&lt;/p&gt;
 &lt;p&gt;action 分为 6 种，下面将一一介绍&lt;/p&gt;
 &lt;h3 id=&#34;1-source_cluster&#34;&gt;1. source_cluster&lt;/h3&gt;
-&lt;p&gt;(&amp;ldquo;source_cluster&amp;rdquo;, &amp;ldquo;&lt;local service cluster&gt;&amp;rdquo;)&lt;/p&gt;
+&lt;p&gt;(&amp;ldquo;source_cluster&amp;rdquo;, &amp;ldquo;&lt;local service cluster&gt;&amp;quot;)&lt;/p&gt;
 &lt;p&gt;其中 &amp;ldquo;&lt;local service cluster&gt;&amp;rdquo; 为该 Envoy 所在的 cluster name，来源于 Envoy 启动时 &amp;ndash;service-cluster 选择指定的值。&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;# envoy: envoy.yaml
 # HttpConnectionManager.route_config.virtual_hosts.rate_limits.actions
@@ -59,8 +56,8 @@
     requests_per_unit: 10
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;2-destination_cluster&#34;&gt;2. destination_cluster&lt;/h3&gt;
-&lt;p&gt;(&amp;ldquo;destination_cluster&amp;rdquo;, &amp;ldquo;&lt;routed target cluster&gt;&amp;rdquo;)&lt;/p&gt;
-&lt;p&gt;其中，&amp;ldquo;&lt;routed target cluster&gt;&amp;rdquo; 表示根据路由匹配规则该请求将发往的 upstream cluster 的 cluster name。&lt;/p&gt;
+&lt;p&gt;(&amp;ldquo;destination_cluster&amp;rdquo;, &amp;ldquo;&lt;routed target cluster&gt;&amp;quot;)&lt;/p&gt;
+&lt;p&gt;其中，&amp;quot;&lt;routed target cluster&gt;&amp;rdquo; 表示根据路由匹配规则该请求将发往的 upstream cluster 的 cluster name。&lt;/p&gt;
 &lt;p&gt;如果是  route 级别的 ratelimit，则 upstream cluster 由当前路由规则决定。&lt;/p&gt;
 &lt;p&gt;路由规则中 routed cluster 配置不同，那么 &amp;ldquo;&lt;routed target cluster&gt;&amp;rdquo; 得到的 upstream cluster name 也不同。&lt;/p&gt;
 &lt;ul&gt;
@@ -80,7 +77,7 @@
     requests_per_unit: 10
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;3-request_headers&#34;&gt;3. request_headers&lt;/h3&gt;
-&lt;p&gt;(&amp;ldquo;&amp;lt;descriptor_key&amp;gt;&amp;rdquo;, &amp;ldquo;&amp;lt;header_value_queried_from_header&amp;gt;&amp;rdquo;)&lt;/p&gt;
+&lt;p&gt;(&amp;quot;&amp;lt;descriptor_key&amp;gt;&amp;rdquo;, &amp;ldquo;&amp;lt;header_value_queried_from_header&amp;gt;&amp;quot;)&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;# envoy: envoy.yaml
 # HttpConnectionManager.route_config.virtual_hosts.rate_limits.actions
 - request_headers:
@@ -96,7 +93,7 @@
 &lt;p&gt;&amp;ldquo;&amp;lt;header_value_queried_from_header&amp;gt;&amp;rdquo; 为该请求 header 中 X-Envoy-ClientID 对应的值。&lt;/p&gt;
 &lt;p&gt;如果 X-Envoy-ClientID: foo，则 &amp;ldquo;&amp;lt;header_value_queried_from_header&amp;gt;&amp;rdquo; 为 foo。&lt;/p&gt;
 &lt;h3 id=&#34;4-remote_address&#34;&gt;4. remote_address&lt;/h3&gt;
-&lt;p&gt;(&amp;ldquo;remote_address&amp;rdquo;, &amp;ldquo;&lt;trusted address from x-forwarded-for&gt;&amp;rdquo;)&lt;/p&gt;
+&lt;p&gt;(&amp;ldquo;remote_address&amp;rdquo;, &amp;ldquo;&lt;trusted address from x-forwarded-for&gt;&amp;quot;)&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;&lt;trusted address from x-forwarded-for&gt;&amp;rdquo; 的值为该请求 header 中 x-forwarded-for 的值，&lt;/p&gt;
 &lt;p&gt;例如如果 x-forwarded-for: 50.0.0.1，那么 &amp;ldquo;&lt;trusted address from x-forwarded-for&gt;&amp;rdquo; 就为 50.0.0.1。&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;# envoy: envoy.yaml
@@ -111,7 +108,7 @@
     requests_per_unit: 10
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;5-generic_key&#34;&gt;5. generic_key&lt;/h3&gt;
-&lt;p&gt;(&amp;ldquo;generic_key&amp;rdquo;, &amp;ldquo;&amp;lt;descriptor_value&amp;gt;&amp;rdquo;)&lt;/p&gt;
+&lt;p&gt;(&amp;ldquo;generic_key&amp;rdquo;, &amp;ldquo;&amp;lt;descriptor_value&amp;gt;&amp;quot;)&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;# envoy: envoy.yaml
 # HttpConnectionManager.route_config.virtual_hosts.rate_limits.actions
 - generic_key:
@@ -125,7 +122,7 @@
     requests_per_unit: 10
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;6-header_value_match&#34;&gt;6. header_value_match&lt;/h3&gt;
-&lt;p&gt;(&amp;ldquo;header_match&amp;rdquo;, &amp;ldquo;&amp;lt;descriptor_value&amp;gt;&amp;rdquo;)&lt;/p&gt;
+&lt;p&gt;(&amp;ldquo;header_match&amp;rdquo;, &amp;ldquo;&amp;lt;descriptor_value&amp;gt;&amp;quot;)&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;# envoy: envoy.yaml
 # HttpConnectionManager.route_config.virtual_hosts.rate_limits.actions
 - header_value_match:
@@ -145,8 +142,7 @@
 &lt;p&gt;当 headers 命中时，生成一个如下 descriptor entry (&amp;ldquo;header_match&amp;rdquo;, &amp;ldquo;quote-path-auth&amp;rdquo;)&lt;/p&gt;
 &lt;p&gt;参考：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://caicloud.io/blog/5e5cb029e7ea52002b5646ba&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;微服务之服务治理（二）：一文掌握 Envoy 限速配置&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://caicloud.io/blog/5e5cb029e7ea52002b5646ba&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;微服务之服务治理（二）：一文掌握 Envoy 限速配置&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -171,8 +167,7 @@
       <link>https://kingye.me/post/2020/have-a-blog/3/</link>
       <pubDate>Mon, 14 Dec 2020 01:48:22 +0800</pubDate>
       <guid>https://kingye.me/post/2020/have-a-blog/3/</guid>
-      <description>&lt;p&gt;本文主要教你在 
-&lt;a href=&#34;../1/&#34;&gt;《创建你的第一个博客》&lt;/a&gt; 的基础上，创建出一个博客群构成的网站。
+      <description>&lt;p&gt;本文主要教你在 &lt;a href=&#34;../1/&#34;&gt;《创建你的第一个博客》&lt;/a&gt; 的基础上，创建出一个博客群构成的网站。
 包括博客，笔记本等。&lt;/p&gt;
 &lt;p&gt;效果参考：&lt;a href=&#34;https://kingye.me&#34;&gt;https://kingye.me&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -183,9 +178,7 @@
       <link>https://kingye.me/post/2020/have-a-blog/2/</link>
       <pubDate>Sun, 13 Dec 2020 16:58:22 +0800</pubDate>
       <guid>https://kingye.me/post/2020/have-a-blog/2/</guid>
-      <description>&lt;p&gt;在上一篇 
-&lt;a href=&#34;../1/&#34;&gt;《创建你的第一个博客》&lt;/a&gt; 中，我们已经搭建了一个基本的博客系统，你已经可以使用喜欢的编辑器（推荐 
-&lt;a href=&#34;https://code.visualstudio.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VSCode&lt;/a&gt;） 进行文章编写，使用 Git 提交修改到 GitHub，由其自动部署到 GitHub Pages，读者就可以读取到你的新博文。&lt;/p&gt;
+      <description>&lt;p&gt;在上一篇 &lt;a href=&#34;../1/&#34;&gt;《创建你的第一个博客》&lt;/a&gt; 中，我们已经搭建了一个基本的博客系统，你已经可以使用喜欢的编辑器（推荐 &lt;a href=&#34;https://code.visualstudio.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VSCode&lt;/a&gt;） 进行文章编写，使用 Git 提交修改到 GitHub，由其自动部署到 GitHub Pages，读者就可以读取到你的新博文。&lt;/p&gt;
 &lt;p&gt;但是还存在一些问题，比如：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;我们只提交了博客生成的数据，而博客原始数据并没有提交到 GitHub，如果你的博客源码丢失了，就无法找回；&lt;/li&gt;
@@ -273,14 +266,9 @@ hugo new post/my-second-post.md
       <link>https://kingye.me/post/2020/have-a-blog/1/</link>
       <pubDate>Sat, 12 Dec 2020 16:41:22 +0800</pubDate>
       <guid>https://kingye.me/post/2020/have-a-blog/1/</guid>
-      <description>&lt;p&gt;本文主要教你使用 
-&lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Pages&lt;/a&gt; 和 
-&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo&lt;/a&gt; 创建一个博客。&lt;/p&gt;
-&lt;h2 id=&#34;1-使用-hugohttpsgohugoio-创建博客&#34;&gt;1. 使用 
-&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo&lt;/a&gt; 创建博客&lt;/h2&gt;
-&lt;p&gt;注：你也可以使用 
-&lt;a href=&#34;https://github.com/gohugoio/hugo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hexo&lt;/a&gt;, 
-&lt;a href=&#34;https://help.github.com/articles/using-jekyll-with-pages&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;jekyll&lt;/a&gt; 等其他静态博客生成工具，详情自己百度。&lt;/p&gt;
+      <description>&lt;p&gt;本文主要教你使用 &lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Pages&lt;/a&gt; 和 &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo&lt;/a&gt; 创建一个博客。&lt;/p&gt;
+&lt;h2 id=&#34;1-使用-hugohttpsgohugoio-创建博客&#34;&gt;1. 使用 &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo&lt;/a&gt; 创建博客&lt;/h2&gt;
+&lt;p&gt;注：你也可以使用 &lt;a href=&#34;https://github.com/gohugoio/hugo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hexo&lt;/a&gt;, &lt;a href=&#34;https://help.github.com/articles/using-jekyll-with-pages&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;jekyll&lt;/a&gt; 等其他静态博客生成工具，详情自己百度。&lt;/p&gt;
 &lt;h3 id=&#34;11-安装-hugo&#34;&gt;1.1 安装 hugo&lt;/h3&gt;
 &lt;p&gt;MacOS 安装 hugo&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;# 若未安装 homebrew，参考这里安装：https://treehouse.github.io/installation-guides/mac/homebrew
@@ -288,20 +276,16 @@ brew install hugo
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;其他系统参考：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://gohugo.io/getting-started/installing#chocolatey-windows&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Windows 安装 hugo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://gohugo.io/getting-started/installing#homebrew-linux&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Linux 安装 hugo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gohugo.io/getting-started/installing#chocolatey-windows&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Windows 安装 hugo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gohugo.io/getting-started/installing#homebrew-linux&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Linux 安装 hugo&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;12-创建博客&#34;&gt;1.2 创建博客&lt;/h3&gt;
 &lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;# ilivelearnteach.github.io 为本地目录名，可以随意更改
 hugo new site ilivelearnteach.github.io
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;参考：
-&lt;a href=&#34;https://gohugo.io/getting-started/quick-start/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Quick Start&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;参考：&lt;a href=&#34;https://gohugo.io/getting-started/quick-start/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Quick Start&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;13-选择一个主题&#34;&gt;1.3 选择一个主题&lt;/h3&gt;
-&lt;p&gt;假设你喜欢主题 
-&lt;a href=&#34;https://github.com/olOwOlo/hugo-theme-even&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Even&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;假设你喜欢主题 &lt;a href=&#34;https://github.com/olOwOlo/hugo-theme-even&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Even&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20201212160642.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;# 进入你刚创建的博客目录
 cd ilivelearnteach.github.io
@@ -311,8 +295,7 @@ git init
 # 添加 even 主题
 git submodule add https://github.com/olOwOlo/hugo-theme-even themes/even
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;更多主题见：
-&lt;a href=&#34;https://themes.gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Themes&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;更多主题见：&lt;a href=&#34;https://themes.gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Themes&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;14-配置博客&#34;&gt;1.4 配置博客&lt;/h3&gt;
 &lt;p&gt;（假设使用 Even 主题）在主题的 exampleSite 目录下有一个 config.toml 文件，将这个 config.toml 文件复制到你的站点目录下，根据自己的需求更改即可。&lt;/p&gt;
 &lt;p&gt;注意修改 baseURL 为 &lt;code&gt;&amp;quot;http://ilivelearnteach.github.io/&amp;quot;&lt;/code&gt;&lt;/p&gt;
@@ -333,14 +316,8 @@ hugo new post/my-first-post.md
 &lt;p&gt;打开 &lt;a href=&#34;http://localhost:1313/&#34;&gt;http://localhost:1313/&lt;/a&gt; 就可以预览你的博客了&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;2-使用-github-pages-部署博客&#34;&gt;2. 使用 GitHub Pages 部署博客&lt;/h2&gt;
-&lt;p&gt;注：你还可以使用 
-&lt;a href=&#34;http://gitlab.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitLab&lt;/a&gt;，
-&lt;a href=&#34;https://bitbucket.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bitbucket&lt;/a&gt;，或者国内的 
-&lt;a href=&#34;https://gitee.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;gitee&lt;/a&gt;，
-&lt;a href=&#34;https://coding.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;coding.net&lt;/a&gt; 等部署博客。&lt;/p&gt;
-&lt;p&gt;详情参考：
-&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Hosting &amp;amp; Deployment&lt;/a&gt; 或者进行
-&lt;a href=&#34;https://www.baidu.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;百度搜索&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;注：你还可以使用 &lt;a href=&#34;http://gitlab.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitLab&lt;/a&gt;，&lt;a href=&#34;https://bitbucket.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bitbucket&lt;/a&gt;，或者国内的 &lt;a href=&#34;https://gitee.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;gitee&lt;/a&gt;，&lt;a href=&#34;https://coding.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;coding.net&lt;/a&gt; 等部署博客。&lt;/p&gt;
+&lt;p&gt;详情参考：&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Hosting &amp;amp; Deployment&lt;/a&gt; 或者进行&lt;a href=&#34;https://www.baidu.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;百度搜索&lt;/a&gt;。&lt;/p&gt;
 &lt;h2 id=&#34;21-注册-github-账户&#34;&gt;2.1 注册 github 账户&lt;/h2&gt;
 &lt;p&gt;假设用户名为 &lt;code&gt;ilivelearnteach&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;22-创建仓库&#34;&gt;2.2 创建仓库&lt;/h2&gt;
@@ -375,8 +352,7 @@ git push origin main
 &lt;p&gt;打开 &lt;a href=&#34;https://github.com/ilivelearnteach/ilivelearnteach.github.io&#34;&gt;https://github.com/ilivelearnteach/ilivelearnteach.github.io&lt;/a&gt; 的 settings 页面即可以看到。&lt;/p&gt;
 &lt;p&gt;如果没有自动开启 GitHub Pages，就手动选择 &lt;code&gt;main&lt;/code&gt; 分支，&lt;code&gt;/ (root)&lt;/code&gt; 路径，点击 &lt;code&gt;Save&lt;/code&gt; 即可。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20201213162649.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;更多详情参考：
-&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Host on GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;更多详情参考：&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Host on GitHub&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -385,25 +361,16 @@ git push origin main
       <link>https://kingye.me/post/2020/have-a-blog/0/</link>
       <pubDate>Sat, 12 Dec 2020 15:41:22 +0800</pubDate>
       <guid>https://kingye.me/post/2020/have-a-blog/0/</guid>
-      <description>&lt;p&gt;本系列手把手教你使用 
-&lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Pages&lt;/a&gt; 和 
-&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo&lt;/a&gt; 创建一个属于你的网站，包括博客系统，笔记系统等。无需购买服务器资源。&lt;/p&gt;
+      <description>&lt;p&gt;本系列手把手教你使用 &lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Pages&lt;/a&gt; 和 &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo&lt;/a&gt; 创建一个属于你的网站，包括博客系统，笔记系统等。无需购买服务器资源。&lt;/p&gt;
 &lt;p&gt;将包括以下内容：&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;a href=&#34;../1/&#34;&gt;创建你的第一个博客&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;../2/&#34;&gt;一键部署并备份你的博客&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;../3/&#34;&gt;创建你的博客群&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;../4/&#34;&gt;网站的一些高阶能力建设&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;../5/&#34;&gt;Markdown 及图片的管理&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;../5/&#34;&gt;文本编辑器 VSCode&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;../6/&#34;&gt;作图工具推荐&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../1/&#34;&gt;创建你的第一个博客&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../2/&#34;&gt;一键部署并备份你的博客&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../3/&#34;&gt;创建你的博客群&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../4/&#34;&gt;网站的一些高阶能力建设&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../5/&#34;&gt;Markdown 及图片的管理&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../5/&#34;&gt;文本编辑器 VSCode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../6/&#34;&gt;作图工具推荐&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </description>
     </item>
@@ -414,9 +381,7 @@ git push origin main
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
       <guid>https://kingye.me/slides/example/</guid>
       <description>&lt;h1 id=&#34;create-slides-in-markdown-with-academic&#34;&gt;Create slides in Markdown with Academic&lt;/h1&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic&lt;/a&gt; | 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic&lt;/a&gt; | &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
 &lt;ul&gt;
@@ -436,8 +401,7 @@ git push origin main
 &lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://github.com/hakimel/reveal.js#pdf-export&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF Export&lt;/a&gt;: &lt;code&gt;E&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hakimel/reveal.js#pdf-export&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF Export&lt;/a&gt;: &lt;code&gt;E&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
@@ -535,10 +499,8 @@ Three
 &lt;/code&gt;&lt;/pre&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://spectrum.chat/academic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://spectrum.chat/academic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -547,32 +509,21 @@ Three
       <link>https://kingye.me/notes/</link>
       <pubDate>Thu, 28 Jun 2018 00:00:00 +0000</pubDate>
       <guid>https://kingye.me/notes/</guid>
-      <description>&lt;h2 id=&#34;学习笔记note&#34;&gt;
-&lt;a href=&#34;https://kingye.me/note/&#34;&gt;学习笔记&lt;/a&gt;&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;学习笔记note&#34;&gt;&lt;a href=&#34;https://kingye.me/note/&#34;&gt;学习笔记&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://kingye.me/note-cs/&#34;&gt;计算机笔记&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/note-cs/&#34;&gt;计算机笔记&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;编程语言
 &lt;ol&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://kingye.me/study-c/&#34;&gt;C 学习笔记&lt;/a&gt;【2013 年】&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://kingye.me/study-php/&#34;&gt;PHP 学习笔记&lt;/a&gt;【2014 年】&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://kingye.me/study-javascript/&#34;&gt;JavaScript 学习笔记&lt;/a&gt;【2015 年】&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://kingye.me/study-python/&#34;&gt;Python 学习笔记&lt;/a&gt;【2016 年】&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://kingye.me/study-java/&#34;&gt;Java 学习笔记&lt;/a&gt;【2017 年】&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://kingye.me/study-cpp/&#34;&gt;C++ 学习笔记&lt;/a&gt;【2018 年】&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://kingye.me/study-go/&#34;&gt;Go 学习笔记&lt;/a&gt;【2019 年】&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://kingye.me/study-rust/&#34;&gt;Rust 学习笔记&lt;/a&gt;【2020 年】&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://kingye.me/study-kotlin/&#34;&gt;Kotlin 学习笔记&lt;/a&gt;【2021 年】&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-c/&#34;&gt;C 学习笔记&lt;/a&gt;【2013 年】&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-php/&#34;&gt;PHP 学习笔记&lt;/a&gt;【2014 年】&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-javascript/&#34;&gt;JavaScript 学习笔记&lt;/a&gt;【2015 年】&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-python/&#34;&gt;Python 学习笔记&lt;/a&gt;【2016 年】&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-java/&#34;&gt;Java 学习笔记&lt;/a&gt;【2017 年】&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-cpp/&#34;&gt;C++ 学习笔记&lt;/a&gt;【2018 年】&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-go/&#34;&gt;Go 学习笔记&lt;/a&gt;【2019 年】&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-rust/&#34;&gt;Rust 学习笔记&lt;/a&gt;【2020 年】&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-kotlin/&#34;&gt;Kotlin 学习笔记&lt;/a&gt;【2021 年】&lt;/li&gt;
 &lt;li&gt;Scala 学习笔记【2022 年】&lt;/li&gt;
 &lt;li&gt;C# 学习笔记【2023 年】&lt;/li&gt;
 &lt;li&gt;Swift 学习笔记【2024 年】&lt;/li&gt;
@@ -600,29 +551,19 @@ Three
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://kingye.me/study-linux/&#34;&gt;Linux 学习笔记&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://kingye.me/study-network/&#34;&gt;网络学习笔记&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://kingye.me/study-algs/&#34;&gt;算法学习笔记&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-linux/&#34;&gt;Linux 学习笔记&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-network/&#34;&gt;网络学习笔记&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-algs/&#34;&gt;算法学习笔记&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://kingye.me/leetcode/&#34;&gt;LeetCode 学习笔记&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/leetcode/&#34;&gt;LeetCode 学习笔记&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://kingye.me/design-pattern/&#34;&gt;设计模式学习笔记&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://kingye.me/study-ml/&#34;&gt;Machine Learning 学习笔记&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://kingye.me/study-kubernetes/&#34;&gt;Kubernetes 学习笔记&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://kingye.me/study-istio/&#34;&gt;Istio 学习笔记&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://kingye.me/interview/&#34;&gt;面试笔记&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://kingye.me/apps/&#34;&gt;一些软件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/design-pattern/&#34;&gt;设计模式学习笔记&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-ml/&#34;&gt;Machine Learning 学习笔记&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-kubernetes/&#34;&gt;Kubernetes 学习笔记&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-istio/&#34;&gt;Istio 学习笔记&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/interview/&#34;&gt;面试笔记&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/apps/&#34;&gt;一些软件&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;数学笔记&lt;/li&gt;
@@ -634,37 +575,22 @@ Three
 &lt;hr&gt;
 &lt;h2 id=&#34;读书笔记&#34;&gt;读书笔记&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://kingye.me/note-cs/docs/book/&#34;&gt;计算机读书笔记&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/note-cs/docs/book/&#34;&gt;计算机读书笔记&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 【TCPL】
-&lt;a href=&#34;&#34;&gt;C 程序设计语言&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 【CPPP】
-&lt;a href=&#34;&#34;&gt;C++ Primer&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 【SICP】
-&lt;a href=&#34;https://kingye.me/note-cs/docs/book/basic/cc/sicp/&#34;&gt;计算机程序的构造和解释&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 【CSAPP】
-&lt;a href=&#34;https://kingye.me/note-cs/docs/book/basic/cc/csapp/&#34;&gt;深入理解计算机系统&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 【OSTEP】
-&lt;a href=&#34;&#34;&gt;操作系统导论&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 【MOS】
-&lt;a href=&#34;&#34;&gt;现代操作系统&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 【CAAQA】
-&lt;a href=&#34;&#34;&gt;计算机体系结构 - 量化研究方法&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 【APUE】
-&lt;a href=&#34;&#34;&gt;Unix 环境高级编程&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 【GOF】
-&lt;a href=&#34;&#34;&gt;设计模式 - 可复用面向对象软件的基础&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 【CLRS】
-&lt;a href=&#34;&#34;&gt;算法导论&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 【TAOCP】
-&lt;a href=&#34;&#34;&gt;计算机程序设计艺术&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 
-&lt;a href=&#34;&#34;&gt;Linux/Unix 系统编程手册&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 
-&lt;a href=&#34;https://kingye.me/note-cs/docs/book/basic/pl/go-advanced-programming/&#34;&gt;Go 语言高级编程&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 
-&lt;a href=&#34;https://kingye.me/note-cs/docs/book/basic/pl/go-in-action/zh/&#34;&gt;Go 语言实战&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 【TCPL】&lt;a href=&#34;&#34;&gt;C 程序设计语言&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 【CPPP】&lt;a href=&#34;&#34;&gt;C++ Primer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 【SICP】&lt;a href=&#34;https://kingye.me/note-cs/docs/book/basic/cc/sicp/&#34;&gt;计算机程序的构造和解释&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 【CSAPP】&lt;a href=&#34;https://kingye.me/note-cs/docs/book/basic/cc/csapp/&#34;&gt;深入理解计算机系统&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 【OSTEP】&lt;a href=&#34;&#34;&gt;操作系统导论&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 【MOS】&lt;a href=&#34;&#34;&gt;现代操作系统&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 【CAAQA】&lt;a href=&#34;&#34;&gt;计算机体系结构 - 量化研究方法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 【APUE】&lt;a href=&#34;&#34;&gt;Unix 环境高级编程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 【GOF】&lt;a href=&#34;&#34;&gt;设计模式 - 可复用面向对象软件的基础&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 【CLRS】&lt;a href=&#34;&#34;&gt;算法导论&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 【TAOCP】&lt;a href=&#34;&#34;&gt;计算机程序设计艺术&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;&#34;&gt;Linux/Unix 系统编程手册&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://kingye.me/note-cs/docs/book/basic/pl/go-advanced-programming/&#34;&gt;Go 语言高级编程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://kingye.me/note-cs/docs/book/basic/pl/go-in-action/zh/&#34;&gt;Go 语言实战&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;非虚构&lt;/li&gt;
@@ -673,28 +599,21 @@ Three
 &lt;hr&gt;
 &lt;h2 id=&#34;课程笔记&#34;&gt;课程笔记&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://kingye.me/note-cs/docs/course/&#34;&gt;计算机&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/note-cs/docs/course/&#34;&gt;计算机&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 
-&lt;a href=&#34;https://kingye.me/note-cs/docs/course/basic/pl/go/go-wiki/&#34;&gt;go wiki&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 
-&lt;a href=&#34;https://kingye.me/note-cs/docs/course/basic/pl/go/gobyexample/&#34;&gt;通过例子学 Golang&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://kingye.me/note-cs/docs/course/basic/pl/go/go-wiki/&#34;&gt;go wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://kingye.me/note-cs/docs/course/basic/pl/go/gobyexample/&#34;&gt;通过例子学 Golang&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;活动笔记&#34;&gt;活动笔记&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://kingye.me/note-cs/docs/activity/&#34;&gt;计算机&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/note-cs/docs/activity/&#34;&gt;计算机&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 
-&lt;a href=&#34;https://kingye.me/note-cs/docs/activity/istio-handbook/&#34;&gt;《Istio Handbook - Istio 服务网格进阶实战》写作&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 
-&lt;a href=&#34;https://kingye.me/note-cs/docs/activity/csapp/&#34;&gt;TalkGo 读书会第三期 -《深入理解计算机系统》学习&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 
-&lt;a href=&#34;https://kingye.me/note-cs/docs/activity/kubernetes-scheduler/&#34;&gt;Kubernetes 源码研习社第二期 - Kubernetes 调度器源码学习&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://kingye.me/note-cs/docs/activity/istio-handbook/&#34;&gt;《Istio Handbook - Istio 服务网格进阶实战》写作&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://kingye.me/note-cs/docs/activity/csapp/&#34;&gt;TalkGo 读书会第三期 -《深入理解计算机系统》学习&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://kingye.me/note-cs/docs/activity/kubernetes-scheduler/&#34;&gt;Kubernetes 源码研习社第二期 - Kubernetes 调度器源码学习&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

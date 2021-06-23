@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>叶王博客 | 叶王</title>
+    <title>叶王博客 | 叶王说</title>
     <link>https://kingye.me/post/</link>
       <atom:link href="https://kingye.me/post/index.xml" rel="self" type="application/rss+xml" />
     <description>叶王博客</description>

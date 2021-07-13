@@ -17,7 +17,10 @@
       <link>https://kingye.me/post/2020/have-a-blog/</link>
       <pubDate>Sat, 12 Dec 2020 15:41:22 +0800</pubDate>
       <guid>https://kingye.me/post/2020/have-a-blog/</guid>
-      <description>&lt;p&gt;本系列手把手教你使用 &lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Pages&lt;/a&gt; 和 &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo&lt;/a&gt; 创建一个属于你的网站，包括博客系统，笔记系统等。无需购买服务器资源。&lt;/p&gt;
+      <description>&lt;p&gt;本系列手把手教你使用 &lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Pages&lt;/a&gt; 和 &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo&lt;/a&gt; 创建一个属于你的网站，包括博客系统，笔记系统等。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;无需购买服务器资源。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;使用-hugo-创建博客&#34;&gt;使用 hugo 创建博客&lt;/h2&gt;
 &lt;p&gt;注：你也可以使用 &lt;a href=&#34;https://github.com/gohugoio/hugo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hexo&lt;/a&gt;, &lt;a href=&#34;https://help.github.com/articles/using-jekyll-with-pages&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;jekyll&lt;/a&gt; 等其他静态博客生成工具，详情自己百度。&lt;/p&gt;

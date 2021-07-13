@@ -13,126 +13,14 @@
     </image>
     
     <item>
-      <title>Envoy Ratelimit</title>
-      <link>https://kingye.me/post/draft/envoy-ratelimit/</link>
-      <pubDate>Wed, 03 Feb 2021 20:20:04 +0800</pubDate>
-      <guid>https://kingye.me/post/draft/envoy-ratelimit/</guid>
-      <description>&lt;h2 id=&#34;ratelimit-action-详解&#34;&gt;ratelimit action 详解&lt;/h2&gt;
-&lt;p&gt;A list of actions that are to be applied for this rate limit configuration. Order matters as the actions are processed sequentially and the descriptor is composed by appending descriptor entries in that sequence. If an action cannot append a descriptor entry, no descriptor is generated for the configuration.&lt;/p&gt;
-&lt;p&gt;See &lt;a href=&#34;https://www.envoyproxy.io/docs/envoy/v1.14.5/configuration/http/http_filters/rate_limit_filter#config-http-filters-rate-limit-composing-actions&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;composing actions&lt;/a&gt; for additional documentation.&lt;/p&gt;
-&lt;p&gt;action 分为 6 种，下面将一一介绍&lt;/p&gt;
-&lt;h3 id=&#34;1-source_cluster&#34;&gt;1. source_cluster&lt;/h3&gt;
-&lt;p&gt;(&amp;ldquo;source_cluster&amp;rdquo;, &amp;ldquo;&lt;local service cluster&gt;&amp;quot;)&lt;/p&gt;
-&lt;p&gt;其中 &amp;ldquo;&lt;local service cluster&gt;&amp;rdquo; 为该 Envoy 所在的 cluster name，来源于 Envoy 启动时 &amp;ndash;service-cluster 选择指定的值。&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;# envoy: envoy.yaml
-# HttpConnectionManager.route_config.virtual_hosts.rate_limits.actions
-- source_cluster: {}
-
-# ratelimit: config.yaml
-- key: source_cluster
-  value: &amp;lt;cluser_name&amp;gt;
-  rate_limit:
-    unit: minute
-    requests_per_unit: 10
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;2-destination_cluster&#34;&gt;2. destination_cluster&lt;/h3&gt;
-&lt;p&gt;(&amp;ldquo;destination_cluster&amp;rdquo;, &amp;ldquo;&lt;routed target cluster&gt;&amp;quot;)&lt;/p&gt;
-&lt;p&gt;其中，&amp;quot;&lt;routed target cluster&gt;&amp;rdquo; 表示根据路由匹配规则该请求将发往的 upstream cluster 的 cluster name。&lt;/p&gt;
-&lt;p&gt;如果是  route 级别的 ratelimit，则 upstream cluster 由当前路由规则决定。&lt;/p&gt;
-&lt;p&gt;路由规则中 routed cluster 配置不同，那么 &amp;ldquo;&lt;routed target cluster&gt;&amp;rdquo; 得到的 upstream cluster name 也不同。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;如果配置为 cluster， 比如    cluster: XXXX ，那么    &amp;ldquo;&lt;routed target cluster&gt;&amp;rdquo;  就 为    XXXX ；&lt;/li&gt;
-&lt;li&gt;如果配置为 cluster_header，比如 cluster_header: X-Envoy-Destination-Cluster，那么通过读取该请求 header 中 X-Envoy-Destination-Cluster 的值，比如 X-Envoy-Destination-Cluster: YYYY，并且 YYYY 名字的 upstream cluster 存在，那么 &amp;ldquo;&lt;routed target cluster&gt;&amp;rdquo; 就是 YYYY。如果不存在则返回 404 错误；&lt;/li&gt;
-&lt;li&gt;如果配置为 weighted_clusters，如上述配置实例所示，那么 upstream cluster 就是 Envoy 当前根据权重选择出来的，比如选中的 upstream cluster 为 ZZZZ-02，那么 &amp;ldquo;&lt;routed target cluster&gt;&amp;rdquo; 就为 ZZZZ-02。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;# envoy: envoy.yaml
-# HttpConnectionManager.route_config.virtual_hosts.rate_limits.actions
-- destination_cluster: {}
-
-# ratelimit: config.yaml
-- key: destination_cluster
-  value: &amp;lt;cluser_name&amp;gt;
-  rate_limit:
-    unit: minute
-    requests_per_unit: 10
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;3-request_headers&#34;&gt;3. request_headers&lt;/h3&gt;
-&lt;p&gt;(&amp;quot;&amp;lt;descriptor_key&amp;gt;&amp;rdquo;, &amp;ldquo;&amp;lt;header_value_queried_from_header&amp;gt;&amp;quot;)&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;# envoy: envoy.yaml
-# HttpConnectionManager.route_config.virtual_hosts.rate_limits.actions
-- request_headers:
-  head_name: X-Envoy-ClientID
-  descriptor_key: client_id
-# ratelimit: config.yaml
-- key: client_id
-  value: foo
-  rate_limit:
-    unit: minute
-    requests_per_unit: 10
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&amp;ldquo;&amp;lt;header_value_queried_from_header&amp;gt;&amp;rdquo; 为该请求 header 中 X-Envoy-ClientID 对应的值。&lt;/p&gt;
-&lt;p&gt;如果 X-Envoy-ClientID: foo，则 &amp;ldquo;&amp;lt;header_value_queried_from_header&amp;gt;&amp;rdquo; 为 foo。&lt;/p&gt;
-&lt;h3 id=&#34;4-remote_address&#34;&gt;4. remote_address&lt;/h3&gt;
-&lt;p&gt;(&amp;ldquo;remote_address&amp;rdquo;, &amp;ldquo;&lt;trusted address from x-forwarded-for&gt;&amp;quot;)&lt;/p&gt;
-&lt;p&gt;&amp;ldquo;&lt;trusted address from x-forwarded-for&gt;&amp;rdquo; 的值为该请求 header 中 x-forwarded-for 的值，&lt;/p&gt;
-&lt;p&gt;例如如果 x-forwarded-for: 50.0.0.1，那么 &amp;ldquo;&lt;trusted address from x-forwarded-for&gt;&amp;rdquo; 就为 50.0.0.1。&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;# envoy: envoy.yaml
-# HttpConnectionManager.route_config.virtual_hosts.rate_limits.actions
-- remote_address: {}
-
-# ratelimit: config.yaml
-- key: remote_address
-  value: 50.0.0.1
-  rate_limit:
-    unit: minute
-    requests_per_unit: 10
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;5-generic_key&#34;&gt;5. generic_key&lt;/h3&gt;
-&lt;p&gt;(&amp;ldquo;generic_key&amp;rdquo;, &amp;ldquo;&amp;lt;descriptor_value&amp;gt;&amp;quot;)&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;# envoy: envoy.yaml
-# HttpConnectionManager.route_config.virtual_hosts.rate_limits.actions
-- generic_key:
-  descriptor_value: bar
-
-# ratelimit: config.yaml
-- key: generic_key
-  value: bar
-  rate_limit:
-    unit: minute
-    requests_per_unit: 10
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;6-header_value_match&#34;&gt;6. header_value_match&lt;/h3&gt;
-&lt;p&gt;(&amp;ldquo;header_match&amp;rdquo;, &amp;ldquo;&amp;lt;descriptor_value&amp;gt;&amp;quot;)&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;# envoy: envoy.yaml
-# HttpConnectionManager.route_config.virtual_hosts.rate_limits.actions
-- header_value_match:
-    descriptor_value: quote-path-auth
-    expect_match: true
-    headers:
-      - name: &amp;quot;:path&amp;quot;
-        exact_match: &amp;quot;/quote&amp;quot;
-
-# ratelimit: config.yaml
-- key: header_match
-  value: quote-path-auth
-  rate_limit:
-    unit: minute
-    requests_per_unit: 10
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;当 headers 命中时，生成一个如下 descriptor entry (&amp;ldquo;header_match&amp;rdquo;, &amp;ldquo;quote-path-auth&amp;rdquo;)&lt;/p&gt;
-&lt;p&gt;参考：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://caicloud.io/blog/5e5cb029e7ea52002b5646ba&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;微服务之服务治理（二）：一文掌握 Envoy 限速配置&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
       <title>创建一个博客网站</title>
       <link>https://kingye.me/post/2020/have-a-blog/</link>
       <pubDate>Sat, 12 Dec 2020 15:41:22 +0800</pubDate>
       <guid>https://kingye.me/post/2020/have-a-blog/</guid>
-      <description>&lt;p&gt;本系列手把手教你使用 &lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Pages&lt;/a&gt; 和 &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo&lt;/a&gt; 创建一个属于你的网站，包括博客系统，笔记系统等。无需购买服务器资源。&lt;/p&gt;
+      <description>&lt;p&gt;本系列手把手教你使用 &lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Pages&lt;/a&gt; 和 &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo&lt;/a&gt; 创建一个属于你的网站，包括博客系统，笔记系统等。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;无需购买服务器资源。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;使用-hugo-创建博客&#34;&gt;使用 hugo 创建博客&lt;/h2&gt;
 &lt;p&gt;注：你也可以使用 &lt;a href=&#34;https://github.com/gohugoio/hugo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hexo&lt;/a&gt;, &lt;a href=&#34;https://help.github.com/articles/using-jekyll-with-pages&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;jekyll&lt;/a&gt; 等其他静态博客生成工具，详情自己百度。&lt;/p&gt;

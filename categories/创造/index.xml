@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>网站 | 叶王</title>
-    <link>https://kingye.me/categories/%E7%BD%91%E7%AB%99/</link>
-      <atom:link href="https://kingye.me/categories/%E7%BD%91%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
-    <description>网站</description>
+    <title>创造 | 叶王</title>
+    <link>https://kingye.me/categories/%E5%88%9B%E9%80%A0/</link>
+      <atom:link href="https://kingye.me/categories/%E5%88%9B%E9%80%A0/index.xml" rel="self" type="application/rss+xml" />
+    <description>创造</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-cn</language><lastBuildDate>Sat, 12 Dec 2020 15:41:22 +0800</lastBuildDate>
     <image>
       <url>https://kingye.me/images/icon_hu5a99a96afa0d5c480d2983cdb70f75bc_28032_512x512_fill_lanczos_center_2.png</url>
-      <title>网站</title>
-      <link>https://kingye.me/categories/%E7%BD%91%E7%AB%99/</link>
+      <title>创造</title>
+      <link>https://kingye.me/categories/%E5%88%9B%E9%80%A0/</link>
     </image>
     
     <item>
@@ -17,7 +17,10 @@
       <link>https://kingye.me/post/2020/have-a-blog/</link>
       <pubDate>Sat, 12 Dec 2020 15:41:22 +0800</pubDate>
       <guid>https://kingye.me/post/2020/have-a-blog/</guid>
-      <description>&lt;p&gt;本系列手把手教你使用 &lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Pages&lt;/a&gt; 和 &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo&lt;/a&gt; 创建一个属于你的网站，包括博客系统，笔记系统等。无需购买服务器资源。&lt;/p&gt;
+      <description>&lt;p&gt;本系列手把手教你使用 &lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Pages&lt;/a&gt; 和 &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo&lt;/a&gt; 创建一个属于你的网站，包括博客系统，笔记系统等。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;无需购买服务器资源。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;使用-hugo-创建博客&#34;&gt;使用 hugo 创建博客&lt;/h2&gt;
 &lt;p&gt;注：你也可以使用 &lt;a href=&#34;https://github.com/gohugoio/hugo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hexo&lt;/a&gt;, &lt;a href=&#34;https://help.github.com/articles/using-jekyll-with-pages&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;jekyll&lt;/a&gt; 等其他静态博客生成工具，详情自己百度。&lt;/p&gt;

@@ -5,12 +5,25 @@
     <link>https://kingye.me/</link>
       <atom:link href="https://kingye.me/index.xml" rel="self" type="application/rss+xml" />
     <description>叶王</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-cn</language><lastBuildDate>Sat, 12 Dec 2020 15:41:22 +0800</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-cn</language><lastBuildDate>Sun, 15 Aug 2021 10:04:06 +0800</lastBuildDate>
     <image>
       <url>https://kingye.me/images/icon_hu5a99a96afa0d5c480d2983cdb70f75bc_28032_512x512_fill_lanczos_center_3.png</url>
       <title>叶王</title>
       <link>https://kingye.me/</link>
     </image>
+    
+    <item>
+      <title>《Kubernetes 设计模式》阅读笔记</title>
+      <link>https://kingye.me/post/draft/kubernetes-patterns/</link>
+      <pubDate>Sun, 15 Aug 2021 10:04:06 +0800</pubDate>
+      <guid>https://kingye.me/post/draft/kubernetes-patterns/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    阅读的是&lt;a href=&#34;https://book.douban.com/subject/35175701/&#34;&gt;《Kubernetes设计模式》中文版&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>创建一个博客网站</title>

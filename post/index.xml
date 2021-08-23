@@ -33,6 +33,16 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;考试内容&#34;&gt;考试内容&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Core Concepts: 13%&lt;/li&gt;
+&lt;li&gt;Configuration: 18%&lt;/li&gt;
+&lt;li&gt;Multi-Container Pods: 10%&lt;/li&gt;
+&lt;li&gt;Observability: 18%&lt;/li&gt;
+&lt;li&gt;Pod Design: 20%&lt;/li&gt;
+&lt;li&gt;Services &amp;amp; Networking: 13%&lt;/li&gt;
+&lt;li&gt;State Persistence: 8%&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;详细内容&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 核心概念: 13％
@@ -79,6 +89,53 @@
 &lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 持续状态: 8％&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3 id=&#34;ckad-2021&#34;&gt;CKAD 2021&lt;/h3&gt;
+&lt;p&gt;2021-09-28 之后 (&lt;a href=&#34;https://www.cncf.io/certification/ckad/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Quarterly exam updates are planned to match Kubernetes releases.&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Application Design and Build – 20%
+&lt;ul&gt;
+&lt;li&gt;Define, build and modify container images&lt;/li&gt;
+&lt;li&gt;Understand Jobs and CronJobs&lt;/li&gt;
+&lt;li&gt;Understand multi-container Pod design patterns (e.g. sidecar, init and others)&lt;/li&gt;
+&lt;li&gt;Utilize persistent and ephemeral volumes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Application Environment, Configuration and Security – 25%
+&lt;ul&gt;
+&lt;li&gt;Discover and use resources that extend Kubernetes (CRD)&lt;/li&gt;
+&lt;li&gt;Understand authentication, authorization and admission control&lt;/li&gt;
+&lt;li&gt;Understanding and defining resource requirements, limits and quotas&lt;/li&gt;
+&lt;li&gt;Understand ConfigMaps&lt;/li&gt;
+&lt;li&gt;Create &amp;amp; consume Secrets&lt;/li&gt;
+&lt;li&gt;Understand ServiceAccounts&lt;/li&gt;
+&lt;li&gt;Understand SecurityContexts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Application Deployment – 20%
+&lt;ul&gt;
+&lt;li&gt;Use Kubernetes primitives to implement common deployment strategies (e.g. blue/green or canary)&lt;/li&gt;
+&lt;li&gt;Understand Deployments and how to perform rolling updates&lt;/li&gt;
+&lt;li&gt;Use the Helm package manager to deploy existing packages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Services and Networking – 20%
+&lt;ul&gt;
+&lt;li&gt;Demonstrate basic understanding of NetworkPolicies&lt;/li&gt;
+&lt;li&gt;Provide and troubleshoot access to applications via services&lt;/li&gt;
+&lt;li&gt;Use Ingress rules to expose applications&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Application Observability and Maintenance – 15%
+&lt;ul&gt;
+&lt;li&gt;Understand API deprecations&lt;/li&gt;
+&lt;li&gt;Implement probes and health checks&lt;/li&gt;
+&lt;li&gt;Use provided tools to monitor Kubernetes applications&lt;/li&gt;
+&lt;li&gt;Utilize container logs&lt;/li&gt;
+&lt;li&gt;Debugging in Kubernetes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
 &lt;h2 id=&#34;教程&#34;&gt;教程&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/dgkanatsios/CKAD-exercises&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;dgkanatsios/CKAD-exercises&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/dgkanatsios/CKAD-exercises.svg&#34; alt=&#34;Github stars&#34;&gt; &lt;img src=&#34;https://img.shields.io/github/languages/top/dgkanatsios/CKAD-exercises.svg&#34; alt=&#34;Language&#34;&gt; &lt;img src=&#34;https://img.shields.io/github/v/tag/dgkanatsios/CKAD-exercises.svg?sort=semver&#34; alt=&#34;Last Tag&#34;&gt; &lt;img src=&#34;https://img.shields.io/github/last-commit/dgkanatsios/CKAD-exercises.svg&#34; alt=&#34;Last commit&#34;&gt;&lt;/li&gt;

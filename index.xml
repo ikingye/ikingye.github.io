@@ -469,16 +469,8 @@ Three
       <link>https://kingye.me/notes/</link>
       <pubDate>Thu, 28 Jun 2018 00:00:00 +0000</pubDate>
       <guid>https://kingye.me/notes/</guid>
-      <description>&lt;h2 id=&#34;书籍&#34;&gt;书籍&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://kingye.me/advanced-go/&#34;&gt;Go 高手进阶&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://kingye.me/dai-go/&#34;&gt;Go 设计与实战&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://kingye.me/advanced-php/&#34;&gt;PHP 高手进阶&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;课程&#34;&gt;课程&lt;/h2&gt;
-&lt;h2 id=&#34;笔记&#34;&gt;笔记&lt;/h2&gt;
-&lt;h3 id=&#34;学习笔记note&#34;&gt;&lt;a href=&#34;https://kingye.me/note/&#34;&gt;学习笔记&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/note/&#34;&gt;学习笔记&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://kingye.me/note-cs/&#34;&gt;计算机笔记&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;编程语言
@@ -517,17 +509,11 @@ Three
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://kingye.me/study-linux/&#34;&gt;Linux 学习笔记&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://kingye.me/study-network/&#34;&gt;网络学习笔记&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-algs/&#34;&gt;算法学习笔记&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://kingye.me/leetcode/&#34;&gt;LeetCode 学习笔记&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://kingye.me/design-pattern/&#34;&gt;设计模式学习笔记&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-algs/&#34;&gt;算法学习笔记&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://kingye.me/study-ml/&#34;&gt;Machine Learning 学习笔记&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://kingye.me/study-kubernetes/&#34;&gt;Kubernetes 学习笔记&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://kingye.me/study-istio/&#34;&gt;Istio 学习笔记&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://kingye.me/interview/&#34;&gt;面试笔记&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://kingye.me/apps/&#34;&gt;我常用的软件&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

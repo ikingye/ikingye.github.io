@@ -1,0 +1,1395 @@
+<!DOCTYPE html><html lang="zh-cn" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  
+  <meta name="generator" content="Wowchemy 4.8.0 for Hugo">
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="叶王">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="本文将手把手教你使用 [GitHub Pages](https://pages.github.com/) 和 [Hugo](https://gohugo.io/) 搭建一个属于你的网站，包括博客系统，日志系统，私人笔记本等。无需购买服务器资源。">
+
+  
+  <link rel="alternate" hreflang="zh-cn" href="https://kingye.me/post/2020/have-a-blog/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155112858-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-155112858-1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu5a99a96afa0d5c480d2983cdb70f75bc_28032_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu5a99a96afa0d5c480d2983cdb70f75bc_28032_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="https://kingye.me/post/2020/have-a-blog/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@ikingye">
+  <meta property="twitter:creator" content="@ikingye">
+  
+  <meta property="og:site_name" content="叶王">
+  <meta property="og:url" content="https://kingye.me/post/2020/have-a-blog/">
+  <meta property="og:title" content="拥有一个博客网站 | 叶王">
+  <meta property="og:description" content="本文将手把手教你使用 [GitHub Pages](https://pages.github.com/) 和 [Hugo](https://gohugo.io/) 搭建一个属于你的网站，包括博客系统，日志系统，私人笔记本等。无需购买服务器资源。"><meta property="og:image" content="https://kingye.me/images/icon_hu5a99a96afa0d5c480d2983cdb70f75bc_28032_512x512_fill_lanczos_center_3.png">
+  <meta property="twitter:image" content="https://kingye.me/images/icon_hu5a99a96afa0d5c480d2983cdb70f75bc_28032_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="zh-cn">
+  
+    
+      <meta property="article:published_time" content="2020-12-12T15:41:22&#43;08:00">
+    
+    <meta property="article:modified_time" content="2021-08-18T14:29:17&#43;08:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kingye.me/post/2020/have-a-blog/"
+  },
+  "headline": "拥有一个博客网站",
+  
+  "datePublished": "2020-12-12T15:41:22+08:00",
+  "dateModified": "2021-08-18T14:29:17+08:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "叶王"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "叶王",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kingye.me/images/icon_hu5a99a96afa0d5c480d2983cdb70f75bc_28032_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "本文将手把手教你使用 [GitHub Pages](https://pages.github.com/) 和 [Hugo](https://gohugo.io/) 搭建一个属于你的网站，包括博客系统，日志系统，私人笔记本等。无需购买服务器资源。"
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>拥有一个博客网站 | 叶王</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class=" ">
+
+  
+  
+  
+    <script>window.wcDarkLightEnabled = true;</script>
+  
+  
+    <script>const isSiteThemeDark = false;</script>
+  
+  
+  <script src="/js/load-theme.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>搜索</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="搜索..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">叶王</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="切换导航">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">叶王</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/post/"><span>博客</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#tags"><span>标签</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/notes/"><span>笔记</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#people"><span>友链</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="搜索"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>浅色</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>深色</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>自动</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+
+  
+<div class="container-fluid docs">
+    <div class="row flex-xl-nowrap">
+      <div class="d-none d-xl-block col-xl-2 docs-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#创建博客">创建博客</a>
+      <ul>
+        <li><a href="#安装-hugo">安装 hugo</a></li>
+        <li><a href="#创建博客-1">创建博客</a></li>
+        <li><a href="#选择一个主题">选择一个主题</a></li>
+        <li><a href="#配置博客">配置博客</a></li>
+        <li><a href="#创建博客文章">创建博客文章</a></li>
+        <li><a href="#本地预览博客">本地预览博客</a></li>
+      </ul>
+    </li>
+    <li><a href="#部署博客">部署博客</a>
+      <ul>
+        <li><a href="#注册-github-账户">注册 github 账户</a></li>
+        <li><a href="#创建仓库">创建仓库</a></li>
+        <li><a href="#提交博客">提交博客</a></li>
+      </ul>
+    </li>
+    <li><a href="#管理原始数据">管理原始数据</a>
+      <ul>
+        <li><a href="#新建仓库">新建仓库</a></li>
+        <li><a href="#提交原始数据">提交原始数据</a></li>
+      </ul>
+    </li>
+    <li><a href="#自动化脚本">自动化脚本</a>
+      <ul>
+        <li><a href="#创建脚本">创建脚本</a></li>
+        <li><a href="#运行脚本">运行脚本</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        
+      </div>
+      <main class="col-12 col-md-0 col-xl-10 py-md-3 pl-md-5 docs-content" role="main">
+
+        <article id="article" class="article">
+            
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>拥有一个博客网站</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  
+  <span ><a href="/authors/yewang/">叶王</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          最近更新于
+      
+    
+    2021-08-18
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    4 分钟阅读时长
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/%E5%88%9B%E9%80%A0/">创造</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+            <div class="article-container">
+              <div class="article-style">
+                <p>本系列手把手教你使用 <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> 和 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 创建一个属于你的网站，包括博客系统，笔记系统等。</p>
+<blockquote>
+<p>无需购买服务器资源。</p>
+</blockquote>
+<hr>
+<h2 id="创建博客">创建博客</h2>
+<p>注：你也可以使用 <a href="https://github.com/gohugoio/hugo" target="_blank" rel="noopener">hexo</a>, <a href="https://help.github.com/articles/using-jekyll-with-pages" target="_blank" rel="noopener">jekyll</a> 等其他静态博客生成工具，详情自己百度。</p>
+<h3 id="安装-hugo">安装 hugo</h3>
+<p>MacOS 安装 hugo</p>
+<pre><code class="language-shell"># 若未安装 homebrew，参考这里安装：https://treehouse.github.io/installation-guides/mac/homebrew
+brew install hugo
+</code></pre>
+<p>其他系统参考：</p>
+<ul>
+<li><a href="https://gohugo.io/getting-started/installing#chocolatey-windows" target="_blank" rel="noopener">Windows 安装 hugo</a></li>
+<li><a href="https://gohugo.io/getting-started/installing#homebrew-linux" target="_blank" rel="noopener">Linux 安装 hugo</a></li>
+</ul>
+<h3 id="创建博客-1">创建博客</h3>
+<pre><code class="language-shell"># ilivelearnteach.github.io 为本地目录名，可以随意更改
+hugo new site ilivelearnteach.github.io
+</code></pre>
+<p>参考：<a href="https://gohugo.io/getting-started/quick-start/" target="_blank" rel="noopener">Hugo Quick Start</a></p>
+<h3 id="选择一个主题">选择一个主题</h3>
+<p>假设你喜欢主题 <a href="https://github.com/olOwOlo/hugo-theme-even" target="_blank" rel="noopener">Even</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20201212160642.png" alt=""></p>
+<pre><code class="language-shell"># 进入你刚创建的博客目录
+cd ilivelearnteach.github.io
+# 使用 git 管理你的博客
+# 不了解 git 的同学，可以参考教程进行学习（重要不紧急）：https://www.liaoxuefeng.com/wiki/896043488029600
+git init
+# 添加 even 主题
+git submodule add https://github.com/olOwOlo/hugo-theme-even themes/even
+</code></pre>
+<p>更多主题见：<a href="https://themes.gohugo.io/" target="_blank" rel="noopener">Hugo Themes</a></p>
+<h3 id="配置博客">配置博客</h3>
+<p>（假设使用 Even 主题）在主题的 exampleSite 目录下有一个 config.toml 文件，将这个 config.toml 文件复制到你的站点目录下，根据自己的需求更改即可。</p>
+<p>注意修改 baseURL 为 <code>&quot;http://ilivelearnteach.github.io/&quot;</code></p>
+<p>注：具体配置请参考你选择的主题的官方文档</p>
+<h3 id="创建博客文章">创建博客文章</h3>
+<pre><code class="language-shell"># 创建博客文章
+hugo new post/my-first-post.md
+# 然后打开文件 `ilivelearnteach.github.io/content/post/my-first-post.md`，
+# 把 `draft: true` 改成 `draft: false`
+
+# 注意：even 主题使用的是 post，但是很多主题是 posts，所以是下面这个命令，
+# 还是那句话，具体参考你选择主题的官方文档
+# hugo new posts/my-first-post.md
+</code></pre>
+<h3 id="本地预览博客">本地预览博客</h3>
+<pre><code class="language-shell">hugo server
+</code></pre>
+<p>打开 <a href="http://localhost:1313/" target="_blank" rel="noopener">http://localhost:1313/</a> 就可以预览你的博客了</p>
+<hr>
+<h2 id="部署博客">部署博客</h2>
+<p>注：你还可以使用 <a href="http://gitlab.com/" target="_blank" rel="noopener">GitLab</a>，<a href="https://bitbucket.org/" target="_blank" rel="noopener">Bitbucket</a>，或者国内的 <a href="https://gitee.com/" target="_blank" rel="noopener">gitee</a>，<a href="https://coding.net/" target="_blank" rel="noopener">coding.net</a> 等部署博客。</p>
+<p>详情参考：<a href="https://gohugo.io/hosting-and-deployment/" target="_blank" rel="noopener">Hugo Hosting &amp; Deployment</a> 或者进行<a href="https://www.baidu.com/" target="_blank" rel="noopener">百度搜索</a>。</p>
+<h3 id="注册-github-账户">注册 github 账户</h3>
+<p>假设用户名为 <code>ilivelearnteach</code></p>
+<h3 id="创建仓库">创建仓库</h3>
+<p>创建仓库 <code>ilivelearnteach.github.io</code></p>
+<ol>
+<li>仓库名必须是 <code>你的用户名.github.io</code></li>
+<li>这三个必须<strong>至少</strong>勾选一个（使仓库生成 main 分支，否则后续会出错）
+<img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20201214011753.png" alt=""></li>
+</ol>
+<h3 id="提交博客">提交博客</h3>
+<h4 id="使用-submodule-管理博客内容">使用 submodule 管理博客内容</h4>
+<pre><code class="language-shell"># ilivelearnteach 换成你的用户名
+git submodule add -b main https://github.com/ilivelearnteach/ilivelearnteach.github.io public
+</code></pre>
+<h4 id="生成博客内容并提交">生成博客内容并提交</h4>
+<pre><code class="language-shell"># 生成博客内容
+hugo
+
+# 进入 public 目录
+cd public
+
+# 提交博客到 git 管理
+git add .
+git commit -m &quot;my first blog&quot;
+
+# 提交博客到 github
+git push origin main
+</code></pre>
+<p>稍等一会儿，直接访问 <a href="https://ilivelearnteach.github.io/" target="_blank" rel="noopener">https://ilivelearnteach.github.io/</a> 就可以看到博客了。</p>
+<p>PS: GitHub Pages 会自动开启。</p>
+<p>打开 <a href="https://github.com/ilivelearnteach/ilivelearnteach.github.io" target="_blank" rel="noopener">https://github.com/ilivelearnteach/ilivelearnteach.github.io</a> 的 settings 页面即可以看到。</p>
+<p>如果没有自动开启 GitHub Pages，就手动选择 <code>main</code> 分支，<code>/ (root)</code> 路径，点击 <code>Save</code> 即可。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20201213162649.png" alt=""></p>
+<p>更多详情参考：<a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/" target="_blank" rel="noopener">Hugo Host on GitHub</a></p>
+<hr>
+<p>我们已经搭建了一个基本的博客系统，你已经可以使用喜欢的编辑器（推荐 <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a>） 进行文章编写，使用 Git 提交修改到 GitHub，由其自动部署到 GitHub Pages，读者就可以读取到你的新博文。</p>
+<p>但是还存在一些问题，比如：</p>
+<ol>
+<li>我们只提交了博客生成的数据，而博客原始数据并没有提交到 GitHub，如果你的博客源码丢失了，就无法找回；</li>
+<li>编写博客后，我们需要手动进行 git 管理，没有实现自动化；</li>
+</ol>
+<h2 id="管理原始数据">管理原始数据</h2>
+<h3 id="新建仓库">新建仓库</h3>
+<p>如 ilivelearnteach.com</p>
+<p>注：建议为私有仓库，保护博客源码。</p>
+<h3 id="提交原始数据">提交原始数据</h3>
+<pre><code class="language-shell"># 进入你的博客目录
+cd path-to-your-blog/
+
+# ilivelearnteach.com 为新建的仓库名
+git remote add origin https://github.com/ilivelearnteach/ilivelearnteach.com
+
+# 提交内容
+git add .
+git commit -m &quot;my blog code&quot;
+
+git branch -M main
+# 提交博客到 github
+git push -u origin main
+</code></pre>
+<hr>
+<h2 id="自动化脚本">自动化脚本</h2>
+<p>想实现的目标是：每次创建或更新博文，执行 <code>./deploy.sh</code> 命令，一键完成所有后续动作。</p>
+<h3 id="创建脚本">创建脚本</h3>
+<p>在博客根目录创建脚本文件 <code>deploy.sh</code>，内容为：</p>
+<pre><code class="language-shell">#!/bin/sh
+
+set -x
+# 可以修改成自己的博客名
+printf &quot;\033[0;32m ilivelearnteach.com Deploying updates to GitHub...\033[0m\n&quot;
+cd $(dirname &quot;$0&quot;)
+
+# Commit changes.
+msg=&quot;rebuilding site $(date)&quot;
+if [ -n &quot;$*&quot; ]; then
+	msg=&quot;$*&quot;
+fi
+
+# update the theme
+git submodule update --remote
+# remove old files
+rm -rf public/*
+# Build the project.
+hugo
+
+# Go To Public folder
+cd public
+# Add changes to git.
+git add .
+git commit -m &quot;$msg&quot;
+# Push to blog repo and trigger building blog.
+git push origin main
+
+# push to source repo
+cd ..
+git add .
+git commit -m &quot;$msg&quot;
+git push origin main
+</code></pre>
+<h3 id="运行脚本">运行脚本</h3>
+<pre><code class="language-shell"># 修改文件属性为可执行（只需要第一次执行）
+chmod +x deploy.sh
+
+# 创建或修改博客
+# 创建博客文章
+hugo new post/my-second-post.md
+# 然后打开文件 `ilivelearnteach.github.io/content/post/my-second-post.md`，
+# 把 `draft: true` 改成 `draft: false`
+
+# 执行脚本，自动提交博客源码和生成的博客到 GitHub，博客将自动更新
+./deploy.sh
+
+# 当然你可以写 commit 信息，记录本次博客更新的内容
+# ./deploy.sh &quot;Your optional commit message&quot;
+</code></pre>
+<hr>
+<p>TODO:</p>
+<ul>
+<li>创建一个包含多个博客的网站，效果参考：<a href="https://kingye.me" target="_blank" rel="noopener">https://kingye.me</a></li>
+<li>统计与评论</li>
+</ul>
+
+              </div>
+              
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/">静态博客</a>
+  
+  <a class="badge badge-light" href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://kingye.me/post/2020/have-a-blog/&amp;text=%e6%8b%a5%e6%9c%89%e4%b8%80%e4%b8%aa%e5%8d%9a%e5%ae%a2%e7%bd%91%e7%ab%99" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://kingye.me/post/2020/have-a-blog/&amp;t=%e6%8b%a5%e6%9c%89%e4%b8%80%e4%b8%aa%e5%8d%9a%e5%ae%a2%e7%bd%91%e7%ab%99" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=%e6%8b%a5%e6%9c%89%e4%b8%80%e4%b8%aa%e5%8d%9a%e5%ae%a2%e7%bd%91%e7%ab%99&amp;body=https://kingye.me/post/2020/have-a-blog/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://kingye.me/post/2020/have-a-blog/&amp;title=%e6%8b%a5%e6%9c%89%e4%b8%80%e4%b8%aa%e5%8d%9a%e5%ae%a2%e7%bd%91%e7%ab%99" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=%e6%8b%a5%e6%9c%89%e4%b8%80%e4%b8%aa%e5%8d%9a%e5%ae%a2%e7%bd%91%e7%ab%99%20https://kingye.me/post/2020/have-a-blog/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://kingye.me/post/2020/have-a-blog/&amp;title=%e6%8b%a5%e6%9c%89%e4%b8%80%e4%b8%aa%e5%8d%9a%e5%ae%a2%e7%bd%91%e7%ab%99" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://kingye.me/"><img class="avatar mr-3 avatar-circle" src="/authors/yewang/avatar_hufb6ed7f4fb6f2a99971e9dfd456d7dbf_75814_270x270_fill_q90_lanczos_center.jpg" alt="叶王"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://kingye.me/">叶王</a></h5>
+      <h6 class="card-subtitle">资深研发工程师</h6>
+      <p class="card-text">主要从事云原生后台开发</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png" target="_blank" rel="noopener">
+        <i class="fab fa-weixin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://weibo.com/kingye15215" target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:kingye.me@gmail.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/ikingye" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417021727.png" target="_blank" rel="noopener">
+        <i class="fab fa-weixin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>
+    <br>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <p><span id="busuanzi_container_page_pv">本文访问量 <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> 次</span></p>
+    <p><span id="busuanzi_container_site_pv">本站总访问量 <span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span> 次</span></p>
+    <p><span id="busuanzi_container_site_uv">本站总访客数 <span id="busuanzi_value_site_uv"><i class="fa fa-spinner fa-spin"></i></span> 人</span></p>
+</div>
+
+
+
+            </div>
+        </article>
+  
+      </main>
+    </div>
+  </div>
+  
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.0/mermaid.min.js" integrity="sha512-ja+hSBi4JDtjSqc4LTBsSwuBT3tdZ3oKYKd07lTVYmCnTCor56AnRql00ssqnTOR9Ss4gOP/ROGB3SfcJnZkeg==" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/c.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/c&#43;&#43;.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/go.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/php.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/rust.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/html.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/css.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/js.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"没有找到结果","placeholder":"搜索...","results":"搜索结果"};
+      const content_type = {
+        'post': "文章",
+        'project': "项目",
+        'publication' : "出版物",
+        'talk' : "演讲",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/wowchemy.min.434af0ebce9e15b273b954d65feb39c7.js"></script>
+
+    
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+  
+  
+  <div class="container">
+    
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">引用</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> 复制
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> 下载
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

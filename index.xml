@@ -14,9 +14,9 @@
     
     <item>
       <title>CKAD 考试准备</title>
-      <link>https://kingye.me/post/draft/ckad/</link>
+      <link>https://kingye.me/post/2021/ckad/</link>
       <pubDate>Mon, 16 Aug 2021 20:41:38 +0800</pubDate>
-      <guid>https://kingye.me/post/draft/ckad/</guid>
+      <guid>https://kingye.me/post/2021/ckad/</guid>
       <description>&lt;p&gt;&lt;code&gt;Certified Kubernetes Application Developer&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Kubernetes 应用程序开发者认证
@@ -325,6 +325,20 @@ hugo new post/my-second-post.md
 
 # 当然你可以写 commit 信息，记录本次博客更新的内容
 # ./deploy.sh &amp;quot;Your optional commit message&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;readmore-效果导流到公众号&#34;&gt;readmore 效果，导流到公众号&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;&amp;lt;script src=&amp;quot;https://readmore.openwrite.cn/js/readmore.js&amp;quot; type=&amp;quot;text/javascript&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script&amp;gt;
+    const btw = new BTWPlugin();
+    btw.init({
+        id: &#39;article&#39;,
+        blogId: &#39;17463-1635735167913-236&#39;,
+        name: &#39;叶王说&#39;,
+        qrcode: &#39;https://cdn.jsdelivr.net/gh/ikingye/imagehost/file/叶王说%20微信公众号%20二维码%20搜一搜.png&#39;,
+        keyword: &#39;博客&#39;,
+    });
+&amp;lt;/script&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;hr&gt;
 &lt;p&gt;TODO:&lt;/p&gt;

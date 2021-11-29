@@ -689,6 +689,7 @@
         <li><a href="#运行脚本">运行脚本</a></li>
       </ul>
     </li>
+    <li><a href="#readmore-效果导流到公众号">readmore 效果，导流到公众号</a></li>
   </ul>
 </nav>
         
@@ -963,6 +964,20 @@ hugo new post/my-second-post.md
 
 # 当然你可以写 commit 信息，记录本次博客更新的内容
 # ./deploy.sh &quot;Your optional commit message&quot;
+</code></pre>
+<hr>
+<h2 id="readmore-效果导流到公众号">readmore 效果，导流到公众号</h2>
+<pre><code class="language-js">&lt;script src=&quot;https://readmore.openwrite.cn/js/readmore.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    const btw = new BTWPlugin();
+    btw.init({
+        id: 'article',
+        blogId: '17463-1635735167913-236',
+        name: '叶王说',
+        qrcode: 'https://cdn.jsdelivr.net/gh/ikingye/imagehost/file/叶王说%20微信公众号%20二维码%20搜一搜.png',
+        keyword: '博客',
+    });
+&lt;/script&gt;
 </code></pre>
 <hr>
 <p>TODO:</p>

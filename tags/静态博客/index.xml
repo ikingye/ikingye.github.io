@@ -189,6 +189,20 @@ hugo new post/my-second-post.md
 # ./deploy.sh &amp;quot;Your optional commit message&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;hr&gt;
+&lt;h2 id=&#34;readmore-效果导流到公众号&#34;&gt;readmore 效果，导流到公众号&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;&amp;lt;script src=&amp;quot;https://readmore.openwrite.cn/js/readmore.js&amp;quot; type=&amp;quot;text/javascript&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script&amp;gt;
+    const btw = new BTWPlugin();
+    btw.init({
+        id: &#39;article&#39;,
+        blogId: &#39;17463-1635735167913-236&#39;,
+        name: &#39;叶王说&#39;,
+        qrcode: &#39;https://cdn.jsdelivr.net/gh/ikingye/imagehost/file/叶王说%20微信公众号%20二维码%20搜一搜.png&#39;,
+        keyword: &#39;博客&#39;,
+    });
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
 &lt;p&gt;TODO:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;创建一个包含多个博客的网站，效果参考：&lt;a href=&#34;https://kingye.me&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://kingye.me&lt;/a&gt;&lt;/li&gt;

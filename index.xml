@@ -471,8 +471,14 @@ Three
       <guid>https://kingye.me/notes/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://kingye.me/note/&#34;&gt;学习笔记&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://kingye.me/note-cs/&#34;&gt;计算机笔记&lt;/a&gt;
-&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/note-cs/&#34;&gt;计算机笔记&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-network/&#34;&gt;网络学习笔记&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-algs/&#34;&gt;算法学习笔记&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-linux/&#34;&gt;Linux 学习笔记&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-kubernetes/&#34;&gt;Kubernetes 学习笔记&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-istio/&#34;&gt;Istio 学习笔记&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-ml/&#34;&gt;Machine Learning 学习笔记&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/interview/&#34;&gt;面试笔记&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;编程语言
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;https://kingye.me/study-c/&#34;&gt;C 学习笔记&lt;/a&gt;【2013 年】&lt;/li&gt;
@@ -506,15 +512,6 @@ Three
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-linux/&#34;&gt;Linux 学习笔记&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-network/&#34;&gt;网络学习笔记&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-algs/&#34;&gt;算法学习笔记&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-ml/&#34;&gt;Machine Learning 学习笔记&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-kubernetes/&#34;&gt;Kubernetes 学习笔记&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-istio/&#34;&gt;Istio 学习笔记&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://kingye.me/interview/&#34;&gt;面试笔记&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 </description>

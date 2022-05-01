@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>叶王</title>
-    <link>https://www.kingye.me/</link>
-      <atom:link href="https://www.kingye.me/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://kingye.me/</link>
+      <atom:link href="https://kingye.me/index.xml" rel="self" type="application/rss+xml" />
     <description>叶王</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-cn</language><lastBuildDate>Mon, 16 Aug 2021 20:41:38 +0800</lastBuildDate>
     <image>
-      <url>https://www.kingye.me/media/icon_hu5a99a96afa0d5c480d2983cdb70f75bc_28032_512x512_fill_lanczos_center_3.png</url>
+      <url>https://kingye.me/media/icon_hu5a99a96afa0d5c480d2983cdb70f75bc_28032_512x512_fill_lanczos_center_3.png</url>
       <title>叶王</title>
-      <link>https://www.kingye.me/</link>
+      <link>https://kingye.me/</link>
     </image>
     
     <item>
       <title>CKAD 考试准备</title>
-      <link>https://www.kingye.me/post/ckad/</link>
+      <link>https://kingye.me/post/ckad/</link>
       <pubDate>Mon, 16 Aug 2021 20:41:38 +0800</pubDate>
-      <guid>https://www.kingye.me/post/ckad/</guid>
+      <guid>https://kingye.me/post/ckad/</guid>
       <description>&lt;p&gt;&lt;code&gt;Certified Kubernetes Application Developer&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Kubernetes 应用程序开发者认证
@@ -792,9 +792,9 @@
     
     <item>
       <title>拥有一个博客网站</title>
-      <link>https://www.kingye.me/post/have-a-blog/</link>
+      <link>https://kingye.me/post/have-a-blog/</link>
       <pubDate>Sat, 12 Dec 2020 15:41:22 +0800</pubDate>
-      <guid>https://www.kingye.me/post/have-a-blog/</guid>
+      <guid>https://kingye.me/post/have-a-blog/</guid>
       <description>&lt;p&gt;本系列手把手教你使用 &lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Pages&lt;/a&gt; 和 &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo&lt;/a&gt; 创建一个属于你的网站，包括博客系统，笔记系统等。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;无需购买服务器资源。&lt;/p&gt;
@@ -1040,9 +1040,9 @@
     
     <item>
       <title>Slides</title>
-      <link>https://www.kingye.me/slides/example/</link>
+      <link>https://kingye.me/slides/example/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.kingye.me/slides/example/</guid>
+      <guid>https://kingye.me/slides/example/</guid>
       <description>&lt;h1 id=&#34;create-slides-in-markdown-with-academic&#34;&gt;Create slides in Markdown with Academic&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic&lt;/a&gt; | &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
@@ -1164,31 +1164,31 @@ $$&lt;/p&gt;
     
     <item>
       <title>叶王笔记</title>
-      <link>https://www.kingye.me/notes/</link>
+      <link>https://kingye.me/notes/</link>
       <pubDate>Thu, 28 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>https://www.kingye.me/notes/</guid>
+      <guid>https://kingye.me/notes/</guid>
       <description>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.kingye.me/note/&#34;&gt;学习笔记&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.kingye.me/note-cs/&#34;&gt;计算机笔记&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.kingye.me/study-network/&#34;&gt;网络学习笔记&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.kingye.me/study-algs/&#34;&gt;算法学习笔记&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.kingye.me/study-linux/&#34;&gt;Linux 学习笔记&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.kingye.me/study-kubernetes/&#34;&gt;Kubernetes 学习笔记&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.kingye.me/study-ml/&#34;&gt;Machine Learning 学习笔记&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.kingye.me/interview/&#34;&gt;面试笔记&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/note/&#34;&gt;学习笔记&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/note-cs/&#34;&gt;计算机笔记&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-network/&#34;&gt;网络学习笔记&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-algs/&#34;&gt;算法学习笔记&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-linux/&#34;&gt;Linux 学习笔记&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-kubernetes/&#34;&gt;Kubernetes 学习笔记&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-ml/&#34;&gt;Machine Learning 学习笔记&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/interview/&#34;&gt;面试笔记&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;编程语言
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.kingye.me/study-c/&#34;&gt;C 学习笔记&lt;/a&gt;【2013 年】&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.kingye.me/study-php/&#34;&gt;PHP 学习笔记&lt;/a&gt;【2014 年】&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.kingye.me/study-javascript/&#34;&gt;JavaScript 学习笔记&lt;/a&gt;【2015 年】&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.kingye.me/study-python/&#34;&gt;Python 学习笔记&lt;/a&gt;【2016 年】&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.kingye.me/study-java/&#34;&gt;Java 学习笔记&lt;/a&gt;【2017 年】&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.kingye.me/study-cpp/&#34;&gt;C++ 学习笔记&lt;/a&gt;【2018 年】&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.kingye.me/study-go/&#34;&gt;Go 学习笔记&lt;/a&gt;【2019 年】&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.kingye.me/study-rust/&#34;&gt;Rust 学习笔记&lt;/a&gt;【2020 年】&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.kingye.me/study-kotlin/&#34;&gt;Kotlin 学习笔记&lt;/a&gt;【2021 年】&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.kingye.me/study-scala/&#34;&gt;Scala 学习笔记&lt;/a&gt;【2022 年】&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.kingye.me/study-julia/&#34;&gt;Julia 学习笔记&lt;/a&gt;【2023 年】&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-c/&#34;&gt;C 学习笔记&lt;/a&gt;【2013 年】&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-php/&#34;&gt;PHP 学习笔记&lt;/a&gt;【2014 年】&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-javascript/&#34;&gt;JavaScript 学习笔记&lt;/a&gt;【2015 年】&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-python/&#34;&gt;Python 学习笔记&lt;/a&gt;【2016 年】&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-java/&#34;&gt;Java 学习笔记&lt;/a&gt;【2017 年】&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-cpp/&#34;&gt;C++ 学习笔记&lt;/a&gt;【2018 年】&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-go/&#34;&gt;Go 学习笔记&lt;/a&gt;【2019 年】&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-rust/&#34;&gt;Rust 学习笔记&lt;/a&gt;【2020 年】&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-kotlin/&#34;&gt;Kotlin 学习笔记&lt;/a&gt;【2021 年】&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-scala/&#34;&gt;Scala 学习笔记&lt;/a&gt;【2022 年】&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kingye.me/study-julia/&#34;&gt;Julia 学习笔记&lt;/a&gt;【2023 年】&lt;/li&gt;
 &lt;li&gt;C# 学习笔记【2024 年】&lt;/li&gt;
 &lt;li&gt;TypeScript 学习笔记【2025 年】&lt;/li&gt;
 &lt;li&gt;Swift 学习笔记【2026 年】&lt;/li&gt;
@@ -1216,17 +1216,17 @@ $$&lt;/p&gt;
     
     <item>
       <title>External Project</title>
-      <link>https://www.kingye.me/project/external-project/</link>
+      <link>https://kingye.me/project/external-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://www.kingye.me/project/external-project/</guid>
+      <guid>https://kingye.me/project/external-project/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Internal Project</title>
-      <link>https://www.kingye.me/project/internal-project/</link>
+      <link>https://kingye.me/project/internal-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://www.kingye.me/project/internal-project/</guid>
+      <guid>https://kingye.me/project/internal-project/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
 &lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
 &lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
@@ -1237,9 +1237,9 @@ $$&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://www.kingye.me/admin/config.yml</link>
+      <link>https://kingye.me/admin/config.yml</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.kingye.me/admin/config.yml</guid>
+      <guid>https://kingye.me/admin/config.yml</guid>
       <description></description>
     </item>
     

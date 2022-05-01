@@ -2,8 +2,8 @@
   "name": "叶王",
   "short_name": "叶王",
   "lang": "zh-cn",
-  "theme_color": "#795548",
-  "background_color": "#795548",
+  "theme_color": "#3f51b5",
+  "background_color": "#3f51b5",
   "icons": [{
     "src": "/media/icon_hu5a99a96afa0d5c480d2983cdb70f75bc_28032_192x192_fill_lanczos_center_3.png",
     "sizes": "192x192",

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>叶王博客 | 叶王</title>
+    <title>叶王博客 | 叶王说</title>
     <link>https://blog.kingye.me/post/</link>
       <atom:link href="https://blog.kingye.me/post/index.xml" rel="self" type="application/rss+xml" />
     <description>叶王博客</description>
@@ -45,7 +45,7 @@
 &lt;/ul&gt;
 &lt;p&gt;详细内容&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 核心概念: 13％
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 核心概念: 13％
 &lt;ul&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 了解 Kubernetes API 原语&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 创建和配置基本窗格&lt;/li&gt;

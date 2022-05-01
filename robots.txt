@@ -1,3 +1,3 @@
 User-agent: *
 
-Sitemap: https://kingye.me/sitemap.xml
+Sitemap: https://www.kingye.me/sitemap.xml

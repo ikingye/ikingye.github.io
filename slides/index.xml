@@ -34,192 +34,32 @@
 &lt;!-- 参考：https://mp.weixin.qq.com/s/jiPMUk6zUdOY6eKxAjNDbQ --&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;1-物理层&#34;&gt;1. 物理层&lt;/h2&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/202205051505904.gif&#34; alt=&#34;bg right fit 70%&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20220505152806.png&#34; alt=&#34;bg vertical right fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/202205051505904.gif&#34; alt=&#34;bg right fit 70%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20220505152806.png&#34; alt=&#34;bg vertical right fit&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;物理层负责把两台计算机连起来，&lt;/li&gt;
 &lt;li&gt;计算机之间通过高低电频来传送 0,1 这样的电信号。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;集线器&#34;&gt;集线器&lt;/h3&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/202205051537246.gif&#34; alt=&#34;bg right fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/202205051537246.gif&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;怎么知道数据包是不是发给自己的呢&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;2-数据链路层&#34;&gt;2 数据链路层&lt;/h2&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXQx9EiaWwmE0kby98Qg4naDUaS3FORjib7sYG4vKJJPOhb6Kjv8xpH7V2NZSa8wuj6bJceLegIee2cQ/640?wx_fmt=gif&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&#34; alt=&#34;bg right fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXQx9EiaWwmE0kby98Qg4naDUaS3FORjib7sYG4vKJJPOhb6Kjv8xpH7V2NZSa8wuj6bJceLegIee2cQ/640?wx_fmt=gif&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;只发给目标 MAC 地址指向的那台电脑&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;交换机-switch&#34;&gt;交换机 switch&lt;/h3&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXTDPrOXlicmulCTjcL9deOvQkaodoHNwcTO5ibDLM6TIgQymoHibokkd9dVuaGuZNal0glFGgM8ib3zsw/640?wx_fmt=gif&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&#34; alt=&#34;bg right fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-
+&lt;p&gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXTDPrOXlicmulCTjcL9deOvQkaodoHNwcTO5ibDLM6TIgQymoHibokkd9dVuaGuZNal0glFGgM8ib3zsw/640?wx_fmt=gif&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&#34; alt=&#34;bg right fit&#34; /&gt;
 switch 本身就是一种 bridge/网桥&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;3-网络层&#34;&gt;3 网络层&lt;/h2&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXTFXnSdksTicclQTOX582DoCmQ3SttlldnkicT7qBibOibWwLq7hSFqhviad94QiaM7HrfVibzpAK3zknL8A/640?wx_fmt=png&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&amp;amp;wx_co=1&#34; alt=&#34;bg right fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXTFXnSdksTicclQTOX582DoCmQ3SttlldnkicT7qBibOibWwLq7hSFqhviad94QiaM7HrfVibzpAK3zknL8A/640?wx_fmt=png&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&amp;amp;wx_co=1&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;如果机器数量超过了路由器的网口数量&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;路由器-1&#34;&gt;路由器 1&lt;/h3&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXQx9EiaWwmE0kby98Qg4naDUibbMdTf8L5icCJytKmb5IyXauL0xZ5qLoQ7lCoNpKKibp4wedgS3MeXPg/640?wx_fmt=png&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&amp;amp;wx_co=1&#34; alt=&#34;bg right 108% fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXS8pNwB4IrqPBOVibO9bMW6285rxNapFpZuzsDYwicEqEKLiaKP7GJyZwv6llbf1BicLhLEQnUHY7WoEQ/640?wx_fmt=png&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&amp;amp;wx_co=1&#34; alt=&#34;bg right fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXQx9EiaWwmE0kby98Qg4naDUibbMdTf8L5icCJytKmb5IyXauL0xZ5qLoQ7lCoNpKKibp4wedgS3MeXPg/640?wx_fmt=png&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&amp;amp;wx_co=1&#34; alt=&#34;bg right 108% fit&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXS8pNwB4IrqPBOVibO9bMW6285rxNapFpZuzsDYwicEqEKLiaKP7GJyZwv6llbf1BicLhLEQnUHY7WoEQ/640?wx_fmt=png&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&amp;amp;wx_co=1&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;MAC 长度为 48 位
 &lt;ul&gt;
@@ -233,27 +73,7 @@ switch 本身就是一种 bridge/网桥&lt;/p&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;路由器-2&#34;&gt;路由器 2&lt;/h3&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXQx9EiaWwmE0kby98Qg4naDUx1JOzx3EUFX66xFrEzxw9DaDho6tb8paPkhIwXTLENRJ5yU0y7NoYw/640?wx_fmt=png&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&amp;amp;wx_co=1&#34; alt=&#34;bg right 90% fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXQx9EiaWwmE0kby98Qg4naDUx1JOzx3EUFX66xFrEzxw9DaDho6tb8paPkhIwXTLENRJ5yU0y7NoYw/640?wx_fmt=png&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&amp;amp;wx_co=1&#34; alt=&#34;bg right 90% fit&#34; /&gt;&lt;/p&gt;
 &lt;small&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -305,72 +125,12 @@ switch 本身就是一种 bridge/网桥&lt;/p&gt;
 &lt;/small&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;路由器-3&#34;&gt;路由器 3&lt;/h3&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXQx9EiaWwmE0kby98Qg4naDUZ1ynpXjWpEwYvdjGVcQcARHGbQrzgwj3Jnk54CfnNXhGCiavAZKrgsw/640?wx_fmt=gif&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&#34; alt=&#34;bg right fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXQx9EiaWwmE0kby98Qg4naDUZ1ynpXjWpEwYvdjGVcQcARHGbQrzgwj3Jnk54CfnNXhGCiavAZKrgsw/640?wx_fmt=gif&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;数据包的两个 &lt;code&gt;IP 地址不变&lt;/code&gt;，&lt;code&gt;MAC 地址不断变化&lt;/code&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;4-传输层-tcp-udp&#34;&gt;4 传输层 (TCP, UDP)&lt;/h2&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200525230718.png&#34; alt=&#34;bg vertical right fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200525235421.png&#34; alt=&#34;bg fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200525230718.png&#34; alt=&#34;bg vertical right fit&#34; /&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200525235421.png&#34; alt=&#34;bg fit&#34; /&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;5-会话层-6-表示层&#34;&gt;5 会话层, 6. 表示层&lt;/h2&gt;
 &lt;ul&gt;
@@ -378,80 +138,20 @@ switch 本身就是一种 bridge/网桥&lt;/p&gt;
 &lt;li&gt;&lt;small&gt;比如说你要做一个视频聊天，你需要会话控制，实现拨号、呼叫、通话、暂停、挂断等，然后你拿来了 sip，这就是&lt;code&gt;会话层&lt;/code&gt;的东西；&lt;/small&gt;&lt;/li&gt;
 &lt;li&gt;&lt;small&gt;你需要视频的编码与压缩，把你这采集的视频信号传输到对面并播放，然后你拿来了 H.264，这个就是&lt;code&gt;表示层&lt;/code&gt;的东西。&lt;/small&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://www.lifewire.com/thmb/zIIyS16p6QJ0o_qxuFHKb3Xs7Gw=/650x0/filters:no_upscale%28%29:max_bytes%28150000%29:strip_icc%28%29:format%28webp%29/layers-of-the-osi-model-illustrated-818017-finalv1-6-ct-f21bdae22e54415b881d77babe8ca51d.png&#34; alt=&#34;bg right fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.lifewire.com/thmb/zIIyS16p6QJ0o_qxuFHKb3Xs7Gw=/650x0/filters:no_upscale%28%29:max_bytes%28150000%29:strip_icc%28%29:format%28webp%29/layers-of-the-osi-model-illustrated-818017-finalv1-6-ct-f21bdae22e54415b881d77babe8ca51d.png&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;5-会话层-6-表示层-1&#34;&gt;5 会话层, 6. 表示层&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;small&gt;&lt;code&gt;会话层&lt;/code&gt;：为两端通信实体建立连接（会话），中间有认证鉴权以及检查点记录（供会话意外中断的时候可以继续，类似断点续传）。&lt;/small&gt;&lt;/li&gt;
 &lt;li&gt;&lt;small&gt;&lt;code&gt;表示层&lt;/code&gt;：决定数据的展现（编码）形式，如同一部电影可以采样、量化、编码为 RMVB、AVI，一张图片能够是 JPEG、BMP、PNG 等。&lt;/small&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://www.lifewire.com/thmb/b_ZwYvi-prWKmW-TzASVg_aPqw8=/650x0/filters:no_upscale%28%29:max_bytes%28150000%29:strip_icc%28%29:format%28webp%29/layers-of-the-osi-model-illustrated-818017-finalv1-7-ct-e102db1b79da4926b510f944183989f8.png&#34; alt=&#34;bg right fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.lifewire.com/thmb/b_ZwYvi-prWKmW-TzASVg_aPqw8=/650x0/filters:no_upscale%28%29:max_bytes%28150000%29:strip_icc%28%29:format%28webp%29/layers-of-the-osi-model-illustrated-818017-finalv1-7-ct-e102db1b79da4926b510f944183989f8.png&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;7-应用层&#34;&gt;7 应用层&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;small&gt;&lt;code&gt;应用层&lt;/code&gt;：就是应用软件使用的协议，如邮箱使用的 POP3，SMTP、远程登录使用的 Telnet、获取 IP 地址的 DHCP、域名解析的 DNS、网页浏览的 http 协议等；这部分协议主要是规定应用软件如何去进行通信的。&lt;/small&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://www.lifewire.com/thmb/fh0lzflTr05pDhv3XSoIT7O0WTs=/650x0/filters:no_upscale%28%29:max_bytes%28150000%29:strip_icc%28%29:format%28webp%29/layers-of-the-osi-model-illustrated-818017-finalv1-8-ct-089b2573bf47462d85f9343f50329f72.png&#34; alt=&#34;bg right fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.lifewire.com/thmb/fh0lzflTr05pDhv3XSoIT7O0WTs=/650x0/filters:no_upscale%28%29:max_bytes%28150000%29:strip_icc%28%29:format%28webp%29/layers-of-the-osi-model-illustrated-818017-finalv1-8-ct-089b2573bf47462d85f9343f50329f72.png&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;8-有趣的问题-&#34;&gt;8 有趣的问题 🤔&lt;/h2&gt;
 &lt;ul&gt;
@@ -514,27 +214,7 @@ switch 本身就是一种 bridge/网桥&lt;/p&gt;
 &lt;h2 id=&#34;22-通信&#34;&gt;2.2 通信&lt;/h2&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;跨-net-ns-通信veth-pair&#34;&gt;跨 net ns 通信：veth pair&lt;/h3&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*5iksV7EzJEAJG--6d9K_Tg.png&#34; alt=&#34;bg vertical right fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*5iksV7EzJEAJG--6d9K_Tg.png&#34; alt=&#34;bg vertical right fit&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;veth 是&lt;code&gt;虚拟以太网卡&lt;/code&gt;（&lt;code&gt;Virtual Ethernet&lt;/code&gt;）的缩写&lt;/li&gt;
 &lt;li&gt;veth 设备总是成对的&lt;/li&gt;
@@ -542,48 +222,8 @@ switch 本身就是一种 bridge/网桥&lt;/p&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;单机容器通信网桥&#34;&gt;单机容器通信：网桥&lt;/h3&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;../../../../static/image/2022/20220412135450.png&#34; alt=&#34;bg right fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*uN5lIUU8wDO8EUL8gnQwNA.png&#34; alt=&#34;bg vertical right fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../../../static/image/2022/20220412135450.png&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*uN5lIUU8wDO8EUL8gnQwNA.png&#34; alt=&#34;bg vertical right fit&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;不同 &lt;code&gt;net ns&lt;/code&gt; 如何互通？&lt;/li&gt;
 &lt;li&gt;通过两个接口连接两个&lt;code&gt;冲突域&lt;/code&gt;的装置称为网桥&lt;/li&gt;
@@ -591,48 +231,8 @@ switch 本身就是一种 bridge/网桥&lt;/p&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;跨主机通信&#34;&gt;跨主机通信&lt;/h3&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://static001.geekbang.org/resource/image/b4/3d/b4387a992352109398a66d1dbe6e413d.png&#34; alt=&#34;bg vertical right fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://pic4.zhimg.com/80/v2-d6bb72977080c5236e7021aaa8d96483_1440w.png&#34; alt=&#34;bg right fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://static001.geekbang.org/resource/image/b4/3d/b4387a992352109398a66d1dbe6e413d.png&#34; alt=&#34;bg vertical right fit&#34; /&gt;
+&lt;img src=&#34;https://pic4.zhimg.com/80/v2-d6bb72977080c5236e7021aaa8d96483_1440w.png&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;NAT&lt;/code&gt;：利用宿主机的 IP 和 iptables 来达到容器与主机之间的通信&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Tunnel（overlay）&lt;/code&gt;：通过&lt;code&gt;软件&lt;/code&gt;构建一个覆盖在已有宿主机网络之上的，可以把所有容器连通在一起的虚拟网络&lt;/li&gt;
@@ -655,48 +255,8 @@ switch 本身就是一种 bridge/网桥&lt;/p&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h5 id=&#34;tuntap-原理&#34;&gt;tun/tap 原理&lt;/h5&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://res.weread.qq.com/wrepub/epub_27741281_79&#34; alt=&#34;bg vertical right 81% fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://res.weread.qq.com/wrepub/epub_27741281_81&#34; alt=&#34;bg vertical right fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://res.weread.qq.com/wrepub/epub_27741281_79&#34; alt=&#34;bg vertical right 81% fit&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://res.weread.qq.com/wrepub/epub_27741281_81&#34; alt=&#34;bg vertical right fit&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;tun&lt;/code&gt; 虚拟的是&lt;code&gt;点对点设备&lt;/code&gt;
 &lt;ul&gt;
@@ -725,48 +285,8 @@ switch 本身就是一种 bridge/网桥&lt;/p&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h5 id=&#34;flannel-udp-方案&#34;&gt;Flannel UDP 方案&lt;/h5&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://static001.geekbang.org/resource/image/83/6c/8332564c0547bf46d1fbba2a1e0e166c.jpg&#34; alt=&#34;bg right fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://static001.geekbang.org/resource/image/84/8d/84caa6dc3f9dcdf8b88b56bd2e22138d.png&#34; alt=&#34;bg vertical 60% right fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://static001.geekbang.org/resource/image/83/6c/8332564c0547bf46d1fbba2a1e0e166c.jpg&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://static001.geekbang.org/resource/image/84/8d/84caa6dc3f9dcdf8b88b56bd2e22138d.png&#34; alt=&#34;bg vertical 60% right fit&#34; /&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Node 1&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ ip route
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 最长匹配原则&lt;/span&gt;
@@ -792,27 +312,7 @@ switch 本身就是一种 bridge/网桥&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;PublicIP&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;10.168.0.3&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h5 id=&#34;flannel-vxlan&#34;&gt;Flannel VXLAN&lt;/h5&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://static001.geekbang.org/resource/image/03/f5/03185fab251a833fef7ed6665d5049f5.jpg&#34; alt=&#34;bg vertical right fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://static001.geekbang.org/resource/image/03/f5/03185fab251a833fef7ed6665d5049f5.jpg&#34; alt=&#34;bg vertical right fit&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;small&gt;&lt;code&gt;VXLAN&lt;/code&gt;：即 Virtual Extensible LAN，是 Linux &lt;code&gt;内核&lt;/code&gt;本身就支持的一种网络虚似化技术&lt;/small&gt;&lt;/li&gt;
 &lt;li&gt;&lt;small&gt;&lt;code&gt;VTEP&lt;/code&gt;: VXLAN Tunnel End Point&lt;/small&gt;&lt;/li&gt;
@@ -829,27 +329,7 @@ switch 本身就是一种 bridge/网桥&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;5e:f8:4f:00:e3:37 dev flannel.1 dst 10.168.0.3 self permanent
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h5 id=&#34;flannel-host-gw&#34;&gt;Flannel host-gw&lt;/h5&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://static001.geekbang.org/resource/image/3d/25/3d8b08411eeb49be2658eb4352206d25.png&#34; alt=&#34;bg right fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://static001.geekbang.org/resource/image/3d/25/3d8b08411eeb49be2658eb4352206d25.png&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# node1&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ ip route
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;10.244.1.0/24 via 10.168.0.3 dev eth0
@@ -860,48 +340,8 @@ switch 本身就是一种 bridge/网桥&lt;/p&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h4 id=&#34;calico&#34;&gt;Calico&lt;/h4&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://static001.geekbang.org/resource/image/2e/9b/2e4b3bee1d924f4ae25e2c1fd115379b.jpg&#34; alt=&#34;bg vertical right fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://static001.geekbang.org/resource/image/8d/1b/8db6dee96c4242738ae2878e58cecd1b.jpg&#34; alt=&#34;bg right fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://static001.geekbang.org/resource/image/2e/9b/2e4b3bee1d924f4ae25e2c1fd115379b.jpg&#34; alt=&#34;bg vertical right fit&#34; /&gt;
+&lt;img src=&#34;https://static001.geekbang.org/resource/image/8d/1b/8db6dee96c4242738ae2878e58cecd1b.jpg&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;small&gt;边界网关：路由表里拥有其他自治系统里的主机路由信息&lt;/small&gt;&lt;/li&gt;
 &lt;li&gt;&lt;small&gt;Calico &lt;code&gt;不会&lt;/code&gt;在宿主机上创建任何&lt;code&gt;网桥&lt;/code&gt;设备&lt;/small&gt;&lt;/li&gt;
@@ -910,27 +350,7 @@ switch 本身就是一种 bridge/网桥&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;10.233.2.3 dev cali5863f3 scope link
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h5 id=&#34;calico-ipip-模式&#34;&gt;Calico IPIP 模式&lt;/h5&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://static001.geekbang.org/resource/image/4d/c9/4dd9ad6415caf68da81562d9542049c9.jpg&#34; alt=&#34;bg right fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://static001.geekbang.org/resource/image/4d/c9/4dd9ad6415caf68da81562d9542049c9.jpg&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# node 1&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;10.233.2.0/24 via 192.168.2.2 tunl0
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
@@ -943,27 +363,7 @@ switch 本身就是一种 bridge/网桥&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;cni&#34;&gt;CNI&lt;/h2&gt;
 &lt;p&gt;&lt;small&gt;CNI 网桥，它在宿主机上的设备名称默认是：&lt;code&gt;cni0&lt;/code&gt;&lt;/small&gt;&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://static001.geekbang.org/resource/image/9f/8c/9f11d8716f6d895ff6d1c813d460488c.jpg&#34; alt=&#34;bg right fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://static001.geekbang.org/resource/image/9f/8c/9f11d8716f6d895ff6d1c813d460488c.jpg&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 子网范围可以在部署时配置&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 部署完成后，可以修改 kube-controller-manager 的配置文件来指定&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ kubeadm init --pod-network-cidr&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;10.244.0.0/16
@@ -973,51 +373,11 @@ switch 本身就是一种 bridge/网桥&lt;/p&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;pod-网络&#34;&gt;pod 网络&lt;/h2&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*oyGbXt7kStLd85ZT4it3oQ.png&#34; alt=&#34;bg right fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*oyGbXt7kStLd85ZT4it3oQ.png&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;这个其实前面都讲过了&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;service-负载均衡&#34;&gt;service (负载均衡)&lt;/h2&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://res.weread.qq.com/wrepub/epub_27741281_380&#34; alt=&#34;bg right fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://res.weread.qq.com/wrepub/epub_27741281_380&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Service 是由 kube-proxy 组件，加上 iptables 来共同实现的&lt;/li&gt;
 &lt;/ul&gt;
@@ -1092,48 +452,8 @@ switch 本身就是一种 bridge/网桥&lt;/p&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h4 id=&#34;iptables-5-链-钩子位置&#34;&gt;iptables 5 链 （钩子位置）&lt;/h4&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://res.weread.qq.com/wrepub/epub_27741281_94&#34; alt=&#34;bg right fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/13181535-866e1ddf756402b2.png?imageMogr2/auto-orient/strip%7cimageView2/2/format/webp&#34; alt=&#34;bg vertical right fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://res.weread.qq.com/wrepub/epub_27741281_94&#34; alt=&#34;bg right fit&#34; /&gt;
+&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/13181535-866e1ddf756402b2.png?imageMogr2/auto-orient/strip%7cimageView2/2/format/webp&#34; alt=&#34;bg vertical right fit&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;small&gt;iptables 底层实现是 &lt;code&gt;netfilter&lt;/code&gt;，IP 层的 5 个 hook 的位置，对应 iptables 就是 5 条&lt;code&gt;内置链&lt;/code&gt;&lt;/small&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;small&gt;&lt;code&gt;PREROUTING&lt;/code&gt;：&lt;strong&gt;DNAT&lt;/strong&gt;（内部服务对外发布）&lt;/small&gt;&lt;/li&gt;
@@ -1251,27 +571,7 @@ switch 本身就是一种 bridge/网桥&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; endpoint
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h3 id=&#34;kube-dnscoredns&#34;&gt;kube-dns/coredns&lt;/h3&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://shoreline.io/_next/image?url=%2Fuploads%2Fposts%2Fcoredns.jpg&amp;amp;w=1920&amp;amp;q=75&#34; alt=&#34;bg right fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://shoreline.io/_next/image?url=%2Fuploads%2Fposts%2Fcoredns.jpg&amp;amp;w=1920&amp;amp;q=75&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nameserver 10.250.0.10
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;search default.svc.cluster.local svc.cluster.local cluster.local
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 如果需要 lookup 的 Domain 中包含少于 5 个 `.` ，那么将会被当做非绝对域名&lt;/span&gt;
@@ -1289,27 +589,7 @@ switch 本身就是一种 bridge/网桥&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;small&gt;默认&lt;code&gt;ClusterFirst&lt;/code&gt;，优先使用 &lt;code&gt;kubedns&lt;/code&gt; 进行域名解析，解析不成功才会使用&lt;code&gt;宿主机&lt;/code&gt;的 DNS 配置进行解析&lt;/small&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;ingress&#34;&gt;Ingress&lt;/h3&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://blog.fleeto.us/post/life-of-a-packet-in-k8s-4/images/1.png&#34; alt=&#34;bg right fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.fleeto.us/post/life-of-a-packet-in-k8s-4/images/1.png&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;所谓 Ingress，就是 &lt;code&gt;Service 的 “Service”&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -1332,111 +612,11 @@ switch 本身就是一种 bridge/网桥&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hostnames   10.244.0.5:9376,10.244.0.6:9376,10.244.0.7:9376
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h1 id=&#34;推荐书籍&#34;&gt;推荐书籍&lt;/h1&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://img1.doubanio.com/view/subject/l/public/s29825217.jpg&#34; alt=&#34;bg fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://img1.doubanio.com/view/subject/l/public/s29370067.jpg&#34; alt=&#34;bg fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://img2.doubanio.com/view/subject/l/public/s27316002.jpg&#34; alt=&#34;bg fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://img1.doubanio.com/view/subject/l/public/s33499479.jpg&#34; alt=&#34;bg fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://img2.doubanio.com/view/subject/l/public/s33868983.jpg&#34; alt=&#34;bg fit&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img1.doubanio.com/view/subject/l/public/s29825217.jpg&#34; alt=&#34;bg fit&#34; /&gt;
+&lt;img src=&#34;https://img1.doubanio.com/view/subject/l/public/s29370067.jpg&#34; alt=&#34;bg fit&#34; /&gt;
+&lt;img src=&#34;https://img2.doubanio.com/view/subject/l/public/s27316002.jpg&#34; alt=&#34;bg fit&#34; /&gt;
+&lt;img src=&#34;https://img1.doubanio.com/view/subject/l/public/s33499479.jpg&#34; alt=&#34;bg fit&#34; /&gt;
+&lt;img src=&#34;https://img2.doubanio.com/view/subject/l/public/s33868983.jpg&#34; alt=&#34;bg fit&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

@@ -4,11 +4,9 @@
   
   
   <url>
-    <loc>https://blog.kingye.me/course/course2/example1/</loc><lastmod>2019-05-05T00:00:00+01:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
     <loc>https://blog.kingye.me/course/go-advanced/</loc><lastmod>2018-09-09T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://blog.kingye.me/course/course2/</loc><lastmod>2018-09-09T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+    <loc>https://blog.kingye.me/course/rust-advanced/</loc><lastmod>2018-09-09T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://blog.kingye.me/publication-type/5/</loc><lastmod>2021-10-01T14:45:41+08:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
@@ -48,8 +46,6 @@
   <url>
     <loc>https://blog.kingye.me/post/have-a-blog/</loc><lastmod>2020-12-12T15:41:22+08:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://blog.kingye.me/course/</loc><lastmod>2019-05-05T00:00:00+01:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
     <loc>https://blog.kingye.me/tag/kubernetes/</loc><lastmod>2019-02-05T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://blog.kingye.me/slides/kubernetes-network/</loc><lastmod>2019-02-05T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
@@ -63,6 +59,8 @@
     <loc>https://blog.kingye.me/slides/</loc><lastmod>2019-02-05T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://blog.kingye.me/tag/%E7%BD%91%E7%BB%9C/</loc><lastmod>2019-02-05T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://blog.kingye.me/course/</loc><lastmod>2018-09-09T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://blog.kingye.me/notes/</loc><lastmod>2018-06-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>

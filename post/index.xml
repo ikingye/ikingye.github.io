@@ -13,7 +13,7 @@
     </image>
     
     <item>
-      <title>中国公务员职位</title>
+      <title>中国公务员职务</title>
       <link>https://blog.kingye.me/post/civil-service-of-china/</link>
       <pubDate>Sun, 22 May 2022 16:15:38 +0800</pubDate>
       <guid>https://blog.kingye.me/post/civil-service-of-china/</guid>
@@ -41,15 +41,24 @@
 &lt;li&gt;西北地区（1 个）：西安市&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;副省级市辖区（3 个）：天津市滨海新区、上海市浦东新区和重庆市万州区&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;ul&gt;
+&lt;li&gt;副省级市辖区（2 个）：天津市滨海新区、上海市浦东新区。
+&lt;ul&gt;
+&lt;li&gt;重庆市万州区属于高配&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 &lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/202205221656065.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;中国大陆的高校全部是&lt;code&gt;厅局级单位&lt;/code&gt;（不含军校）。本科高校一般为&lt;strong&gt;正厅级&lt;/strong&gt;，专科院校为&lt;strong&gt;副厅级&lt;/strong&gt;。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;其中 32 所大学由于自身实力得到中央认可，其党委书记和校长高配为&lt;strong&gt;副部级&lt;/strong&gt;，由中共中央、中央组织部联合任命，而非通常由国家部委或省、市政府任命。这些高校的常务副书记和常务副校长为正厅级。注⚠️，这些学校还是厅局级单位，并不是副部级单位。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;中国大陆的高校全部是&lt;code&gt;厅局级单位&lt;/code&gt;（不含军校）。本科高校一般为&lt;strong&gt;正厅级&lt;/strong&gt;，专科院校为&lt;strong&gt;副厅级&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;其中 32 所大学由于自身实力得到中央认可，其党委书记和校长高配为&lt;strong&gt;副部级&lt;/strong&gt;，由中共中央、中央组织部联合任命，而非通常由国家部委或省、市政府任命。这些高校的常务副书记和常务副校长为正厅级。
 &lt;ul&gt;
 &lt;li&gt;北京市（7 所）清华大学、北京大学、中国人民大学、北京航空航天大学、北京理工大学、北京师范大学、中国农业大学&lt;/li&gt;
 &lt;li&gt;上海市（3 所）复旦大学、上海交通大学、同济大学&lt;/li&gt;
@@ -71,21 +80,21 @@
 &lt;li&gt;黑龙江省（1 所）哈尔滨工业大学&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;这 7 所学校属于 985、211 工程院校，但不属于副部级大学：东北大学、华东师范大学、中国海洋大学、湖南大学、电子科技大学、华南理工大学、中央民族大学&lt;/p&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    这些学校还是厅局级单位，并不是副部级单位。
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;有 7 所学校属于 985、211 工程院校，但不属于副部级大学：东北大学、华东师范大学、中国海洋大学、湖南大学、电子科技大学、华南理工大学、中央民族大学
 &lt;ul&gt;
 &lt;li&gt;其中前 6 所为&lt;strong&gt;教育部&lt;/strong&gt;直属高校，中央民族大学为&lt;strong&gt;国家民族事务委员会&lt;/strong&gt;直属&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;民办高校一般不署行政级别&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;部分地级市把几个中专合并为大专，一般为县处级&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;中专重高正处，普高副处，初中正科，小学副科&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;民办高校一般不署行政级别&lt;/li&gt;
+&lt;li&gt;部分地级市把几个中专合并为大专，一般为县处级&lt;/li&gt;
+&lt;li&gt;中专重高正处，普高副处，初中正科，小学副科&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;常见问题&#34;&gt;常见问题&lt;/h2&gt;
@@ -253,10 +262,10 @@
     </item>
     
     <item>
-      <title>拥有一个博客网站</title>
-      <link>https://blog.kingye.me/post/hava-a-blog/</link>
+      <title>搭建一个博客网站</title>
+      <link>https://blog.kingye.me/post/make-a-blog/</link>
       <pubDate>Sat, 12 Dec 2020 15:41:22 +0800</pubDate>
-      <guid>https://blog.kingye.me/post/hava-a-blog/</guid>
+      <guid>https://blog.kingye.me/post/make-a-blog/</guid>
       <description>&lt;p&gt;本系列手把手教你使用 &lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Pages&lt;/a&gt; 和 &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo&lt;/a&gt; 创建一个属于你的网站，包括博客系统，笔记系统等。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;无需购买服务器资源。&lt;/p&gt;

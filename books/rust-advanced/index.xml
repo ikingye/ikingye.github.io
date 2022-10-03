@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Rust 进阶编程 | 叶王说</title>
+    <title>Rust 深入浅出 | 叶王说</title>
     <link>https://blog.kingye.me/books/rust-advanced/</link>
       <atom:link href="https://blog.kingye.me/books/rust-advanced/index.xml" rel="self" type="application/rss+xml" />
-    <description>Rust 进阶编程</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-cn</language><lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <description>Rust 深入浅出</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-cn</language><lastBuildDate>Sat, 01 Oct 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://blog.kingye.me/media/icon_hu5a99a96afa0d5c480d2983cdb70f75bc_28032_512x512_fill_lanczos_center_3.png</url>
-      <title>Rust 进阶编程</title>
+      <title>Rust 深入浅出</title>
       <link>https://blog.kingye.me/books/rust-advanced/</link>
     </image>
     

@@ -4,9 +4,21 @@
   
   
   <url>
-    <loc>https://blog.kingye.me/books/go-advanced/</loc><lastmod>2018-09-09T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+    <loc>https://blog.kingye.me/books/go-advanced/</loc><lastmod>2022-10-02T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://blog.kingye.me/books/rust-advanced/</loc><lastmod>2018-09-09T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+    <loc>https://blog.kingye.me/books/rust-advanced/</loc><lastmod>2022-10-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://blog.kingye.me/</loc><lastmod>2022-10-02T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://blog.kingye.me/en/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="zh"
+      href="https://blog.kingye.me/"
+    /></url>
+  <url>
+    <loc>https://blog.kingye.me/books/</loc><lastmod>2022-10-02T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://blog.kingye.me/authors/</loc><lastmod>2022-05-22T16:15:38+08:00</lastmod><changefreq>weekly</changefreq><xhtml:link
       rel="alternate"
@@ -40,16 +52,6 @@
       rel="alternate"
       hreflang="zh"
       href="https://blog.kingye.me/post/"
-    /></url>
-  <url>
-    <loc>https://blog.kingye.me/</loc><lastmod>2022-05-22T16:15:38+08:00</lastmod><changefreq>weekly</changefreq><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://blog.kingye.me/en/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="zh"
-      href="https://blog.kingye.me/"
     /></url>
   <url>
     <loc>https://blog.kingye.me/tag/%E6%94%BF%E6%B2%BB/</loc><lastmod>2022-05-22T16:15:38+08:00</lastmod><changefreq>weekly</changefreq></url>
@@ -125,8 +127,6 @@
     /></url>
   <url>
     <loc>https://blog.kingye.me/tag/%E7%BD%91%E7%BB%9C/</loc><lastmod>2019-02-05T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://blog.kingye.me/books/</loc><lastmod>2018-09-09T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://blog.kingye.me/notes/</loc><lastmod>2018-06-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>

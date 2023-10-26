@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>博客 | 叶王说</title>
-    <link>https://blog.kingye.me/tag/%E5%8D%9A%E5%AE%A2/</link>
-      <atom:link href="https://blog.kingye.me/tag/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://kingye.me/tag/%E5%8D%9A%E5%AE%A2/</link>
+      <atom:link href="https://kingye.me/tag/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
     <description>博客</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-cn</language><lastBuildDate>Sat, 12 Dec 2020 15:41:22 +0800</lastBuildDate>
     <image>
-      <url>https://blog.kingye.me/media/icon_hu5a99a96afa0d5c480d2983cdb70f75bc_28032_512x512_fill_lanczos_center_3.png</url>
+      <url>https://kingye.me/media/icon_hu5a99a96afa0d5c480d2983cdb70f75bc_28032_512x512_fill_lanczos_center_3.png</url>
       <title>博客</title>
-      <link>https://blog.kingye.me/tag/%E5%8D%9A%E5%AE%A2/</link>
+      <link>https://kingye.me/tag/%E5%8D%9A%E5%AE%A2/</link>
     </image>
     
     <item>
       <title>搭建一个博客网站</title>
-      <link>https://blog.kingye.me/post/make-a-blog/</link>
+      <link>https://kingye.me/post/make-a-blog/</link>
       <pubDate>Sat, 12 Dec 2020 15:41:22 +0800</pubDate>
-      <guid>https://blog.kingye.me/post/make-a-blog/</guid>
+      <guid>https://kingye.me/post/make-a-blog/</guid>
       <description>&lt;p&gt;本系列手把手教你使用 &lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Pages&lt;/a&gt; 和 &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo&lt;/a&gt; 创建一个属于你的网站，包括博客系统，笔记系统等。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;无需购买服务器资源。&lt;/p&gt;

@@ -2,21 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>叶王 | 叶王说</title>
-    <link>https://blog.kingye.me/authors/yewang/</link>
-      <atom:link href="https://blog.kingye.me/authors/yewang/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://kingye.me/authors/yewang/</link>
+      <atom:link href="https://kingye.me/authors/yewang/index.xml" rel="self" type="application/rss+xml" />
     <description>叶王</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-cn</language><lastBuildDate>Sun, 22 May 2022 16:15:38 +0800</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-cn</language><lastBuildDate>Fri, 01 Jul 2022 14:45:41 +0800</lastBuildDate>
     <image>
-      <url>https://blog.kingye.me/authors/yewang/avatar_hufb6ed7f4fb6f2a99971e9dfd456d7dbf_75814_270x270_fill_q75_lanczos_center.jpg</url>
+      <url>https://kingye.me/authors/yewang/avatar_hufb6ed7f4fb6f2a99971e9dfd456d7dbf_75814_270x270_fill_q75_lanczos_center.jpg</url>
       <title>叶王</title>
-      <link>https://blog.kingye.me/authors/yewang/</link>
+      <link>https://kingye.me/authors/yewang/</link>
     </image>
     
     <item>
+      <title>深入理解 Istio：云原生服务网格进阶实战</title>
+      <link>https://kingye.me/publication/dive-into-istio/</link>
+      <pubDate>Fri, 01 Jul 2022 14:45:41 +0800</pubDate>
+      <guid>https://kingye.me/publication/dive-into-istio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>中国公务员职务</title>
-      <link>https://blog.kingye.me/post/civil-service-of-china/</link>
+      <link>https://kingye.me/post/civil-service-of-china/</link>
       <pubDate>Sun, 22 May 2022 16:15:38 +0800</pubDate>
-      <guid>https://blog.kingye.me/post/civil-service-of-china/</guid>
+      <guid>https://kingye.me/post/civil-service-of-china/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/202205221614628.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;每一级行政机构下设有&lt;strong&gt;内设&lt;/strong&gt;和&lt;strong&gt;外管&lt;/strong&gt;两套系统，外管指其管辖下级行政区划的机构，内设部门一般与其平级&lt;/li&gt;
@@ -125,17 +133,17 @@
     
     <item>
       <title>软件开发的201个原则</title>
-      <link>https://blog.kingye.me/publication/201posd/</link>
+      <link>https://kingye.me/publication/201-posd/</link>
       <pubDate>Fri, 01 Oct 2021 14:45:41 +0800</pubDate>
-      <guid>https://blog.kingye.me/publication/201posd/</guid>
+      <guid>https://kingye.me/publication/201-posd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CKAD 考试准备</title>
-      <link>https://blog.kingye.me/post/ckad/</link>
+      <link>https://kingye.me/post/ckad/</link>
       <pubDate>Mon, 16 Aug 2021 20:41:38 +0800</pubDate>
-      <guid>https://blog.kingye.me/post/ckad/</guid>
+      <guid>https://kingye.me/post/ckad/</guid>
       <description>&lt;p&gt;&lt;code&gt;Certified Kubernetes Application Developer&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Kubernetes 应用程序开发者认证
@@ -271,9 +279,9 @@
     
     <item>
       <title>搭建一个博客网站</title>
-      <link>https://blog.kingye.me/post/make-a-blog/</link>
+      <link>https://kingye.me/post/make-a-blog/</link>
       <pubDate>Sat, 12 Dec 2020 15:41:22 +0800</pubDate>
-      <guid>https://blog.kingye.me/post/make-a-blog/</guid>
+      <guid>https://kingye.me/post/make-a-blog/</guid>
       <description>&lt;p&gt;本系列手把手教你使用 &lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Pages&lt;/a&gt; 和 &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo&lt;/a&gt; 创建一个属于你的网站，包括博客系统，笔记系统等。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;无需购买服务器资源。&lt;/p&gt;
@@ -459,9 +467,9 @@
     
     <item>
       <title>Kubernetes 网络从零开始</title>
-      <link>https://blog.kingye.me/slides/kubernetes-network/</link>
+      <link>https://kingye.me/slides/kubernetes-network/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://blog.kingye.me/slides/kubernetes-network/</guid>
+      <guid>https://kingye.me/slides/kubernetes-network/</guid>
       <description>&lt;h1 id=&#34;kubernetes-网络从零开始&#34;&gt;Kubernetes 网络从零开始&lt;/h1&gt;
 &lt;!-- &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;2&#34;&gt;
   One

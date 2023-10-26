@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kubernetes | 叶王说</title>
-    <link>https://blog.kingye.me/tag/kubernetes/</link>
-      <atom:link href="https://blog.kingye.me/tag/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://kingye.me/tag/kubernetes/</link>
+      <atom:link href="https://kingye.me/tag/kubernetes/index.xml" rel="self" type="application/rss+xml" />
     <description>Kubernetes</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-cn</language><lastBuildDate>Tue, 05 Feb 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://blog.kingye.me/media/icon_hu5a99a96afa0d5c480d2983cdb70f75bc_28032_512x512_fill_lanczos_center_3.png</url>
+      <url>https://kingye.me/media/icon_hu5a99a96afa0d5c480d2983cdb70f75bc_28032_512x512_fill_lanczos_center_3.png</url>
       <title>Kubernetes</title>
-      <link>https://blog.kingye.me/tag/kubernetes/</link>
+      <link>https://kingye.me/tag/kubernetes/</link>
     </image>
     
     <item>
       <title>Kubernetes 网络从零开始</title>
-      <link>https://blog.kingye.me/slides/kubernetes-network/</link>
+      <link>https://kingye.me/slides/kubernetes-network/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://blog.kingye.me/slides/kubernetes-network/</guid>
+      <guid>https://kingye.me/slides/kubernetes-network/</guid>
       <description>&lt;h1 id=&#34;kubernetes-网络从零开始&#34;&gt;Kubernetes 网络从零开始&lt;/h1&gt;
 &lt;!-- &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;2&#34;&gt;
   One

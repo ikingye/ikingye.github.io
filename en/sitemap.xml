@@ -4,9 +4,9 @@
   
   
   <url>
-    <loc>https://kingye.me/en/talk/example-talk/</loc><lastmod>2030-06-01T13:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+    <loc>https://kingye.me/en/talk/example-talk/</loc><lastmod>2022-05-16T11:31:42+08:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://kingye.me/en/</loc><lastmod>2030-06-01T13:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+    <loc>https://kingye.me/en/</loc><lastmod>2022-05-22T17:32:20+08:00</lastmod><changefreq>weekly</changefreq><xhtml:link
       rel="alternate"
       hreflang="zh"
       href="https://kingye.me/"
@@ -16,9 +16,7 @@
       href="https://kingye.me/en/"
     /></url>
   <url>
-    <loc>https://kingye.me/en/event/</loc><lastmod>2030-06-01T13:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://kingye.me/en/slides/</loc><lastmod>2019-02-05T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+    <loc>https://kingye.me/en/slides/</loc><lastmod>2022-05-16T11:31:42+08:00</lastmod><changefreq>weekly</changefreq><xhtml:link
       rel="alternate"
       hreflang="zh"
       href="https://kingye.me/slides/"
@@ -28,13 +26,13 @@
       href="https://kingye.me/en/slides/"
     /></url>
   <url>
-    <loc>https://kingye.me/en/slides/example/</loc><lastmod>2019-02-05T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+    <loc>https://kingye.me/en/slides/example/</loc><lastmod>2022-05-16T11:31:42+08:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://kingye.me/en/tag/deep-learning/</loc><lastmod>2016-04-27T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+    <loc>https://kingye.me/en/tag/deep-learning/</loc><lastmod>2022-05-16T11:31:42+08:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://kingye.me/en/project/example/</loc><lastmod>2016-04-27T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+    <loc>https://kingye.me/en/project/example/</loc><lastmod>2022-05-16T11:31:42+08:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://kingye.me/en/project/</loc><lastmod>2016-04-27T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+    <loc>https://kingye.me/en/project/</loc><lastmod>2022-05-16T11:31:42+08:00</lastmod><changefreq>weekly</changefreq><xhtml:link
       rel="alternate"
       hreflang="zh"
       href="https://kingye.me/project/"
@@ -44,7 +42,7 @@
       href="https://kingye.me/en/project/"
     /></url>
   <url>
-    <loc>https://kingye.me/en/tags/</loc><lastmod>2016-04-27T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+    <loc>https://kingye.me/en/tags/</loc><lastmod>2022-05-16T11:31:42+08:00</lastmod><changefreq>weekly</changefreq><xhtml:link
       rel="alternate"
       hreflang="zh"
       href="https://kingye.me/tags/"
@@ -54,23 +52,13 @@
       href="https://kingye.me/en/tags/"
     /></url>
   <url>
-    <loc></loc><lastmod>2013-07-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
-      rel="alternate"
-      hreflang="zh"
-      href="https://kingye.me/authors/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href=""
-    /></url>
+    <loc>https://kingye.me/en/publication-type/1/</loc><lastmod>2022-05-16T11:31:42+08:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://kingye.me/en/publication-type/1/</loc><lastmod>2013-07-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+    <loc></loc><lastmod>2022-05-16T11:31:42+08:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc></loc><lastmod>2013-07-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+    <loc>https://kingye.me/en/publication/example/</loc><lastmod>2022-05-16T11:31:42+08:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://kingye.me/en/publication/example/</loc><lastmod>2013-07-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://kingye.me/en/publication_types/</loc><lastmod>2013-07-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+    <loc>https://kingye.me/en/publication_types/</loc><lastmod>2022-05-16T11:31:42+08:00</lastmod><changefreq>weekly</changefreq><xhtml:link
       rel="alternate"
       hreflang="zh"
       href="https://kingye.me/publication_types/"
@@ -80,17 +68,17 @@
       href="https://kingye.me/en/publication_types/"
     /></url>
   <url>
-    <loc>https://kingye.me/en/publication/</loc><lastmod>2013-07-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+    <loc></loc><lastmod>2022-05-16T11:31:42+08:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc></loc><lastmod>2022-05-16T11:31:42+08:00</lastmod><changefreq>weekly</changefreq><xhtml:link
       rel="alternate"
       hreflang="zh"
-      href="https://kingye.me/publication/"
+      href="https://kingye.me/authors/"
     /><xhtml:link
       rel="alternate"
       hreflang="en"
-      href="https://kingye.me/en/publication/"
+      href=""
     /></url>
-  <url>
-    <loc></loc><lastmod>2013-07-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://kingye.me/en/categories/</loc><changefreq>weekly</changefreq><xhtml:link
       rel="alternate"
@@ -102,9 +90,9 @@
       href="https://kingye.me/en/categories/"
     /></url>
   <url>
-    <loc></loc><changefreq>weekly</changefreq></url>
+    <loc></loc><lastmod>2022-05-22T17:32:20+08:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://kingye.me/en/post/</loc><changefreq>weekly</changefreq><xhtml:link
+    <loc>https://kingye.me/en/post/</loc><lastmod>2022-05-16T11:31:42+08:00</lastmod><changefreq>weekly</changefreq><xhtml:link
       rel="alternate"
       hreflang="zh"
       href="https://kingye.me/post/"
@@ -112,4 +100,16 @@
       rel="alternate"
       hreflang="en"
       href="https://kingye.me/en/post/"
-    /></url></urlset>
+    /></url>
+  <url>
+    <loc>https://kingye.me/en/publication/</loc><lastmod>2022-05-16T11:31:42+08:00</lastmod><changefreq>weekly</changefreq><xhtml:link
+      rel="alternate"
+      hreflang="zh"
+      href="https://kingye.me/publication/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://kingye.me/en/publication/"
+    /></url>
+  <url>
+    <loc>https://kingye.me/en/event/</loc><lastmod>2022-05-16T11:31:42+08:00</lastmod><changefreq>weekly</changefreq></url></urlset>

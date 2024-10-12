@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>服务网格 | 叶王说</title>
+    <link>https://kingye.me/tag/%E6%9C%8D%E5%8A%A1%E7%BD%91%E6%A0%BC/</link>
+      <atom:link href="https://kingye.me/tag/%E6%9C%8D%E5%8A%A1%E7%BD%91%E6%A0%BC/index.xml" rel="self" type="application/rss+xml" />
+    <description>服务网格</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-cn</language><lastBuildDate>Fri, 01 Jul 2022 14:45:41 +0800</lastBuildDate>
+    <image>
+      <url>https://kingye.me/media/icon_hu5a99a96afa0d5c480d2983cdb70f75bc_28032_512x512_fill_lanczos_center_3.png</url>
+      <title>服务网格</title>
+      <link>https://kingye.me/tag/%E6%9C%8D%E5%8A%A1%E7%BD%91%E6%A0%BC/</link>
+    </image>
+    
+    <item>
+      <title>深入理解 Istio：云原生服务网格进阶实战</title>
+      <link>https://kingye.me/publication/dive-into-istio/</link>
+      <pubDate>Fri, 01 Jul 2022 14:45:41 +0800</pubDate>
+      <guid>https://kingye.me/publication/dive-into-istio/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

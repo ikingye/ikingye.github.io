@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PPT | 叶王说</title>
+    <link>https://kingye.me/tag/ppt/</link>
+      <atom:link href="https://kingye.me/tag/ppt/index.xml" rel="self" type="application/rss+xml" />
+    <description>PPT</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-cn</language><lastBuildDate>Tue, 05 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://kingye.me/media/icon_hu5a99a96afa0d5c480d2983cdb70f75bc_28032_512x512_fill_lanczos_center_3.png</url>
+      <title>PPT</title>
+      <link>https://kingye.me/tag/ppt/</link>
+    </image>
+    
+    <item>
+      <title>Kubernetes 网络从零开始</title>
+      <link>https://kingye.me/slides/kubernetes-network/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/slides/kubernetes-network/</guid>
+      <description>&lt;h1 id=&#34;kubernetes-网络从零开始&#34;&gt;Kubernetes 网络从零开始&lt;/h1&gt;
+&lt;!-- &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;2&#34;&gt;
+  One
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; data-fragment-index=&#34;3&#34;&gt;
+  &lt;strong&gt;Two&lt;/strong&gt;
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; data-fragment-index=&#34;1&#34;&gt;
+  Three
+&lt;/span&gt; --&gt;
+&lt;aside class=&#34;notes&#34;&gt;
+  &lt;ul&gt;
+&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/aside&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;一计算机网络基础&#34;&gt;一、计算机网络基础&lt;/h1&gt;
+&lt;p&gt;自底向上&lt;/p&gt;
+&lt;!-- 参考：https://mp.weixin.qq.com/s/jiPMUk6zUdOY6eKxAjNDbQ --&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;1-物理层&#34;&gt;1. 物理层&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/202205051505904.gif&#34; alt=&#34;bg right fit 70%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20220505152806.png&#34; alt=&#34;bg vertical right fit&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;物理层负责把两台计算机连起来，&lt;/li&gt;
+&lt;li&gt;计算机之间通过高低电频来传送 0,1 这样的电信号。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;集线器&#34;&gt;集线器&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/202205051537246.gif&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;怎么知道数据包是不是发给自己的呢&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;2-数据链路层&#34;&gt;2 数据链路层&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXQx9EiaWwmE0kby98Qg4naDUaS3FORjib7sYG4vKJJPOhb6Kjv8xpH7V2NZSa8wuj6bJceLegIee2cQ/640?wx_fmt=gif&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;只发给目标 MAC 地址指向的那台电脑&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;交换机-switch&#34;&gt;交换机 switch&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXTDPrOXlicmulCTjcL9deOvQkaodoHNwcTO5ibDLM6TIgQymoHibokkd9dVuaGuZNal0glFGgM8ib3zsw/640?wx_fmt=gif&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&#34; alt=&#34;bg right fit&#34; /&gt;
+switch 本身就是一种 bridge/网桥&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;3-网络层&#34;&gt;3 网络层&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXTFXnSdksTicclQTOX582DoCmQ3SttlldnkicT7qBibOibWwLq7hSFqhviad94QiaM7HrfVibzpAK3zknL8A/640?wx_fmt=png&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&amp;amp;wx_co=1&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;如果机器数量超过了路由器的网口数量&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;路由器-1&#34;&gt;路由器 1&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXQx9EiaWwmE0kby98Qg4naDUibbMdTf8L5icCJytKmb5IyXauL0xZ5qLoQ7lCoNpKKibp4wedgS3MeXPg/640?wx_fmt=png&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&amp;amp;wx_co=1&#34; alt=&#34;bg right 108% fit&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXS8pNwB4IrqPBOVibO9bMW6285rxNapFpZuzsDYwicEqEKLiaKP7GJyZwv6llbf1BicLhLEQnUHY7WoEQ/640?wx_fmt=png&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&amp;amp;wx_co=1&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;MAC 长度为 48 位
+&lt;ul&gt;
+&lt;li&gt;如：&lt;code&gt;00-16-EA-AE-3C-40&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;前 24 位（&lt;code&gt;00-16-EA&lt;/code&gt;）代表网络&lt;code&gt;硬件制造商&lt;/code&gt;的编号&lt;/li&gt;
+&lt;li&gt;后 24 位（&lt;code&gt;AE-3C-40&lt;/code&gt;）是该厂家自己分配的&lt;code&gt;系列号&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;划分&lt;code&gt;子网&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;引入 &lt;code&gt;IP 地址&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;路由器-2&#34;&gt;路由器 2&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXQx9EiaWwmE0kby98Qg4naDUx1JOzx3EUFX66xFrEzxw9DaDho6tb8paPkhIwXTLENRJ5yU0y7NoYw/640?wx_fmt=png&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&amp;amp;wx_co=1&#34; alt=&#34;bg right 90% fit&#34; /&gt;&lt;/p&gt;
+&lt;small&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;目的地址&lt;/th&gt;
+&lt;th&gt;下一跳&lt;/th&gt;
+&lt;th&gt;端口&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;192.168.0.0/24&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;192.168.0.254/32&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;192.168.1.0/24&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;192.168.1.254/32&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;192.168.2.0/24&lt;/td&gt;
+&lt;td&gt;192.168.100.5&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;192.168.100.0/24&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;192.168.100.4/32&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;路由表是各种&lt;code&gt;路由算法&lt;/code&gt; + &lt;code&gt;人工配置&lt;/code&gt;逐步完善起来的&lt;/p&gt;
+&lt;/small&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;路由器-3&#34;&gt;路由器 3&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXQx9EiaWwmE0kby98Qg4naDUZ1ynpXjWpEwYvdjGVcQcARHGbQrzgwj3Jnk54CfnNXhGCiavAZKrgsw/640?wx_fmt=gif&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;数据包的两个 &lt;code&gt;IP 地址不变&lt;/code&gt;，&lt;code&gt;MAC 地址不断变化&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;4-传输层-tcp-udp&#34;&gt;4 传输层 (TCP, UDP)&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200525230718.png&#34; alt=&#34;bg vertical right fit&#34; /&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200525235421.png&#34; alt=&#34;bg fit&#34; /&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;5-会话层-6-表示层&#34;&gt;5 会话层, 6. 表示层&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;small&gt;表示层、会话层的东西，更多的是做成了一种标准件，直接被拿来用，集成进了应用中。&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;small&gt;比如说你要做一个视频聊天，你需要会话控制，实现拨号、呼叫、通话、暂停、挂断等，然后你拿来了 sip，这就是&lt;code&gt;会话层&lt;/code&gt;的东西；&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;small&gt;你需要视频的编码与压缩，把你这采集的视频信号传输到对面并播放，然后你拿来了 H.264，这个就是&lt;code&gt;表示层&lt;/code&gt;的东西。&lt;/small&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.lifewire.com/thmb/zIIyS16p6QJ0o_qxuFHKb3Xs7Gw=/650x0/filters:no_upscale%28%29:max_bytes%28150000%29:strip_icc%28%29:format%28webp%29/layers-of-the-osi-model-illustrated-818017-finalv1-6-ct-f21bdae22e54415b881d77babe8ca51d.png&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;5-会话层-6-表示层-1&#34;&gt;5 会话层, 6. 表示层&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;small&gt;&lt;code&gt;会话层&lt;/code&gt;：为两端通信实体建立连接（会话），中间有认证鉴权以及检查点记录（供会话意外中断的时候可以继续，类似断点续传）。&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;small&gt;&lt;code&gt;表示层&lt;/code&gt;：决定数据的展现（编码）形式，如同一部电影可以采样、量化、编码为 RMVB、AVI，一张图片能够是 JPEG、BMP、PNG 等。&lt;/small&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.lifewire.com/thmb/b_ZwYvi-prWKmW-TzASVg_aPqw8=/650x0/filters:no_upscale%28%29:max_bytes%28150000%29:strip_icc%28%29:format%28webp%29/layers-of-the-osi-model-illustrated-818017-finalv1-7-ct-e102db1b79da4926b510f944183989f8.png&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;7-应用层&#34;&gt;7 应用层&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;small&gt;&lt;code&gt;应用层&lt;/code&gt;：就是应用软件使用的协议，如邮箱使用的 POP3，SMTP、远程登录使用的 Telnet、获取 IP 地址的 DHCP、域名解析的 DNS、网页浏览的 http 协议等；这部分协议主要是规定应用软件如何去进行通信的。&lt;/small&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.lifewire.com/thmb/fh0lzflTr05pDhv3XSoIT7O0WTs=/650x0/filters:no_upscale%28%29:max_bytes%28150000%29:strip_icc%28%29:format%28webp%29/layers-of-the-osi-model-illustrated-818017-finalv1-8-ct-089b2573bf47462d85f9343f50329f72.png&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;8-有趣的问题-&#34;&gt;8 有趣的问题 🤔&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;MAC 地址可以修改吗？&lt;/li&gt;
+&lt;li&gt;有了 MAC 地址为什么还需要 IP？&lt;/li&gt;
+&lt;li&gt;可以没有 MAC 地址吗？
+&lt;ul&gt;
+&lt;li&gt;&lt;small&gt;交换机既然可以学习 MAC 地址，那就一定可以学习 IP 地址。这样，每个网口所连电脑的 IP 映射关系也就知道了。&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;small&gt;电脑 A 如果想给 C 发数据，可以不查 C 的 MAC 地址，而是直接给交换机发一个 IP 报文（注意，这次没有 MAC 帧）。交换机收到后直接转发给电脑 C。整个过程就仿佛回到了最开始的点对点链接路。&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;small&gt;现在没有去掉 MAC 地址，可能是因为以太网设备已经遍布全球，也足够便宜，已经没有必要再优化了。&lt;/small&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;二容器网络&#34;&gt;二、容器网络&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;21-隔离&#34;&gt;2.1 隔离&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;linux-namespaces&#34;&gt;Linux Namespaces&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Mount：隔离文件系统加载点；&lt;/li&gt;
+&lt;li&gt;UTS：隔离主机名和域名；&lt;/li&gt;
+&lt;li&gt;IPC：隔离跨进程通信（IPC）资源；&lt;/li&gt;
+&lt;li&gt;PID：隔离 PID 空间；&lt;/li&gt;
+&lt;li&gt;网络：隔离网络接口；&lt;/li&gt;
+&lt;li&gt;用户：隔离 UID/GID 空间；&lt;/li&gt;
+&lt;li&gt;Cgroup：隔离 cgroup 根目录。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;namespace-问题&#34;&gt;namespace 问题&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;基于 Linux Namespace 的隔离机制相比于虚拟化技术也有很多不足之处，其中最主要的问题就是：&lt;code&gt;隔离得不彻底&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;容器只是运行在宿主机上的一种&lt;code&gt;特殊的进程&lt;/code&gt;，那么多个容器之间使用的就还是&lt;code&gt;同一个&lt;/code&gt;宿主机的操作系统&lt;code&gt;内核&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;要在 Windows 宿主机上运行 Linux 容器，或者在低版本的 Linux 宿主机上运行高版本的 Linux 容器，都是行不通的&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;在 Linux 内核中，有很多资源和对象是不能被 Namespace 化的，最典型的例子就是：&lt;code&gt;时间&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;容器中的程序使用 &lt;a href=&#34;https://linux.die.net/man/2/settimeofday&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;settimeofday(2)&lt;/a&gt; 系统调用修改了时间，整个宿主机的时间都会被随之修改&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;限制linux-cgroups&#34;&gt;限制：Linux Cgroups&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Linux Cgroups 的全称是 Linux Control Group。它最主要的作用，就是限制一个进程组能够使用的资源上限，包括 CPU、内存、磁盘、网络带宽等等&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;docker-network-namespace&#34;&gt;Docker network namespace&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;ns 保存目录一般是 &lt;code&gt;/var/run/docker/netns/&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;非&lt;/code&gt;默认的 &lt;code&gt;/var/run/netns/&lt;/code&gt; 路径&lt;/li&gt;
+&lt;li&gt;所以 &lt;code&gt;ip netns list&lt;/code&gt; 没有 docker 创建的 ns&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;22-通信&#34;&gt;2.2 通信&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;跨-net-ns-通信veth-pair&#34;&gt;跨 net ns 通信：veth pair&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*5iksV7EzJEAJG--6d9K_Tg.png&#34; alt=&#34;bg vertical right fit&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;veth 是&lt;code&gt;虚拟以太网卡&lt;/code&gt;（&lt;code&gt;Virtual Ethernet&lt;/code&gt;）的缩写&lt;/li&gt;
+&lt;li&gt;veth 设备总是成对的&lt;/li&gt;
+&lt;li&gt;veth pair 一端发送的数据会在另外一端接收，非常像 Linux 的&lt;code&gt;双向管道&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;单机容器通信网桥&#34;&gt;单机容器通信：网桥&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;../../../../static/image/2022/20220412135450.png&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*uN5lIUU8wDO8EUL8gnQwNA.png&#34; alt=&#34;bg vertical right fit&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;不同 &lt;code&gt;net ns&lt;/code&gt; 如何互通？&lt;/li&gt;
+&lt;li&gt;通过两个接口连接两个&lt;code&gt;冲突域&lt;/code&gt;的装置称为网桥&lt;/li&gt;
+&lt;li&gt;网桥的作用相当于 OSI 模型中的&lt;code&gt;数据链路层&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;跨主机通信&#34;&gt;跨主机通信&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://static001.geekbang.org/resource/image/b4/3d/b4387a992352109398a66d1dbe6e413d.png&#34; alt=&#34;bg vertical right fit&#34; /&gt;
+&lt;img src=&#34;https://pic4.zhimg.com/80/v2-d6bb72977080c5236e7021aaa8d96483_1440w.png&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;NAT&lt;/code&gt;：利用宿主机的 IP 和 iptables 来达到容器与主机之间的通信&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Tunnel（overlay）&lt;/code&gt;：通过&lt;code&gt;软件&lt;/code&gt;构建一个覆盖在已有宿主机网络之上的，可以把所有容器连通在一起的虚拟网络&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Routing&lt;/code&gt;：通过&lt;code&gt;路由配置&lt;/code&gt;的方式让容器对容器，容器对宿主机之间相通信&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;tuntap-设备&#34;&gt;tun/tap 设备&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;从 Linux 文件系统的角度看，是用户可以用文件句柄操作的&lt;code&gt;字符设备&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;从网络虚拟化角度看，是&lt;code&gt;虚拟网卡&lt;/code&gt;，一端连着网络协议栈，另一端连着用户态程序
+&lt;ul&gt;
+&lt;li&gt;&lt;small&gt;&lt;code&gt;网络栈&lt;/code&gt;主要包括：网卡（Network Interface）、回环设备（Loopback Device）、路由表（Routing Table），iptables 规则和 DNS 配置等&lt;/small&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tun/tap&lt;/code&gt; 可以将 TCP/IP 协议栈处理好的网络包发送给任何一个使用 tun/tap 驱动的进程，由进程处理后发到物理链路中
+&lt;ul&gt;
+&lt;li&gt;&lt;small&gt;tun/tap 像是用户程序空间的&lt;code&gt;钩子&lt;/code&gt;，可以很方便地将对网络包的处理程序挂在这个钩子上，OpenVPN、Vtun、flannel 都是基于它实现隧道包封装的&lt;/small&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h5 id=&#34;tuntap-原理&#34;&gt;tun/tap 原理&lt;/h5&gt;
+&lt;p&gt;&lt;img src=&#34;https://res.weread.qq.com/wrepub/epub_27741281_79&#34; alt=&#34;bg vertical right 81% fit&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://res.weread.qq.com/wrepub/epub_27741281_81&#34; alt=&#34;bg vertical right fit&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;tun&lt;/code&gt; 虚拟的是&lt;code&gt;点对点设备&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;small&gt;tun 设备的&lt;code&gt;/dev/tunX&lt;/code&gt;文件收发的是 IP 包，因此只能工作在 L3&lt;/small&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tap&lt;/code&gt; 虚拟的是&lt;code&gt;以太网设备&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;small&gt;tap 设备的 &lt;code&gt;/dev/tapX&lt;/code&gt; 文件收发的是链路层数据包，可以与物理网卡做桥接&lt;/small&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;small&gt;对 tun/tap 设备而言，它与物理网卡的不同表现在它的&lt;strong&gt;数据源&lt;/strong&gt;不是物理链路，而是来自&lt;code&gt;用户态&lt;/code&gt;&lt;/small&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;flannel&#34;&gt;Flannel&lt;/h4&gt;
+&lt;p&gt;Flannel 项目是 CoreOS 公司主推的容器网络方案。&lt;/p&gt;
+&lt;p&gt;Flannel 项目本身只是一个框架，真正为我们提供容器网络功能的，是 Flannel 的后端实现，分别是：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;del&gt;UDP&lt;/del&gt;（最早实现，性能最差，弃用）
+&lt;ul&gt;
+&lt;li&gt;Flannel 之所以最先选择 UDP 模式，就是因为这种模式是最直接、也是最容易理解的容器跨主网络实现&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;VXLAN&lt;/li&gt;
+&lt;li&gt;host-gw&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h5 id=&#34;flannel-udp-方案&#34;&gt;Flannel UDP 方案&lt;/h5&gt;
+&lt;p&gt;&lt;img src=&#34;https://static001.geekbang.org/resource/image/83/6c/8332564c0547bf46d1fbba2a1e0e166c.jpg&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://static001.geekbang.org/resource/image/84/8d/84caa6dc3f9dcdf8b88b56bd2e22138d.png&#34; alt=&#34;bg vertical 60% right fit&#34; /&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Node 1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ ip route
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 最长匹配原则&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;default via 10.168.0.1 dev eth0
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;100.96.0.0/16 dev flannel0  proto kernel  scope link  src 100.96.1.0
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;100.96.1.0/24 dev docker0  proto kernel  scope link  src 100.96.1.1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;10.168.0.0/24 dev eth0  proto kernel  scope link  src 10.168.0.2
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Node 2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ ip route
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;default via 10.168.0.1 dev eth0
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;100.96.0.0/16 dev flannel0  proto kernel  scope link  src 100.96.2.0
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;100.96.2.0/24 dev docker0  proto kernel  scope link  src 100.96.2.1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;10.168.0.0/24 dev eth0  proto kernel  scope link  src 10.168.0.3
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ etcdctl ls
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/coreos.com/network/subnets
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/coreos.com/network/subnets/100.96.1.0-24
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/coreos.com/network/subnets/100.96.2.0-24
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/coreos.com/network/subnets/100.96.3.0-24
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ etcdctl get /coreos.com/network/subnets/100.96.2.0-24
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;PublicIP&amp;#34;&lt;/span&gt;:&lt;span class=&#34;s2&#34;&gt;&amp;#34;10.168.0.3&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h5 id=&#34;flannel-vxlan&#34;&gt;Flannel VXLAN&lt;/h5&gt;
+&lt;p&gt;&lt;img src=&#34;https://static001.geekbang.org/resource/image/03/f5/03185fab251a833fef7ed6665d5049f5.jpg&#34; alt=&#34;bg vertical right fit&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;small&gt;&lt;code&gt;VXLAN&lt;/code&gt;：即 Virtual Extensible LAN，是 Linux &lt;code&gt;内核&lt;/code&gt;本身就支持的一种网络虚似化技术&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;small&gt;&lt;code&gt;VTEP&lt;/code&gt;: VXLAN Tunnel End Point&lt;/small&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 在 Node 1上&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ route -n
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;10.1.16.0       10.1.16.0       255.255.255.0   UG    &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;      &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;        &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt; flannel.1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ ip neigh show dev flannel.1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;10.1.16.0 lladdr 5e:f8:4f:00:e3:37 PERMANENT
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# flannel.1 “网桥” 对应的 FDB 信息，找到目标宿主机 IP&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ bridge fdb show flannel.1 &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; grep 5e:f8:4f:00:e3:37
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;5e:f8:4f:00:e3:37 dev flannel.1 dst 10.168.0.3 self permanent
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h5 id=&#34;flannel-host-gw&#34;&gt;Flannel host-gw&lt;/h5&gt;
+&lt;p&gt;&lt;img src=&#34;https://static001.geekbang.org/resource/image/3d/25/3d8b08411eeb49be2658eb4352206d25.png&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# node1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ ip route
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;10.244.1.0/24 via 10.168.0.3 dev eth0
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;small&gt;主机会充当这条容器通信路径里的网关，这也正是&lt;code&gt;host-gw&lt;/code&gt;的含义&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;small&gt;通过 Etcd 和宿主机上的 flanneld 来维护路由信息&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;small&gt;要求集群宿主机之间是&lt;code&gt;二层连通&lt;/code&gt;的&lt;/small&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;calico&#34;&gt;Calico&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://static001.geekbang.org/resource/image/2e/9b/2e4b3bee1d924f4ae25e2c1fd115379b.jpg&#34; alt=&#34;bg vertical right fit&#34; /&gt;
+&lt;img src=&#34;https://static001.geekbang.org/resource/image/8d/1b/8db6dee96c4242738ae2878e58cecd1b.jpg&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;small&gt;边界网关：路由表里拥有其他自治系统里的主机路由信息&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;small&gt;Calico &lt;code&gt;不会&lt;/code&gt;在宿主机上创建任何&lt;code&gt;网桥&lt;/code&gt;设备&lt;/small&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# node 2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;10.233.2.3 dev cali5863f3 scope link
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h5 id=&#34;calico-ipip-模式&#34;&gt;Calico IPIP 模式&lt;/h5&gt;
+&lt;p&gt;&lt;img src=&#34;https://static001.geekbang.org/resource/image/4d/c9/4dd9ad6415caf68da81562d9542049c9.jpg&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# node 1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;10.233.2.0/24 via 192.168.2.2 tunl0
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;small&gt;Calico IPIP 模式与 Flannel VXLAN 模式的性能大致相当&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;small&gt;公有云环境下，宿主机之间的网关，肯定不会允许用户进行干预和设置&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;small&gt;在私有部署的环境下，想办法将宿主机网关也加入到 BGP Mesh 里从而避免使用 IPIP&lt;/small&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;三kubernetes-网络&#34;&gt;三、Kubernetes 网络&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;cni&#34;&gt;CNI&lt;/h2&gt;
+&lt;p&gt;&lt;small&gt;CNI 网桥，它在宿主机上的设备名称默认是：&lt;code&gt;cni0&lt;/code&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://static001.geekbang.org/resource/image/9f/8c/9f11d8716f6d895ff6d1c813d460488c.jpg&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 子网范围可以在部署时配置&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 部署完成后，可以修改 kube-controller-manager 的配置文件来指定&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ kubeadm init --pod-network-cidr&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;10.244.0.0/16
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol&gt;
+&lt;li&gt;&lt;small&gt;&lt;code&gt;网络方案&lt;/code&gt;：创建和配置 flannel.1 设备、配置宿主机路由、配置 ARP 和 FDB 表里的信息&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;small&gt;&lt;code&gt;CNI 插件&lt;/code&gt;：配置 Infra 容器里面的网络栈，并把它连接到 CNI 网桥&lt;/small&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;pod-网络&#34;&gt;pod 网络&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*oyGbXt7kStLd85ZT4it3oQ.png&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;这个其实前面都讲过了&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;service-负载均衡&#34;&gt;service (负载均衡)&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://res.weread.qq.com/wrepub/epub_27741281_380&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Service 是由 kube-proxy 组件，加上 iptables 来共同实现的&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;iptables-5x5&#34;&gt;iptables 5x5&lt;/h3&gt;
+&lt;small&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;规则名称&lt;/th&gt;
+&lt;th&gt;&lt;del&gt;raw&lt;/del&gt;&lt;/th&gt;
+&lt;th&gt;mangle&lt;/th&gt;
+&lt;th&gt;nat(DNAT)&lt;/th&gt;
+&lt;th&gt;nat(SNAT)&lt;/th&gt;
+&lt;th&gt;filter&lt;/th&gt;
+&lt;th&gt;&lt;del&gt;security&lt;/del&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;PREROUTING&lt;/td&gt;
+&lt;td&gt;✓&lt;/td&gt;
+&lt;td&gt;✓&lt;/td&gt;
+&lt;td&gt;✓&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;INPUT&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;✓&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;✓&lt;/td&gt;
+&lt;td&gt;✓&lt;/td&gt;
+&lt;td&gt;✓&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;OUTPUT&lt;/td&gt;
+&lt;td&gt;✓&lt;/td&gt;
+&lt;td&gt;✓&lt;/td&gt;
+&lt;td&gt;✓&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;✓&lt;/td&gt;
+&lt;td&gt;✓&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;FORWARD&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;✓&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;✓&lt;/td&gt;
+&lt;td&gt;✓&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;POSTROUTING&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;✓&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;✓&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/small&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;small&gt;重点是 &lt;code&gt;3 表 5 链&lt;/code&gt;，raw 和 security 比较少用&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;small&gt;iptables &lt;code&gt;不支持&lt;/code&gt;用户自定义表&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;small&gt;iptables 支持用户自定义链&lt;/small&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;iptables-5-链-钩子位置&#34;&gt;iptables 5 链 （钩子位置）&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://res.weread.qq.com/wrepub/epub_27741281_94&#34; alt=&#34;bg right fit&#34; /&gt;
+&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/13181535-866e1ddf756402b2.png?imageMogr2/auto-orient/strip%7cimageView2/2/format/webp&#34; alt=&#34;bg vertical right fit&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;iptables 底层实现是 &lt;code&gt;netfilter&lt;/code&gt;，IP 层的 5 个 hook 的位置，对应 iptables 就是 5 条&lt;code&gt;内置链&lt;/code&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;small&gt;&lt;code&gt;PREROUTING&lt;/code&gt;：&lt;strong&gt;DNAT&lt;/strong&gt;（内部服务对外发布）&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;small&gt;&lt;code&gt;INPUT&lt;/code&gt;：处理输入本地进程的包&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;small&gt;&lt;code&gt;OUTPUT&lt;/code&gt;：处理本地进程的输出包&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;small&gt;&lt;code&gt;FORWARD&lt;/code&gt;：处理转发的包&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;small&gt;&lt;code&gt;POSTROUTING&lt;/code&gt;：&lt;strong&gt;SNAT&lt;/strong&gt;（内部共享 IP 访问外部）&lt;/small&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;iptables-5-表-分类管理-rule&#34;&gt;iptables 5 表 （分类管理 rule）&lt;/h4&gt;
+&lt;p&gt;优先级从高到低分别是：raw、mangle、nat、filter、security&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;raw&lt;/code&gt;：&lt;del&gt;iptables 是有状态的，即 iptables 对数据包有连接追踪（connectiontracking）机制，而 raw 是用来去除这种追踪机制的；&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mangle&lt;/code&gt;：修改数据包的服务类型，生存周期，为数据包设置标记，实现流量整形、策略路由；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;nat&lt;/code&gt;：用于修改数据包的&lt;strong&gt;源和目的地址&lt;/strong&gt;；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;filter&lt;/code&gt;：用于控制到达某条链上的数据包是&lt;strong&gt;继续放行、直接丢弃（drop）或拒绝（reject）&lt;/strong&gt;；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;security&lt;/code&gt;：&lt;del&gt;最不常用的表（通常，我们说 iptables 只有 4 张表，security`是新加入的特性），用于在数据包上应用 SELinux。&lt;/del&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;iptables-rule&#34;&gt;iptables rule&lt;/h4&gt;
+&lt;p&gt;&lt;small&gt;一条 iptables 规则包含：&lt;code&gt;匹配条件&lt;/code&gt;（多个条件是&lt;strong&gt;逻辑与&lt;/strong&gt;的关系）和&lt;code&gt;动作&lt;/code&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;small&gt;&lt;code&gt;DROP&lt;/code&gt;：直接将数据包丢弃，不再进行后续的处理。可以用来模拟&lt;code&gt;宕机&lt;/code&gt;&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;small&gt;&lt;code&gt;REJECT&lt;/code&gt;：给客户端返回 Connection Refused 或 Destination Unreachable 报文&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;small&gt;&lt;code&gt;RETURN&lt;/code&gt;：跳出当前链，该链里后续的规则不再执行&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;small&gt;&lt;code&gt;ACCEPT&lt;/code&gt;：同意数据包通过，继续执行后续的规则&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;small&gt;&lt;code&gt;QUEUE&lt;/code&gt;：将数据包放入用户空间的队列，供用户空间的程序处理&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;small&gt;&lt;code&gt;JUMP&lt;/code&gt;：跳转到其他&lt;code&gt;用户自定义的链&lt;/code&gt;继续执行&lt;/small&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;iptables-命令示例&#34;&gt;iptables 命令示例&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;iptables &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;-t 表名&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; 管理选项 &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;链名&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;匹配条件&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;-j 控制类型&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 查询规则 (默认是 filter 表)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;iptables -L -n
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 查询 nat 表的规则&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;iptables -t nat -L -n
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 只开启 22 端口&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;iptables -A INPUT -p tcp --dport &lt;span class=&#34;m&#34;&gt;22&lt;/span&gt; -j ACCEPT
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 关闭所有外部访问&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;iptables -P INPUT DROP
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 允许本机访问&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;iptables -A INPUT -i lo -j ACCEPT
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 允许访问外网&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;iptables -A INPUT -m state --state ESTABLISHED -j ACCEPT
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 80 端口被占了，实际 Web 服务监听在 8080 端口上&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;iptables -t nat -A PREROUTING -p tcp --dport &lt;span class=&#34;m&#34;&gt;80&lt;/span&gt; -j REDIRECT --to-port &lt;span class=&#34;m&#34;&gt;8080&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;iptables -A INPUT -p icmp -j DROP
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h3 id=&#34;service---iptables-模式&#34;&gt;service - iptables 模式&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ kubectl get endpoints hostnames
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;NAME        ENDPOINTS
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hostnames   10.244.1.7:9376,10.244.2.3:9376,10.244.3.6:9376
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ kubectl get svc hostnames
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;NAME        TYPE        CLUSTER-IP   EXTERNAL-IP   PORT&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;S&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;   AGE
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hostnames   ClusterIP   10.0.1.175   &amp;lt;none&amp;gt;        80/TCP    5s
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# iptables&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-A KUBE-SERVICES -d 10.0.1.175/32 -p tcp -m comment --comment &lt;span class=&#34;s2&#34;&gt;&amp;#34;default/hostnames: cluster IP&amp;#34;&lt;/span&gt; -m tcp --dport &lt;span class=&#34;m&#34;&gt;80&lt;/span&gt; -j KUBE-SVC-NWV5X2332I4OT4T3
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-A KUBE-SVC-NWV5X2332I4OT4T3 -m comment --comment &lt;span class=&#34;s2&#34;&gt;&amp;#34;default/hostnames:&amp;#34;&lt;/span&gt; -m statistic --mode random --probability 0.33332999982 -j KUBE-SEP-WNBA2IHDGP2BOBGZ
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-A KUBE-SVC-NWV5X2332I4OT4T3 -m comment --comment &lt;span class=&#34;s2&#34;&gt;&amp;#34;default/hostnames:&amp;#34;&lt;/span&gt; -m statistic --mode random --probability 0.50000000000 -j KUBE-SEP-X3P2623AGDH6CDF3
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-A KUBE-SVC-NWV5X2332I4OT4T3 -m comment --comment &lt;span class=&#34;s2&#34;&gt;&amp;#34;default/hostnames:&amp;#34;&lt;/span&gt; -j KUBE-SEP-57KPRZ3JQVENLNBR
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-A KUBE-SEP-57KPRZ3JQVENLNBR -d 10.244.3.6/32 -m comment --comment &lt;span class=&#34;s2&#34;&gt;&amp;#34;default/hostnames:&amp;#34;&lt;/span&gt; -j MARK --set-xmark 0x00004000/0x00004000
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-A KUBE-SEP-57KPRZ3JQVENLNBR -p tcp -m comment --comment &lt;span class=&#34;s2&#34;&gt;&amp;#34;default/hostnames:&amp;#34;&lt;/span&gt; -m tcp -j DNAT --to-destination 10.244.3.6:9376
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-A KUBE-SEP-WNBA2IHDGP2BOBGZ -d 10.244.1.7/32 -m comment --comment &lt;span class=&#34;s2&#34;&gt;&amp;#34;default/hostnames:&amp;#34;&lt;/span&gt; -j MARK --set-xmark 0x00004000/0x00004000
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-A KUBE-SEP-WNBA2IHDGP2BOBGZ -p tcp -m comment --comment &lt;span class=&#34;s2&#34;&gt;&amp;#34;default/hostnames:&amp;#34;&lt;/span&gt; -m tcp -j DNAT --to-destination 10.244.1.7:9376
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-A KUBE-SEP-X3P2623AGDH6CDF3 -d 10.244.2.3/32 -m comment --comment &lt;span class=&#34;s2&#34;&gt;&amp;#34;default/hostnames:&amp;#34;&lt;/span&gt; -j MARK --set-xmark 0x00004000/0x00004000
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-A KUBE-SEP-X3P2623AGDH6CDF3 -p tcp -m comment --comment &lt;span class=&#34;s2&#34;&gt;&amp;#34;default/hostnames:&amp;#34;&lt;/span&gt; -m tcp -j DNAT --to-destination 10.244.2.3:9376
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h3 id=&#34;service---ipvs-模式&#34;&gt;service - ipvs 模式&lt;/h3&gt;
+&lt;p&gt;&lt;small&gt;IPVS 在内核中的实现其实也是基于 Netfilter 的 &lt;code&gt;NAT 模式&lt;/code&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ ip addr
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  73：kube-ipvs0：&amp;lt;BROADCAST,NOARP&amp;gt;  mtu &lt;span class=&#34;m&#34;&gt;1500&lt;/span&gt; qdisc noop state DOWN qlen &lt;span class=&#34;m&#34;&gt;1000&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  link/ether  1a:ce:f5:5f:c1:4d brd ff:ff:ff:ff:ff:ff
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  inet 10.0.1.175/32  scope global kube-ipvs0
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  valid_lft forever  preferred_lft forever
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ ipvsadm -ln
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; IP Virtual Server version 1.2.1 &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;size&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;4096&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  Prot LocalAddress:Port Scheduler Flags
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -&amp;gt;  RemoteAddress:Port           Forward  Weight ActiveConn InActConn
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  TCP  10.102.128.4:80 rr
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -&amp;gt;  10.244.3.6:9376    Masq    &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;       &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;          &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -&amp;gt;  10.244.1.7:9376    Masq    &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;       &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;          &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -&amp;gt;  10.244.2.3:9376    Masq    &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;       &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;          &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h3 id=&#34;集群外访问&#34;&gt;集群外访问&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;small&gt;NodePort&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;small&gt;LoadBalancer&lt;/small&gt;&lt;/li&gt;
+&lt;li&gt;&lt;small&gt;ExternalName&lt;/small&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# iptables&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-A KUBE-NODEPORTS -p tcp -m comment --comment &lt;span class=&#34;s2&#34;&gt;&amp;#34;default/my-nginx: nodePort&amp;#34;&lt;/span&gt; -m tcp --dport &lt;span class=&#34;m&#34;&gt;8080&lt;/span&gt; -j KUBE-SVC-67RL4FN6JRUPOJYM
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# IP 包离开宿主机发往目的 Pod 时进行 SNAT。将这个 IP 包的源地址替换成了这台宿主机上的 CNI 网桥地址，或者宿主机本身的 IP 地址（如果 CNI 网桥不存在的话）&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 查看该 IP 包是否有一个 “0x4000” 的标志（IP 包被执行 DNAT 操作之前被打上去的）&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-A KUBE-POSTROUTING -m comment --comment &lt;span class=&#34;s2&#34;&gt;&amp;#34;kubernetes service traffic requiring SNAT&amp;#34;&lt;/span&gt; -m mark --mark 0x4000/0x4000 -j MASQUERADE
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;           client
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;             &lt;span class=&#34;se&#34;&gt;\ &lt;/span&gt;^
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;              &lt;span class=&#34;se&#34;&gt;\ \
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;               v &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;   node &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; &amp;lt;--- node &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; ^   SNAT
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;   ---&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    v &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; endpoint
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h3 id=&#34;kube-dnscoredns&#34;&gt;kube-dns/coredns&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://shoreline.io/_next/image?url=%2Fuploads%2Fposts%2Fcoredns.jpg&amp;amp;w=1920&amp;amp;q=75&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nameserver 10.250.0.10
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;search default.svc.cluster.local svc.cluster.local cluster.local
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 如果需要 lookup 的 Domain 中包含少于 5 个 `.` ，那么将会被当做非绝对域名&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;options ndots:5
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ curl a
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;a.default.svc.cluster.local &lt;span class=&#34;c1&#34;&gt;# Found&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ curl a.default
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;a.default.default.svc.cluster.local &lt;span class=&#34;c1&#34;&gt;# Not Found&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;a.default.svc.cluster.local &lt;span class=&#34;c1&#34;&gt;# Found&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 在要访问的域名后面加上点(.)，可以避免走 search 域进行匹配&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ curl iftech.io.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;small&gt;默认&lt;code&gt;ClusterFirst&lt;/code&gt;，优先使用 &lt;code&gt;kubedns&lt;/code&gt; 进行域名解析，解析不成功才会使用&lt;code&gt;宿主机&lt;/code&gt;的 DNS 配置进行解析&lt;/small&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;ingress&#34;&gt;Ingress&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.fleeto.us/post/life-of-a-packet-in-k8s-4/images/1.png&#34; alt=&#34;bg right fit&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;所谓 Ingress，就是 &lt;code&gt;Service 的 “Service”&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;常见网络问题排查&#34;&gt;常见网络问题排查&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 1. service 不通。区分 coredns 还是 service 问题&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ nslookup kubernetes.default
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Server:    10.0.0.10
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Address 1: 10.0.0.10 kube-dns.kube-system.svc.cluster.local
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 2. 查看 dns 实例&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;kubectl get pods --namespace&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;kube-system -l k8s-app&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;kube-dns
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;NAME                       READY     STATUS    RESTARTS   AGE
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;coredns-7b96bf9f76-5hsxb   1/1       Running   &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;           1h
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;coredns-7b96bf9f76-mvmmt   1/1       Running   &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;           1h
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 3. service clusterIP 不通。查看 endpoints 问题还是 kube-proxy 问题&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ kubectl get endpoints hostnames
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;NAME        ENDPOINTS
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hostnames   10.244.0.5:9376,10.244.0.6:9376,10.244.0.7:9376
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h1 id=&#34;推荐书籍&#34;&gt;推荐书籍&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;https://img1.doubanio.com/view/subject/l/public/s29825217.jpg&#34; alt=&#34;bg fit&#34; /&gt;
+&lt;img src=&#34;https://img1.doubanio.com/view/subject/l/public/s29370067.jpg&#34; alt=&#34;bg fit&#34; /&gt;
+&lt;img src=&#34;https://img2.doubanio.com/view/subject/l/public/s27316002.jpg&#34; alt=&#34;bg fit&#34; /&gt;
+&lt;img src=&#34;https://img1.doubanio.com/view/subject/l/public/s33499479.jpg&#34; alt=&#34;bg fit&#34; /&gt;
+&lt;img src=&#34;https://img2.doubanio.com/view/subject/l/public/s33868983.jpg&#34; alt=&#34;bg fit&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

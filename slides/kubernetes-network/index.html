@@ -15,8 +15,8 @@
     <link rel="manifest" href="/manifest.webmanifest">
   
 
-  <link rel="icon" type="image/png" href="/media/icon_hu5a99a96afa0d5c480d2983cdb70f75bc_28032_32x32_fill_lanczos_center_3.png">
-  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu5a99a96afa0d5c480d2983cdb70f75bc_28032_192x192_fill_lanczos_center_3.png">
+  <link rel="icon" type="image/png" href="/media/icon_hu6903198404594755751.png">
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu9251444991858654686.png">
 
   <link rel="canonical" href="https://kingye.me/slides/kubernetes-network/">
 
@@ -188,50 +188,50 @@ switch 本身就是一种 bridge/网桥</p>
 <p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXQx9EiaWwmE0kby98Qg4naDUx1JOzx3EUFX66xFrEzxw9DaDho6tb8paPkhIwXTLENRJ5yU0y7NoYw/640?wx_fmt=png&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="bg right 90% fit" /></p>
 <small>
 <table>
-<thead>
-<tr>
-<th>目的地址</th>
-<th>下一跳</th>
-<th>端口</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>192.168.0.0/24</td>
-<td></td>
-<td>0</td>
-</tr>
-<tr>
-<td>192.168.0.254/32</td>
-<td></td>
-<td>0</td>
-</tr>
-<tr>
-<td>192.168.1.0/24</td>
-<td></td>
-<td>1</td>
-</tr>
-<tr>
-<td>192.168.1.254/32</td>
-<td></td>
-<td>1</td>
-</tr>
-<tr>
-<td>192.168.2.0/24</td>
-<td>192.168.100.5</td>
-<td></td>
-</tr>
-<tr>
-<td>192.168.100.0/24</td>
-<td></td>
-<td>2</td>
-</tr>
-<tr>
-<td>192.168.100.4/32</td>
-<td></td>
-<td>2</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>目的地址</th>
+          <th>下一跳</th>
+          <th>端口</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>192.168.0.0/24</td>
+          <td></td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>192.168.0.254/32</td>
+          <td></td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>192.168.1.0/24</td>
+          <td></td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>192.168.1.254/32</td>
+          <td></td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>192.168.2.0/24</td>
+          <td>192.168.100.5</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>192.168.100.0/24</td>
+          <td></td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>192.168.100.4/32</td>
+          <td></td>
+          <td>2</td>
+      </tr>
+  </tbody>
 </table>
 <p>路由表是各种<code>路由算法</code> + <code>人工配置</code>逐步完善起来的</p>
 </small>
@@ -758,64 +758,64 @@ switch 本身就是一种 bridge/网桥</p>
 <h3 id="iptables-5x5">iptables 5x5</h3>
 <small>
 <table>
-<thead>
-<tr>
-<th>规则名称</th>
-<th><del>raw</del></th>
-<th>mangle</th>
-<th>nat(DNAT)</th>
-<th>nat(SNAT)</th>
-<th>filter</th>
-<th><del>security</del></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>PREROUTING</td>
-<td>✓</td>
-<td>✓</td>
-<td>✓</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>INPUT</td>
-<td></td>
-<td>✓</td>
-<td></td>
-<td>✓</td>
-<td>✓</td>
-<td>✓</td>
-</tr>
-<tr>
-<td>OUTPUT</td>
-<td>✓</td>
-<td>✓</td>
-<td>✓</td>
-<td></td>
-<td>✓</td>
-<td>✓</td>
-</tr>
-<tr>
-<td>FORWARD</td>
-<td></td>
-<td>✓</td>
-<td></td>
-<td></td>
-<td>✓</td>
-<td>✓</td>
-</tr>
-<tr>
-<td>POSTROUTING</td>
-<td></td>
-<td>✓</td>
-<td></td>
-<td>✓</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>规则名称</th>
+          <th><del>raw</del></th>
+          <th>mangle</th>
+          <th>nat(DNAT)</th>
+          <th>nat(SNAT)</th>
+          <th>filter</th>
+          <th><del>security</del></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>PREROUTING</td>
+          <td>✓</td>
+          <td>✓</td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>INPUT</td>
+          <td></td>
+          <td>✓</td>
+          <td></td>
+          <td>✓</td>
+          <td>✓</td>
+          <td>✓</td>
+      </tr>
+      <tr>
+          <td>OUTPUT</td>
+          <td>✓</td>
+          <td>✓</td>
+          <td>✓</td>
+          <td></td>
+          <td>✓</td>
+          <td>✓</td>
+      </tr>
+      <tr>
+          <td>FORWARD</td>
+          <td></td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+          <td>✓</td>
+          <td>✓</td>
+      </tr>
+      <tr>
+          <td>POSTROUTING</td>
+          <td></td>
+          <td>✓</td>
+          <td></td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+      </tr>
+  </tbody>
 </table>
 </small>
 <ul>

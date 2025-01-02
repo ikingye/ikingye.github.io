@@ -44,7 +44,454 @@
 &lt;li>Groovy&lt;/li>
 &lt;/ol>
 &lt;/li>
-&lt;/ol></description></item><item><title>项目</title><link>https://kingye.me/projects/</link><pubDate>Sun, 19 May 2024 00:00:00 +0000</pubDate><guid>https://kingye.me/projects/</guid><description/></item><item><title>100 个 Go 语言典型错误</title><link>https://kingye.me/publication/go-100-mistakes/</link><pubDate>Wed, 17 Jan 2024 11:27:41 +0800</pubDate><guid>https://kingye.me/publication/go-100-mistakes/</guid><description/></item><item><title>工作经历</title><link>https://kingye.me/experience/</link><pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate><guid>https://kingye.me/experience/</guid><description/></item><item><title>深入理解 Istio：云原生服务网格进阶实战</title><link>https://kingye.me/publication/dive-into-istio/</link><pubDate>Fri, 01 Jul 2022 14:45:41 +0800</pubDate><guid>https://kingye.me/publication/dive-into-istio/</guid><description/></item><item><title>软件开发的201个原则</title><link>https://kingye.me/publication/201-posd/</link><pubDate>Fri, 01 Oct 2021 14:45:41 +0800</pubDate><guid>https://kingye.me/publication/201-posd/</guid><description/></item><item><title>搭建一个博客网站</title><link>https://kingye.me/post/make-a-blog/</link><pubDate>Sat, 12 Dec 2020 15:41:22 +0800</pubDate><guid>https://kingye.me/post/make-a-blog/</guid><description>&lt;p>本系列手把手教你使用 &lt;a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages&lt;/a> 和 &lt;a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo&lt;/a> 创建一个属于你的网站，包括博客系统，笔记系统等。&lt;/p>
+&lt;/ol></description></item><item><title>项目</title><link>https://kingye.me/projects/</link><pubDate>Sun, 19 May 2024 00:00:00 +0000</pubDate><guid>https://kingye.me/projects/</guid><description/></item><item><title>100 个 Go 语言典型错误</title><link>https://kingye.me/publication/go-100-mistakes/</link><pubDate>Wed, 17 Jan 2024 11:27:41 +0800</pubDate><guid>https://kingye.me/publication/go-100-mistakes/</guid><description/></item><item><title>工作经历</title><link>https://kingye.me/experience/</link><pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate><guid>https://kingye.me/experience/</guid><description/></item><item><title>深入理解 Istio：云原生服务网格进阶实战</title><link>https://kingye.me/publication/dive-into-istio/</link><pubDate>Fri, 01 Jul 2022 14:45:41 +0800</pubDate><guid>https://kingye.me/publication/dive-into-istio/</guid><description/></item><item><title>中国公务员职务</title><link>https://kingye.me/post/civil-service-of-china/</link><pubDate>Sun, 22 May 2022 16:15:38 +0800</pubDate><guid>https://kingye.me/post/civil-service-of-china/</guid><description>&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center">
+&lt;div class="w-100" >&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/202205221614628.png"
+alt=""
+loading="lazy"
+data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>&lt;/p>
+&lt;ul>
+&lt;li>每一级行政机构下设有&lt;strong>内设&lt;/strong>和&lt;strong>外管&lt;/strong>两套系统，外管指其管辖下级行政区划的机构，内设部门一般与其平级&lt;/li>
+&lt;li>国家部委只到&lt;code>处室&lt;/code>（县处级），省和地级市只到&lt;code>科室&lt;/code>（乡科级），县和乡到&lt;code>股/所&lt;/code>（股级）&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="特殊规则">特殊规则&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>直辖市（北京、上海、天津、重庆）为省级行政单位，下属部门级别也均上调一级&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>副省级城市及其下属部门高半级&lt;/p>
+&lt;ul>
+&lt;li>中国现有 15 个&lt;a href="https://www.wikiwand.com/zh-cn/%E5%89%AF%E7%9C%81%E7%BA%A7%E5%B8%82" target="_blank" rel="noopener">副省级市&lt;/a>
+&lt;ul>
+&lt;li>东北地区（4 个）：沈阳市、大连市、长春市、哈尔滨市&lt;/li>
+&lt;li>华东地区（6 个）：南京市、杭州市、济南市、青岛市、宁波市、厦门市&lt;/li>
+&lt;li>华中地区（1 个）：武汉市&lt;/li>
+&lt;li>华南地区（2 个）：广州市、深圳市&lt;/li>
+&lt;li>西南地区（1 个）：成都市&lt;/li>
+&lt;li>西北地区（1 个）：西安市&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+&lt;span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/>&lt;/svg>
+&lt;/span>
+&lt;span class="dark:text-neutral-300">&lt;ul>
+&lt;li>副省级市辖区（2 个）：天津市滨海新区、上海市浦东新区。
+&lt;ul>
+&lt;li>重庆市万州区属于高配&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/span>
+&lt;/div>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center">
+&lt;div class="w-100" >&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/202205221656065.png"
+alt=""
+loading="lazy"
+data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>&lt;/p>
+&lt;ul>
+&lt;li>中国大陆的高校全部是&lt;code>厅局级单位&lt;/code>（不含军校）。本科高校一般为&lt;strong>正厅级&lt;/strong>，专科院校为&lt;strong>副厅级&lt;/strong>。&lt;/li>
+&lt;li>其中 32 所大学由于自身实力得到中央认可，其党委书记和校长高配为&lt;strong>副部级&lt;/strong>，由中共中央、中央组织部联合任命，而非通常由国家部委或省、市政府任命。这些高校的常务副书记和常务副校长为正厅级。
+&lt;ul>
+&lt;li>北京市（7 所）清华大学、北京大学、中国人民大学、北京航空航天大学、北京理工大学、北京师范大学、中国农业大学&lt;/li>
+&lt;li>上海市（3 所）复旦大学、上海交通大学、同济大学&lt;/li>
+&lt;li>陕西省（3 所）西安交通大学、西北工业大学、西北农林科技大学&lt;/li>
+&lt;li>天津市（2 所）天津大学、南开大学&lt;/li>
+&lt;li>江苏省（2 所）南京大学、东南大学&lt;/li>
+&lt;li>湖北省（2 所）武汉大学、华中科技大学&lt;/li>
+&lt;li>湖南省（2 所）中南大学、国防科技大学&lt;/li>
+&lt;li>广东省（1 所）中山大学&lt;/li>
+&lt;li>浙江省（1 所）浙江大学&lt;/li>
+&lt;li>重庆市（1 所）重庆大学&lt;/li>
+&lt;li>福建省（1 所）厦门大学&lt;/li>
+&lt;li>山东省（1 所）山东大学&lt;/li>
+&lt;li>四川省（1 所）四川大学&lt;/li>
+&lt;li>安徽省（1 所）中国科技大学&lt;/li>
+&lt;li>甘肃省（1 所）兰州大学&lt;/li>
+&lt;li>吉林省（1 所）吉林大学&lt;/li>
+&lt;li>辽宁省（1 所）大连理工大学&lt;/li>
+&lt;li>黑龙江省（1 所）哈尔滨工业大学&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+&lt;span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/>&lt;/svg>
+&lt;/span>
+&lt;span class="dark:text-neutral-300">这些学校还是厅局级单位，并不是副部级单位。&lt;/span>
+&lt;/div>
+&lt;ul>
+&lt;li>有 7 所学校属于 985、211 工程院校，但不属于副部级大学：东北大学、华东师范大学、中国海洋大学、湖南大学、电子科技大学、华南理工大学、中央民族大学
+&lt;ul>
+&lt;li>其中前 6 所为&lt;strong>教育部&lt;/strong>直属高校，中央民族大学为&lt;strong>国家民族事务委员会&lt;/strong>直属&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>民办高校一般不署行政级别&lt;/li>
+&lt;li>部分地级市把几个中专合并为大专，一般为县处级&lt;/li>
+&lt;li>中专重高正处，普高副处，初中正科，小学副科&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="常见问题">常见问题&lt;/h2>
+&lt;h3 id="局长的区别">局长的区别&lt;/h3>
+&lt;p>国家部委的司局=省的厅局 &amp;gt; 地级市处局 &amp;gt; 县级政府的科局&lt;/p>
+&lt;h3 id="公务员-vs-参公-vs-事业编">公务员 vs 参公 vs 事业编&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>公务员&lt;/strong>是行政编&lt;/li>
+&lt;li>公务员和参公：都是参加国考或省考，考&lt;strong>行测&lt;/strong>和&lt;strong>申论&lt;/strong>&lt;/li>
+&lt;li>事业编：事业单位招聘，考&lt;strong>公共基础知识&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>市直单位事业编 &amp;gt; 乡镇公务员副科 &amp;gt; 乡镇公务员&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="职务职级级别">职务，职级，级别&lt;/h3>
+&lt;p>
+&lt;figure >
+&lt;div class="flex justify-center">
+&lt;div class="w-100" >&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/202205221956384.png"
+alt=""
+loading="lazy"
+data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>&lt;/p>
+&lt;hr>
+&lt;h2 id="参考">参考&lt;/h2>
+&lt;ul>
+&lt;li>B 站 &lt;a href="https://www.bilibili.com/video/BV1R44y1q7nA" target="_blank" rel="noopener">中国行政区划详解&lt;/a>&lt;/li>
+&lt;li>维基百科 &lt;a href="https://www.wikiwand.com/zh-cn/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%85%AC%E5%8A%A1%E5%91%98" target="_blank" rel="noopener">中华人民共和国公务员&lt;/a>&lt;/li>
+&lt;li>知乎 &lt;a href="https://zhuanlan.zhihu.com/p/67817923" target="_blank" rel="noopener">公务员职务、职级与级别全面解读&lt;/a>&lt;/li>
+&lt;li>知乎 &lt;a href="https://zhuanlan.zhihu.com/p/19986484" target="_blank" rel="noopener">行政级别分哪几级？局级是哪一级？&lt;/a>&lt;/li>
+&lt;li>知乎 &lt;a href="https://www.zhihu.com/question/328539440" target="_blank" rel="noopener">中国高校的行政级别有哪几个级别？&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>软件开发的201个原则</title><link>https://kingye.me/publication/201-posd/</link><pubDate>Fri, 01 Oct 2021 14:45:41 +0800</pubDate><guid>https://kingye.me/publication/201-posd/</guid><description/></item><item><title>CKAD 考试准备</title><link>https://kingye.me/post/ckad/</link><pubDate>Mon, 16 Aug 2021 20:41:38 +0800</pubDate><guid>https://kingye.me/post/ckad/</guid><description>&lt;p>&lt;code>Certified Kubernetes Application Developer&lt;/code>&lt;/p>
+&lt;ul>
+&lt;li>Kubernetes 应用程序开发者认证
+&lt;ul>
+&lt;li>考试模式：线上&lt;/li>
+&lt;li>考试时间：2 小时&lt;/li>
+&lt;li>认证有效期：3 年&lt;/li>
+&lt;li>软件版本：Kubernetes v1.21&lt;/li>
+&lt;li>重考政策：可接受重考&lt;/li>
+&lt;li>经验水平：中级&lt;/li>
+&lt;li>考生需于购买考试后，12 个月内进行考试&lt;/li>
+&lt;li>通过认证考试的考生将获得 PDF 认证证书&lt;/li>
+&lt;li>&lt;a href="https://killer.sh/course/preview/052229bd-1062-44a4-8aae-f50d0770165a" target="_blank" rel="noopener">问题预览&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="考试内容">考试内容&lt;/h2>
+&lt;ul>
+&lt;li>Core Concepts: 13%&lt;/li>
+&lt;li>Configuration: 18%&lt;/li>
+&lt;li>Multi-Container Pods: 10%&lt;/li>
+&lt;li>Observability: 18%&lt;/li>
+&lt;li>Pod Design: 20%&lt;/li>
+&lt;li>Services &amp;amp; Networking: 13%&lt;/li>
+&lt;li>State Persistence: 8%&lt;/li>
+&lt;/ul>
+&lt;p>详细内容&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 核心概念: 13％
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> 了解 Kubernetes API 原语&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 创建和配置基本窗格&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 配置: 18％
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> 了解 ConfigMaps&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 了解 SecurityContexts&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 定义应用程序的资源需求&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 创造和消费秘密&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 了解 ServiceAccounts&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Multi-Container Pods: 10％
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> 了解 Multi-Container Pod 设计模式（例如，大使，适配器，边车）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 可观察性: 18％
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> 了解 LivenessProbes 和 ReadinessProbes&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 了解容器日志记录&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 了解如何监控 Kubernetes 中的应用程序&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 了解 Kubernetes 中的调试&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Pod 设计: 20％
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> 了解如何使用标签，选择器和注释&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 了解部署以及如何执行滚动更新&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 了解部署以及如何执行回滚&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 了解 Jobs 和 CronJobs&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 服务与网络: 13％
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> 了解服务&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 展示对 NetworkPolicies 的基本了解&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 持续状态: 8％&lt;/li>
+&lt;/ul>
+&lt;h3 id="ckad-2021">CKAD 2021&lt;/h3>
+&lt;p>2021-09-28 之后 (&lt;a href="https://www.cncf.io/certification/ckad/" target="_blank" rel="noopener">Quarterly exam updates are planned to match Kubernetes releases.&lt;/a>)&lt;/p>
+&lt;ul>
+&lt;li>Application Design and Build – 20%
+&lt;ul>
+&lt;li>Define, build and modify container images&lt;/li>
+&lt;li>Understand Jobs and CronJobs&lt;/li>
+&lt;li>Understand multi-container Pod design patterns (e.g. sidecar, init and others)&lt;/li>
+&lt;li>Utilize persistent and ephemeral volumes&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Application Environment, Configuration and Security – 25%
+&lt;ul>
+&lt;li>Discover and use resources that extend Kubernetes (CRD)&lt;/li>
+&lt;li>Understand authentication, authorization and admission control&lt;/li>
+&lt;li>Understanding and defining resource requirements, limits and quotas&lt;/li>
+&lt;li>Understand ConfigMaps&lt;/li>
+&lt;li>Create &amp;amp; consume Secrets&lt;/li>
+&lt;li>Understand ServiceAccounts&lt;/li>
+&lt;li>Understand SecurityContexts&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Application Deployment – 20%
+&lt;ul>
+&lt;li>Use Kubernetes primitives to implement common deployment strategies (e.g. blue/green or canary)&lt;/li>
+&lt;li>Understand Deployments and how to perform rolling updates&lt;/li>
+&lt;li>Use the Helm package manager to deploy existing packages&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Services and Networking – 20%
+&lt;ul>
+&lt;li>Demonstrate basic understanding of NetworkPolicies&lt;/li>
+&lt;li>Provide and troubleshoot access to applications via services&lt;/li>
+&lt;li>Use Ingress rules to expose applications&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Application Observability and Maintenance – 15%
+&lt;ul>
+&lt;li>Understand API deprecations&lt;/li>
+&lt;li>Implement probes and health checks&lt;/li>
+&lt;li>Use provided tools to monitor Kubernetes applications&lt;/li>
+&lt;li>Utilize container logs&lt;/li>
+&lt;li>Debugging in Kubernetes&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="教程">教程&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/dgkanatsios/CKAD-exercises" target="_blank" rel="noopener">dgkanatsios/CKAD-exercises&lt;/a>
+&lt;img
+src="https://img.shields.io/github/stars/dgkanatsios/CKAD-exercises.svg"
+alt="Github stars"
+loading="lazy"
+style="display: inline-block; vertical-align: middle; margin: 0 2px;"
+/>
+&lt;img
+src="https://img.shields.io/github/languages/top/dgkanatsios/CKAD-exercises.svg"
+alt="Language"
+loading="lazy"
+style="display: inline-block; vertical-align: middle; margin: 0 2px;"
+/>
+&lt;img
+src="https://img.shields.io/github/v/tag/dgkanatsios/CKAD-exercises.svg?sort=semver"
+alt="Last Tag"
+loading="lazy"
+style="display: inline-block; vertical-align: middle; margin: 0 2px;"
+/>
+&lt;img
+src="https://img.shields.io/github/last-commit/dgkanatsios/CKAD-exercises.svg"
+alt="Last commit"
+loading="lazy"
+style="display: inline-block; vertical-align: middle; margin: 0 2px;"
+/>&lt;/li>
+&lt;li>&lt;a href="https://github.com/twajr/ckad-prep-notes" target="_blank" rel="noopener">twajr/ckad-prep-notes&lt;/a>
+&lt;img
+src="https://img.shields.io/github/stars/twajr/ckad-prep-notes.svg"
+alt="Github stars"
+loading="lazy"
+style="display: inline-block; vertical-align: middle; margin: 0 2px;"
+/>
+&lt;img
+src="https://img.shields.io/github/languages/top/twajr/ckad-prep-notes.svg"
+alt="Language"
+loading="lazy"
+style="display: inline-block; vertical-align: middle; margin: 0 2px;"
+/>
+&lt;img
+src="https://img.shields.io/github/v/tag/twajr/ckad-prep-notes.svg?sort=semver"
+alt="Last Tag"
+loading="lazy"
+style="display: inline-block; vertical-align: middle; margin: 0 2px;"
+/>
+&lt;img
+src="https://img.shields.io/github/last-commit/twajr/ckad-prep-notes.svg"
+alt="Last commit"
+loading="lazy"
+style="display: inline-block; vertical-align: middle; margin: 0 2px;"
+/>&lt;/li>
+&lt;li>&lt;a href="https://github.com/lucassha/CKAD-resources" target="_blank" rel="noopener">lucassha/CKAD-resources&lt;/a>
+&lt;img
+src="https://img.shields.io/github/stars/lucassha/CKAD-resources.svg"
+alt="Github stars"
+loading="lazy"
+style="display: inline-block; vertical-align: middle; margin: 0 2px;"
+/>
+&lt;img
+src="https://img.shields.io/github/languages/top/lucassha/CKAD-resources.svg"
+alt="Language"
+loading="lazy"
+style="display: inline-block; vertical-align: middle; margin: 0 2px;"
+/>
+&lt;img
+src="https://img.shields.io/github/v/tag/lucassha/CKAD-resources.svg?sort=semver"
+alt="Last Tag"
+loading="lazy"
+style="display: inline-block; vertical-align: middle; margin: 0 2px;"
+/>
+&lt;img
+src="https://img.shields.io/github/last-commit/lucassha/CKAD-resources.svg"
+alt="Last commit"
+loading="lazy"
+style="display: inline-block; vertical-align: middle; margin: 0 2px;"
+/>&lt;/li>
+&lt;li>&lt;a href="https://github.com/bmuschko/ckad-prep" target="_blank" rel="noopener">bmuschko/ckad-prep&lt;/a>
+&lt;img
+src="https://img.shields.io/github/stars/bmuschko/ckad-prep.svg"
+alt="Github stars"
+loading="lazy"
+style="display: inline-block; vertical-align: middle; margin: 0 2px;"
+/>
+&lt;img
+src="https://img.shields.io/github/languages/top/bmuschko/ckad-prep.svg"
+alt="Language"
+loading="lazy"
+style="display: inline-block; vertical-align: middle; margin: 0 2px;"
+/>
+&lt;img
+src="https://img.shields.io/github/v/tag/bmuschko/ckad-prep.svg?sort=semver"
+alt="Last Tag"
+loading="lazy"
+style="display: inline-block; vertical-align: middle; margin: 0 2px;"
+/>
+&lt;img
+src="https://img.shields.io/github/last-commit/bmuschko/ckad-prep.svg"
+alt="Last commit"
+loading="lazy"
+style="display: inline-block; vertical-align: middle; margin: 0 2px;"
+/>&lt;/li>
+&lt;li>&lt;a href="https://github.com/bmuschko/ckad-crash-course" target="_blank" rel="noopener">bmuschko/ckad-crash-course&lt;/a>
+&lt;img
+src="https://img.shields.io/github/stars/bmuschko/ckad-crash-course.svg"
+alt="Github stars"
+loading="lazy"
+style="display: inline-block; vertical-align: middle; margin: 0 2px;"
+/>
+&lt;img
+src="https://img.shields.io/github/languages/top/bmuschko/ckad-crash-course.svg"
+alt="Language"
+loading="lazy"
+style="display: inline-block; vertical-align: middle; margin: 0 2px;"
+/>
+&lt;img
+src="https://img.shields.io/github/v/tag/bmuschko/ckad-crash-course.svg?sort=semver"
+alt="Last Tag"
+loading="lazy"
+style="display: inline-block; vertical-align: middle; margin: 0 2px;"
+/>
+&lt;img
+src="https://img.shields.io/github/last-commit/bmuschko/ckad-crash-course.svg"
+alt="Last commit"
+loading="lazy"
+style="display: inline-block; vertical-align: middle; margin: 0 2px;"
+/>&lt;/li>
+&lt;li>&lt;a href="https://github.com/bbachi/CKAD-Practice-Questions" target="_blank" rel="noopener">bbachi/CKAD-Practice-Questions&lt;/a>
+&lt;img
+src="https://img.shields.io/github/stars/bbachi/CKAD-Practice-Questions.svg"
+alt="Github stars"
+loading="lazy"
+style="display: inline-block; vertical-align: middle; margin: 0 2px;"
+/>
+&lt;img
+src="https://img.shields.io/github/languages/top/bbachi/CKAD-Practice-Questions.svg"
+alt="Language"
+loading="lazy"
+style="display: inline-block; vertical-align: middle; margin: 0 2px;"
+/>
+&lt;img
+src="https://img.shields.io/github/v/tag/bbachi/CKAD-Practice-Questions.svg?sort=semver"
+alt="Last Tag"
+loading="lazy"
+style="display: inline-block; vertical-align: middle; margin: 0 2px;"
+/>
+&lt;img
+src="https://img.shields.io/github/last-commit/bbachi/CKAD-Practice-Questions.svg"
+alt="Last commit"
+loading="lazy"
+style="display: inline-block; vertical-align: middle; margin: 0 2px;"
+/>&lt;/li>
+&lt;li>&lt;a href="https://github.com/saripurigopi/CKAD" target="_blank" rel="noopener">saripurigopi/CKAD&lt;/a>
+&lt;img
+src="https://img.shields.io/github/stars/saripurigopi/CKAD.svg"
+alt="Github stars"
+loading="lazy"
+style="display: inline-block; vertical-align: middle; margin: 0 2px;"
+/>
+&lt;img
+src="https://img.shields.io/github/languages/top/saripurigopi/CKAD.svg"
+alt="Language"
+loading="lazy"
+style="display: inline-block; vertical-align: middle; margin: 0 2px;"
+/>
+&lt;img
+src="https://img.shields.io/github/v/tag/saripurigopi/CKAD.svg?sort=semver"
+alt="Last Tag"
+loading="lazy"
+style="display: inline-block; vertical-align: middle; margin: 0 2px;"
+/>
+&lt;img
+src="https://img.shields.io/github/last-commit/saripurigopi/CKAD.svg"
+alt="Last commit"
+loading="lazy"
+style="display: inline-block; vertical-align: middle; margin: 0 2px;"
+/>&lt;/li>
+&lt;li>&lt;a href="https://github.com/jbigtani/crack-CKAD" target="_blank" rel="noopener">jbigtani/crack-CKAD&lt;/a>
+&lt;img
+src="https://img.shields.io/github/stars/jbigtani/crack-CKAD.svg"
+alt="Github stars"
+loading="lazy"
+style="display: inline-block; vertical-align: middle; margin: 0 2px;"
+/>
+&lt;img
+src="https://img.shields.io/github/languages/top/jbigtani/crack-CKAD.svg"
+alt="Language"
+loading="lazy"
+style="display: inline-block; vertical-align: middle; margin: 0 2px;"
+/>
+&lt;img
+src="https://img.shields.io/github/v/tag/jbigtani/crack-CKAD.svg?sort=semver"
+alt="Last Tag"
+loading="lazy"
+style="display: inline-block; vertical-align: middle; margin: 0 2px;"
+/>
+&lt;img
+src="https://img.shields.io/github/last-commit/jbigtani/crack-CKAD.svg"
+alt="Last commit"
+loading="lazy"
+style="display: inline-block; vertical-align: middle; margin: 0 2px;"
+/>&lt;/li>
+&lt;/ul></description></item><item><title>搭建一个博客网站</title><link>https://kingye.me/post/make-a-blog/</link><pubDate>Sat, 12 Dec 2020 15:41:22 +0800</pubDate><guid>https://kingye.me/post/make-a-blog/</guid><description>&lt;p>本系列手把手教你使用 &lt;a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages&lt;/a> 和 &lt;a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo&lt;/a> 创建一个属于你的网站，包括博客系统，笔记系统等。&lt;/p>
 &lt;blockquote>
 &lt;p>无需购买服务器资源。&lt;/p>
 &lt;/blockquote>
@@ -68,10 +515,12 @@
 &lt;p>假设你喜欢主题 &lt;a href="https://github.com/olOwOlo/hugo-theme-even" target="_blank" rel="noopener">Even&lt;/a>&lt;/p>
 &lt;p>
 &lt;figure >
-&lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20201212160642.png" alt="" loading="lazy" data-zoomable />&lt;/div>
-&lt;/div>&lt;/figure>
-&lt;/p>
+&lt;div class="flex justify-center">
+&lt;div class="w-100" >&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20201212160642.png"
+alt=""
+loading="lazy"
+data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 进入你刚创建的博客目录&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> ilivelearnteach.github.io
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 使用 git 管理你的博客&lt;/span>
@@ -108,10 +557,12 @@
 &lt;li>仓库名必须是 &lt;code>你的用户名.github.io&lt;/code>&lt;/li>
 &lt;li>这三个必须&lt;strong>至少&lt;/strong>勾选一个（使仓库生成 main 分支，否则后续会出错）
 &lt;figure >
-&lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20201214011753.png" alt="" loading="lazy" data-zoomable />&lt;/div>
-&lt;/div>&lt;/figure>
-&lt;/li>
+&lt;div class="flex justify-center">
+&lt;div class="w-100" >&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20201214011753.png"
+alt=""
+loading="lazy"
+data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>&lt;/li>
 &lt;/ol>
 &lt;h3 id="提交博客">提交博客&lt;/h3>
 &lt;h4 id="使用-submodule-管理博客内容">使用 submodule 管理博客内容&lt;/h4>
@@ -136,10 +587,12 @@
 &lt;p>如果没有自动开启 GitHub Pages，就手动选择 &lt;code>main&lt;/code> 分支，&lt;code>/ (root)&lt;/code> 路径，点击 &lt;code>Save&lt;/code> 即可。&lt;/p>
 &lt;p>
 &lt;figure >
-&lt;div class="flex justify-center ">
-&lt;div class="w-100" >&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20201213162649.png" alt="" loading="lazy" data-zoomable />&lt;/div>
-&lt;/div>&lt;/figure>
-&lt;/p>
+&lt;div class="flex justify-center">
+&lt;div class="w-100" >&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20201213162649.png"
+alt=""
+loading="lazy"
+data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>&lt;/p>
 &lt;p>更多详情参考：&lt;a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/" target="_blank" rel="noopener">Hugo Host on GitHub&lt;/a>&lt;/p>
 &lt;hr>
 &lt;p>我们已经搭建了一个基本的博客系统，你已经可以使用喜欢的编辑器（推荐 &lt;a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode&lt;/a>） 进行文章编写，使用 Git 提交修改到 GitHub，由其自动部署到 GitHub Pages，读者就可以读取到你的新博文。&lt;/p>

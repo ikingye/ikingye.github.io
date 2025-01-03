@@ -28,6 +28,8 @@
 &lt;li>&lt;a href="https://kingye.me/study-csharp/">C# 学习笔记&lt;/a>【2024 年】&lt;/li>
 &lt;li>&lt;a href="https://kingye.me/note-cs/docs/basic/pl/typescript/">TypeScript 学习笔记&lt;/a>【2025 年】&lt;/li>
 &lt;li>&lt;a href="https://kingye.me/note-cs/docs/basic/pl/swift/">Swift 学习笔记&lt;/a>【2026 年】&lt;/li>
+&lt;/ol>
+&lt;ul>
 &lt;li>候选
 &lt;ol>
 &lt;li>Erlang&lt;/li>
@@ -44,7 +46,7 @@
 &lt;li>Groovy&lt;/li>
 &lt;/ol>
 &lt;/li>
-&lt;/ol></description></item><item><title>项目</title><link>https://kingye.me/projects/</link><pubDate>Sun, 19 May 2024 00:00:00 +0000</pubDate><guid>https://kingye.me/projects/</guid><description/></item><item><title>100 个 Go 语言典型错误</title><link>https://kingye.me/publication/go-100-mistakes/</link><pubDate>Wed, 17 Jan 2024 11:27:41 +0800</pubDate><guid>https://kingye.me/publication/go-100-mistakes/</guid><description/></item><item><title>工作经历</title><link>https://kingye.me/experience/</link><pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate><guid>https://kingye.me/experience/</guid><description/></item><item><title>深入理解 Istio：云原生服务网格进阶实战</title><link>https://kingye.me/publication/dive-into-istio/</link><pubDate>Fri, 01 Jul 2022 14:45:41 +0800</pubDate><guid>https://kingye.me/publication/dive-into-istio/</guid><description/></item><item><title>中国公务员职务</title><link>https://kingye.me/post/civil-service-of-china/</link><pubDate>Sun, 22 May 2022 16:15:38 +0800</pubDate><guid>https://kingye.me/post/civil-service-of-china/</guid><description>&lt;p>
+&lt;/ul></description></item><item><title>项目</title><link>https://kingye.me/projects/</link><pubDate>Sun, 19 May 2024 00:00:00 +0000</pubDate><guid>https://kingye.me/projects/</guid><description/></item><item><title>100 个 Go 语言典型错误</title><link>https://kingye.me/publication/go-100-mistakes/</link><pubDate>Wed, 17 Jan 2024 11:27:41 +0800</pubDate><guid>https://kingye.me/publication/go-100-mistakes/</guid><description/></item><item><title>工作经历</title><link>https://kingye.me/experience/</link><pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate><guid>https://kingye.me/experience/</guid><description/></item><item><title>深入理解 Istio：云原生服务网格进阶实战</title><link>https://kingye.me/publication/dive-into-istio/</link><pubDate>Fri, 01 Jul 2022 14:45:41 +0800</pubDate><guid>https://kingye.me/publication/dive-into-istio/</guid><description/></item><item><title>中国公务员职务</title><link>https://kingye.me/post/civil-service-of-china/</link><pubDate>Sun, 22 May 2022 16:15:38 +0800</pubDate><guid>https://kingye.me/post/civil-service-of-china/</guid><description>&lt;p>
 &lt;figure >
 &lt;div class="flex justify-center">
 &lt;div class="w-100" >&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/202205221614628.png"

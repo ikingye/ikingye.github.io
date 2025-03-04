@@ -1,5 +1,26 @@
-<!doctype html><html lang=zh-cn dir=ltr data-wc-theme-default=system><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=generator content="Hugo Blox Builder 0.3.1"><meta name=author content="叶王"><meta name=description content='磁盘 lsblk | awk &#39;/disk/ {a[$4]++} END{for(i in a) printf "NVME %s * %d\n",i,a[i]}&#39; 网卡 devices_info=$(ibv_devices | awk &#39;NR>2 {print $1}&#39; | xargs -I {} sh -c &#39;rate=$(ibstat {} | grep "Rate" | awk "{print \$2 \" Gb/s\"}"); firmware=$(ibstat {} | grep "Firmware version" | awk "{print \$3}"); echo "{}: Firmware: $firmware, Rate: $rate"&#39;) echo "$devices_info" echo "总结：" echo "$devices_info" | grep -oP &#39;Rate: \K\d+&#39; | sort | uniq -c | awk &#39;{print $2 " Gb/s * " $1}&#39; '><link rel=alternate hreflang=zh-cn href=https://kingye.me/post/hello-gpu/><link rel=stylesheet href=/css/themes/blue.min.css><link href=/dist/wc.min.css rel=stylesheet><script>window.hbb={defaultTheme:document.documentElement.dataset.wcThemeDefault,setDarkTheme:()=>{document.documentElement.classList.add("dark"),document.documentElement.style.colorScheme="dark"},setLightTheme:()=>{document.documentElement.classList.remove("dark"),document.documentElement.style.colorScheme="light"}},console.debug(`Default Hugo Blox Builder theme is ${window.hbb.defaultTheme}`),"wc-color-theme"in localStorage?localStorage.getItem("wc-color-theme")==="dark"?window.hbb.setDarkTheme():window.hbb.setLightTheme():(window.hbb.defaultTheme==="dark"?window.hbb.setDarkTheme():window.hbb.setLightTheme(),window.hbb.defaultTheme==="system"&&(window.matchMedia("(prefers-color-scheme: dark)").matches?window.hbb.setDarkTheme():window.hbb.setLightTheme()))</script><script>document.addEventListener("DOMContentLoaded",function(){let e=document.querySelectorAll("li input[type='checkbox'][disabled]");e.forEach(e=>{e.parentElement.parentElement.classList.add("task-list")});const t=document.querySelectorAll(".task-list li");t.forEach(e=>{let t=Array.from(e.childNodes).filter(e=>e.nodeType===3&&e.textContent.trim().length>1);if(t.length>0){const n=document.createElement("label");t[0].after(n),n.appendChild(e.querySelector("input[type='checkbox']")),n.appendChild(t[0])}})})</script><link rel=icon type=image/png href=/media/icon_hu3247630877640252165.png><link rel=apple-touch-icon type=image/png href=/media/icon_hu4166356570829923896.png><link rel=canonical href=https://kingye.me/post/hello-gpu/><meta property="twitter:card" content="summary"><meta property="twitter:site" content="@ikingye"><meta property="twitter:creator" content="@ikingye"><meta property="og:site_name" content="叶王说"><meta property="og:url" content="https://kingye.me/post/hello-gpu/"><meta property="og:title" content="GPU 入门 | 叶王说"><meta property="og:description" content='磁盘
-lsblk | awk &#39;/disk/ {a[$4]++} END{for(i in a) printf "NVME %s * %d\n",i,a[i]}&#39;
+<!doctype html><html lang=zh-cn dir=ltr data-wc-theme-default=system><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=generator content="Hugo Blox Builder 0.3.1"><meta name=author content="叶王"><meta name=description content='磁盘 lsblk | awk &#39; /disk/ { if ($1 ~ /^sd/) { type = "SATA"; } else if ($1 ~ /^nvme/) { type = "NVME"; } else if ($1 ~ /^vd/) { type = "VIRTIO"; # 新增虚拟化磁盘类型 } else { type = "OTHER"; # 未知类型归类 } size = $4; count[type][size]++; } END { # 遍历所有类型输出 for (t in count) { for (s in count[t]) { printf "%s %s * %d\n", t, s, count[t][s]; } } }&#39; 网卡 devices_info=$(ibv_devices | awk &#39;NR>2 {print $1}&#39; | xargs -I {} sh -c &#39;rate=$(ibstat {} | grep "Rate" | awk "{print \$2 \" Gb/s\"}"); firmware=$(ibstat {} | grep "Firmware version" | awk "{print \$3}"); echo "{}: Firmware: $firmware, Rate: $rate"&#39;) echo "$devices_info" echo "总结：" echo "$devices_info" | grep -oP &#39;Rate: \K\d+&#39; | sort | uniq -c | awk &#39;{print $2 " Gb/s * " $1}&#39; '><link rel=alternate hreflang=zh-cn href=https://kingye.me/post/hello-gpu/><link rel=stylesheet href=/css/themes/blue.min.css><link href=/dist/wc.min.css rel=stylesheet><script>window.hbb={defaultTheme:document.documentElement.dataset.wcThemeDefault,setDarkTheme:()=>{document.documentElement.classList.add("dark"),document.documentElement.style.colorScheme="dark"},setLightTheme:()=>{document.documentElement.classList.remove("dark"),document.documentElement.style.colorScheme="light"}},console.debug(`Default Hugo Blox Builder theme is ${window.hbb.defaultTheme}`),"wc-color-theme"in localStorage?localStorage.getItem("wc-color-theme")==="dark"?window.hbb.setDarkTheme():window.hbb.setLightTheme():(window.hbb.defaultTheme==="dark"?window.hbb.setDarkTheme():window.hbb.setLightTheme(),window.hbb.defaultTheme==="system"&&(window.matchMedia("(prefers-color-scheme: dark)").matches?window.hbb.setDarkTheme():window.hbb.setLightTheme()))</script><script>document.addEventListener("DOMContentLoaded",function(){let e=document.querySelectorAll("li input[type='checkbox'][disabled]");e.forEach(e=>{e.parentElement.parentElement.classList.add("task-list")});const t=document.querySelectorAll(".task-list li");t.forEach(e=>{let t=Array.from(e.childNodes).filter(e=>e.nodeType===3&&e.textContent.trim().length>1);if(t.length>0){const n=document.createElement("label");t[0].after(n),n.appendChild(e.querySelector("input[type='checkbox']")),n.appendChild(t[0])}})})</script><link rel=icon type=image/png href=/media/icon_hu3247630877640252165.png><link rel=apple-touch-icon type=image/png href=/media/icon_hu4166356570829923896.png><link rel=canonical href=https://kingye.me/post/hello-gpu/><meta property="twitter:card" content="summary"><meta property="twitter:site" content="@ikingye"><meta property="twitter:creator" content="@ikingye"><meta property="og:site_name" content="叶王说"><meta property="og:url" content="https://kingye.me/post/hello-gpu/"><meta property="og:title" content="GPU 入门 | 叶王说"><meta property="og:description" content='磁盘
+lsblk | awk &#39;
+  /disk/ {
+    if ($1 ~ /^sd/) {
+      type = "SATA";
+    } else if ($1 ~ /^nvme/) {
+      type = "NVME";
+    } else if ($1 ~ /^vd/) {
+      type = "VIRTIO";  # 新增虚拟化磁盘类型
+    } else {
+      type = "OTHER";    # 未知类型归类
+    }
+    size = $4;
+    count[type][size]++;
+  }
+  END {
+    # 遍历所有类型输出
+    for (t in count) {
+      for (s in count[t]) {
+        printf "%s %s * %d\n", t, s, count[t][s];
+      }
+    }
+  }&#39;
 网卡
 devices_info=$(ibv_devices | awk &#39;NR>2 {print $1}&#39; | xargs -I {} sh -c &#39;rate=$(ibstat {} | grep "Rate" | awk "{print \$2 \" Gb/s\"}"); firmware=$(ibstat {} | grep "Firmware version" | awk "{print \$3}"); echo "{}: Firmware: $firmware, Rate: $rate"&#39;)
 echo "$devices_info"
@@ -29,7 +50,28 @@ text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hove
     
   </div></nav><article class="w-full break-words flex min-h-[calc(100vh-var(--navbar-height))] min-w-0 justify-center pb-8 pr-[calc(env(safe-area-inset-right)-1.5rem)]"><main class="w-full min-w-0 max-w-6xl px-6 pt-4 md:px-12"><h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100">GPU 入门</h1><div class="mt-4 mb-16"><div class="text-gray-500 dark:text-gray-300 text-sm flex items-center flex-wrap gap-y-2"><span class=mr-1>2025-03-02</span>
 <span class=mx-1>·</span>
-<span class=mx-1>1 分钟阅读时长</span></div><div class=mt-3></div></div><div class="prose prose-slate lg:prose-xl dark:prose-invert"><h2 id=磁盘>磁盘</h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>lsblk <span class=p>|</span> awk <span class=s1>&#39;/disk/ {a[$4]++} END{for(i in a) printf &#34;NVME %s * %d\n&#34;,i,a[i]}&#39;</span>
+<span class=mx-1>1 分钟阅读时长</span></div><div class=mt-3></div></div><div class="prose prose-slate lg:prose-xl dark:prose-invert"><h2 id=磁盘>磁盘</h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>lsblk <span class=p>|</span> awk <span class=s1>&#39;
+</span></span></span><span class=line><span class=cl><span class=s1>  /disk/ {
+</span></span></span><span class=line><span class=cl><span class=s1>    if ($1 ~ /^sd/) {
+</span></span></span><span class=line><span class=cl><span class=s1>      type = &#34;SATA&#34;;
+</span></span></span><span class=line><span class=cl><span class=s1>    } else if ($1 ~ /^nvme/) {
+</span></span></span><span class=line><span class=cl><span class=s1>      type = &#34;NVME&#34;;
+</span></span></span><span class=line><span class=cl><span class=s1>    } else if ($1 ~ /^vd/) {
+</span></span></span><span class=line><span class=cl><span class=s1>      type = &#34;VIRTIO&#34;;  # 新增虚拟化磁盘类型
+</span></span></span><span class=line><span class=cl><span class=s1>    } else {
+</span></span></span><span class=line><span class=cl><span class=s1>      type = &#34;OTHER&#34;;    # 未知类型归类
+</span></span></span><span class=line><span class=cl><span class=s1>    }
+</span></span></span><span class=line><span class=cl><span class=s1>    size = $4;
+</span></span></span><span class=line><span class=cl><span class=s1>    count[type][size]++;
+</span></span></span><span class=line><span class=cl><span class=s1>  }
+</span></span></span><span class=line><span class=cl><span class=s1>  END {
+</span></span></span><span class=line><span class=cl><span class=s1>    # 遍历所有类型输出
+</span></span></span><span class=line><span class=cl><span class=s1>    for (t in count) {
+</span></span></span><span class=line><span class=cl><span class=s1>      for (s in count[t]) {
+</span></span></span><span class=line><span class=cl><span class=s1>        printf &#34;%s %s * %d\n&#34;, t, s, count[t][s];
+</span></span></span><span class=line><span class=cl><span class=s1>      }
+</span></span></span><span class=line><span class=cl><span class=s1>    }
+</span></span></span><span class=line><span class=cl><span class=s1>  }&#39;</span>
 </span></span></code></pre></div><h2 id=网卡>网卡</h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=nv>devices_info</span><span class=o>=</span><span class=k>$(</span>ibv_devices <span class=p>|</span> awk <span class=s1>&#39;NR&gt;2 {print $1}&#39;</span> <span class=p>|</span> xargs -I <span class=o>{}</span> sh -c <span class=s1>&#39;rate=$(ibstat {} | grep &#34;Rate&#34; | awk &#34;{print \$2 \&#34; Gb/s\&#34;}&#34;); firmware=$(ibstat {} | grep &#34;Firmware version&#34; | awk &#34;{print \$3}&#34;); echo &#34;{}: Firmware: $firmware, Rate: $rate&#34;&#39;</span><span class=k>)</span>
 </span></span><span class=line><span class=cl><span class=nb>echo</span> <span class=s2>&#34;</span><span class=nv>$devices_info</span><span class=s2>&#34;</span>
 </span></span><span class=line><span class=cl>
